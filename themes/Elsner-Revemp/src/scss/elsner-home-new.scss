@@ -2337,11 +2337,10 @@
     border: 1px solid #fff;
     -webkit-box-shadow: 0 4px 14px rgba(0, 0, 0, .45);
     box-shadow: 0 4px 14px rgba(0, 0, 0, .45);
-    margin-bottom: 16px;
     -webkit-transition: width .45s cubic-bezier(.4, 0, .2, 1), height .45s cubic-bezier(.4, 0, .2, 1), border-color .45s ease;
     -o-transition: width .45s cubic-bezier(.4, 0, .2, 1), height .45s cubic-bezier(.4, 0, .2, 1), border-color .45s ease;
     transition: width .45s cubic-bezier(.4, 0, .2, 1), height .45s cubic-bezier(.4, 0, .2, 1), border-color .45s ease;
-    margin: 0 auto
+    margin: 0 auto ;
   }
 
   .testimonials-section .author-photo img {
