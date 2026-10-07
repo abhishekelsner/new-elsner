@@ -308,7 +308,7 @@ body.active-secondmenu .main-wrapper {
 }
 .elsner-header.fixed .navmenu > .menu-item:last-child > a:hover:after,
 .elsner-header.header-2 .navmenu > .menu-item:last-child > a:hover:after {
-  background-color: #fff;
+  /* background-color: #fff; */
   background: #fff
     url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='12' fill='none'%3E%3Cpath fill='%230093CF' d='M13.805 5.907a1.972 1.972 0 0 0-.582-1.38L8.993.287a.986.986 0 1 0-1.39 1.4l3.244 3.234H.987a.986.986 0 0 0 0 1.972h9.86l-3.244 3.244a.987.987 0 0 0 1.39 1.4l4.23-4.24c.37-.367.58-.867.582-1.39Z'/%3E%3C/svg%3E")
     50% no-repeat;
