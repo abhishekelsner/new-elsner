@@ -1384,7 +1384,7 @@ span.london-event-cta-eyebrow {
 	gap: 13px;
 	font-size: 20px;
 	font-weight: 400;
-	font-family: 'Poppins';
+	font-family: 'Poppins',sans-serif;
 	line-height: 1.4;
 	letter-spacing: 0px;
 	padding: 0.55rem 1.15rem;
@@ -1422,7 +1422,7 @@ span.london-event-cta-eyebrow {
 .london-event-cta-desc p {
 	font-size: 20px;
 	font-weight: 400;
-	font-family: 'Poppins';
+	font-family: 'Poppins', sans-serif;
 	color: #DFDFDF;
 	margin: 0 auto;
 	line-height: 32.5px;
