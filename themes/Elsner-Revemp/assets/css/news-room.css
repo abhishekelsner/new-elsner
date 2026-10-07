@@ -1212,7 +1212,7 @@
   background: #0098d7;
   color: #ffffff;
   border-radius: 0 0 0 6px;
-  font-weight: 700;
+  /* font-weight: 700; */
   padding-top: 6.62px;
   padding-right: 11.04px;
   padding-bottom: 6.62px;
@@ -1254,7 +1254,7 @@
 .upcoming-event-card__category {
   flex: 0 0 auto;
   color: #ffffff;
-  line-height: 1.3;
+  /* line-height: 1.3; */
   text-transform: uppercase;
   font-weight: 700;
   font-style: Bold;
@@ -1417,7 +1417,7 @@
   box-sizing: border-box;
   background: #ffffff;
   color: #0077ad;
-  font-weight: 700;
+  /* font-weight: 700; */
   text-decoration: none;
   text-transform: uppercase;
   transition: all 0.25s ease;
