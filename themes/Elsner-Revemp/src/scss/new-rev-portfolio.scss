@@ -676,8 +676,8 @@ body.case-study-template-default.single.single-case-study, h1, h2, h3, h4, h5, h
 
 .our-portfolio-form {
     padding: 80px 0;
-    background-size: cover;
-    background-position: center;
+    // background-size: cover;
+    // background-position: center;
     color: #fff;
     background: linear-gradient(118.41deg, #03497A 0%, #00BDF2 100%);
 }
@@ -2728,7 +2728,7 @@ section.case-study-cards {
     display: flex;
     align-items: center;
     gap: 6px;
-    margin-top: 6px;
+    // margin-top: 6px;
     width: max-content;
     margin: 6px auto;
 }
