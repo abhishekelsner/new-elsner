@@ -1,0 +1,28 @@
+# Existing ignores
+plugins.tar.gz/
+themes.tar.gz/
+themes/twentytwentyfive
+themes/twentytwentyfour
+themes/Elsner-Revemp/assets/images
+themes/Elsner-Revemp/assets/webfonts
+themes/Elsner-Revemp/node_modules
+themes/Elsner-Revemp/==ultimate-member
+themes/==export-posts-csv.php
+themes/==template-testimonials.php
+
+# Environment variables & Secrets
+.env
+.env.*
+.ENV
+
+# SonarQube Scripts & Tooling
+scripts/
+package.json
+.env.example
+
+# SonarQube JSON exports and reports
+sonarqube-issues.json
+sonarqube-summary.json
+sonarqube-report.md
+sonarqube-security-before.md
+sonarqube-security-fixes.md

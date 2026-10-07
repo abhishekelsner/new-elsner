@@ -1,0 +1,1240 @@
+/* ── Header 5 ─────────────────────────────────────── */
+.elsner-header.header-5 {
+    background: #fff;
+}
+
+.elsner-header.header-5 .container-fluid .navbar {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-5 .navbar-brand {
+    margin-right: auto;
+}
+
+.header-5-right {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-left: auto;
+}
+
+.header-5-contact {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header-5-link {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #000000;
+    text-decoration: none;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.header-5-link svg {
+    color: #005282;
+}
+
+.header-5-link:hover {
+    color: #000000;
+    opacity: 0.8;
+}
+
+.header-5-cta {
+    display: inline-block;
+    padding: 10px 22px;
+    background: #03497A;
+    color: #fff !important;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    border: 2px solid #03497A;
+    transition: background 0.2s, color 0.2s;
+}
+
+.header-5-cta:hover {
+    background: transparent;
+    color: #005282 !important;
+}
+
+/* hide hamburger + nav collapse for header 5 */
+.header-5 .navbar-toggler,
+.header-5 .navbar-collapse {
+    display: none !important;
+}
+
+@media (max-width: 991px) {}
+
+/* responsive */
+@media (max-width: 767px) {
+    .header-5-right {
+        gap: 12px;
+    }
+
+    .header-5-contact {
+        display: none;
+    }
+
+    .header-5-cta {
+        padding: 8px 14px;
+        font-size: 11px;
+    }
+}
+
+html:has(#lp-main) {
+    scroll-behavior: smooth;
+}
+
+/* ── Case Studies ────────────────────────────────────── */
+.lp-cases {
+    padding: 70px 0;
+}
+
+.lp-cases__header {
+    text-align: center;
+    margin-bottom: 44px;
+}
+
+.lp-cases__heading {
+    font-family: Red Hat Display;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 36px;
+    leading-trim: NONE;
+    line-height: 43.2px;
+    letter-spacing: 0px;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: capitalize;
+}
+
+.lp-cases__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.lp-cases__card {
+    background: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #E5E5E5;
+    transition: box-shadow 0.25s, transform 0.2s;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.lp-cases__card:hover {
+    box-shadow: 0 10px 36px rgba(13, 32, 69, 0.12);
+    transform: translateY(-4px);
+}
+
+.lp-cases__card-img {
+    width: 100%;
+
+    object-fit: cover;
+    display: block;
+
+    border-radius: 10px;
+}
+
+.lp-cases__card-img-placeholder {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background: linear-gradient(135deg, #e8edf5, #d0d9ec);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lp-cases__card-body {
+    margin-top: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.lp-cases__card-stars {
+    display: flex;
+    gap: 2px;
+    margin-bottom: 10px;
+}
+
+.lp-cases__card-star {
+    color: #f4ac0d;
+    font-size: 13px;
+}
+
+.lp-cases__card-title {
+    font-family: Red Hat Display;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 22px;
+    leading-trim: NONE;
+    line-height: 32px;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    margin-bottom: 10px;
+}
+
+.lp-cases__card-excerpt {
+    font-family: Red Hat Display;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    leading-trim: NONE;
+    line-height: 22px;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    color: #7c7c86;
+}
+
+.lp-cases__card-link {
+    font-family: Red Hat Display;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 18px;
+    leading-trim: NONE;
+    line-height: 33.63px;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    color: #005282;
+}
+
+.lp-cases__card-link:hover {
+    gap: 9px;
+}
+
+@media (max-width: 860px) {
+    .lp-cases__grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 560px) {
+    .lp-cases__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .lp-cases {
+        padding: 50px 0;
+    }
+}
+
+/* ── Happy Clients Testimonials ──────────────────────── */
+.lp-happy {
+    background: #ffffff;
+    padding: 0;
+}
+
+.lp-happy__header {
+    text-align: center;
+    margin-bottom: 44px;
+}
+
+.lp-happy__heading {
+    font-family: Red Hat Display;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 42px;
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+/* Slider wrapper — your JS targets .lp-happy__slider */
+.lp-happy__slider-wrap {
+    position: relative;
+    overflow: hidden;
+}
+
+.lp-happy__slider {
+    margin: 0 -10px;
+}
+
+.lp-happy__card {
+    margin: 0 10px;
+    height: 100%;
+}
+
+.slick-track {
+    display: flex !important;
+}
+
+.lp-happy__slider.slick-initialized .slick-slide {
+    padding: 0 30px 0 0;
+}
+
+.slick-slide {
+    height: inherit !important;
+}
+
+.slick-slide>div {
+    height: 100%;
+}
+
+.lp-happy__card {
+    height: 100%;
+}
+
+.lp-happy__card {
+    background: #F4F4F4;
+    border: 1px solid #e8edf5;
+    border-radius: 10px;
+    padding: 24px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    transition: box-shadow 0.2s;
+    display: flex !important;
+}
+
+.lp-happy__card:hover {
+    box-shadow: 0 6px 24px rgba(13, 32, 69, 0.09);
+}
+
+/* Stars */
+.lp-happy__stars {
+    display: flex;
+    gap: 2px;
+}
+
+.lp-happy__star {
+    color: #f4ac0d;
+    font-size: 25px;
+}
+
+.lp-happy__star--empty {
+    color: #dde3ec;
+}
+
+/* Text */
+.lp-happy__text {
+    font-family: Red Hat Display;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    leading-trim: NONE;
+    line-height: 28px;
+    letter-spacing: 0px;
+    vertical-align: middle;
+}
+
+/* Author */
+.lp-happy__author {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-top: 14px;
+    margin-top: auto;
+}
+
+.lp-happy__author-photo {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.lp-happy__author-placeholder {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #e8701a, #0d2045);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    flex-shrink: 0;
+}
+
+.lp-happy__author-name {
+    font-size: 13px;
+    font-weight: 700;
+    color: #0a1628;
+    margin: 0;
+}
+
+/* Drag indicator (matches design) */
+.lp-happy__drag-hint {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 6px;
+    margin-top: 24px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #6b7a99;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.lp-happy__drag-icon {
+    width: 28px;
+    height: 28px;
+    background: #0a1628;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+@media (max-width: 1100px) {
+    .lp-happy__slider {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 760px) {
+
+    .lp-happy__slider .slick-list {
+        margin: 0 auto;
+    }
+
+    .lp-happy__slider {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 520px) {
+    .lp-happy__slider {
+        grid-template-columns: 1fr;
+    }
+
+    .lp-happy {
+        padding: 50px 0;
+    }
+}
+
+.lp-hero {
+    padding: 150px 0 90px;
+    position: relative;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* ── Inner Grid ──────────────────────────────────────── */
+.lp-hero__inner {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    flex-wrap: wrap;
+}
+
+/* ── Left Content ────────────────────────────────────── */
+.lp-hero__content {
+    padding-right: 10px;
+    flex: 1;
+}
+
+/* Heading */
+.lp-hero__heading {
+    font-family: Red Hat Display;
+    font-weight: 900;
+    font-size: 42px;
+    color: #FFFFFF;
+    line-height: 130%;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.lp-hero__heading span {
+    font-style: Red Hat Display;
+    color: #FF7700;
+}
+
+/* Orange underline accent below heading */
+.lp-hero__heading-accent {
+    display: block;
+    width: 48px;
+    height: 3px;
+    background: #e8701a;
+    margin: 14px 0 22px;
+    border-radius: 2px;
+}
+
+/* Subtext */
+.lp-hero__subtext {
+    font-family: Red Hat Display;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 18px;
+    leading-trim: NONE;
+    line-height: 130%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #FFFFFF;
+    max-width: 569px;
+    margin-bottom: 60px;
+}
+
+/* Trust Bullets Grid */
+.lp-hero__bullets {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.lp-hero__bullet {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: rgba(255, 255, 255, 0.88);
+    background: #FFFFFF1A;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 7px;
+    padding: 20px;
+    line-height: 1.4;
+    font-family: Red Hat Display;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 16px;
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+}
+
+.lp-hero__bullet::before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    min-width: 8px;
+    border-radius: 50%;
+    background: #FFFFFF;
+}
+
+/* ── Right: Form Box ─────────────────────────────────── */
+.lp-hero__form-box {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 32px 30px 26px;
+    box-shadow: 0 24px 64px rgba(0, 0, 0, 0.4);
+    position: relative;
+    z-index: 2;
+    flex: 1;
+    max-width: 568px;
+}
+
+.lp-hero__form-title {
+    font-size: 17px;
+    font-weight: 700;
+    color: #002840;
+    margin: 0 0 22px;
+    line-height: 1.3;
+    font-family: Red Hat Display;
+    font-weight: 800;
+    font-style: ExtraBold;
+    font-size: 24px;
+    leading-trim: NONE;
+    line-height: 30px;
+    letter-spacing: 2%;
+    vertical-align: middle;
+    border-bottom: 1px solid #ECECEC;
+    padding-bottom: 20px;
+}
+
+/* ── CF7 Form Inside Box ─────────────────────────────── */
+.lp-hero__form-box .wpcf7-form {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.lp-hero__form-box .wpcf7-form .zoho-form-group {
+    display: flex;
+    gap: 13px;
+}
+
+/* Full-width fields */
+.lp-hero__form-box .wpcf7-form .cf7-full,
+.lp-hero__form-box .wpcf7-form p:has(input[name="your-email"]),
+.lp-hero__form-box .wpcf7-form p:has(input[name="your-company"]),
+.lp-hero__form-box .wpcf7-form p:has(select),
+.lp-hero__form-box .wpcf7-form p:last-of-type,
+.lp-hero__form-box .wpcf7-form .wpcf7-submit {
+    grid-column: 1 / -1;
+}
+
+.lp-hero__form-box .wpcf7-form .zoho-form-group .form-group {
+    width: 100%;
+}
+
+/* Remove default CF7 paragraph spacing */
+.lp-hero__form-box .wpcf7-form p {
+    margin: 0;
+}
+
+/* Labels */
+.lp-hero__form-box .wpcf7-form label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    color: #1a2540;
+    margin-bottom: 6px;
+    letter-spacing: 0.1px;
+    padding-bottom: 0;
+}
+
+/* Inputs, selects */
+.lp-hero__form-box input[type="text"],
+.lp-hero__form-box input[type="email"],
+.lp-hero__form-box input[type="tel"],
+.lp-hero__form-box select,
+.lp-hero__form-box textarea {
+    width: 100%;
+    border: 1.5px solid #dde3ec;
+    border-radius: 7px;
+    padding: 11px 14px;
+    font-size: 13.5px;
+    color: #1a2540;
+    transition: border-color 0.2s, box-shadow 0.2s, background 0.2s;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    appearance: none;
+    font-family: Red Hat Display;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 13px;
+    leading-trim: NONE;
+    line-height: 19.5px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    padding: 18px 14px;
+}
+
+.lp-hero__form-box input[type="text"]::placeholder,
+.lp-hero__form-box input[type="email"]::placeholder,
+.lp-hero__form-box input[type="tel"]::placeholder {
+    color: #aab4c4;
+}
+
+.lp-hero__form-box input[type="text"]:focus,
+.lp-hero__form-box input[type="email"]:focus,
+.lp-hero__form-box input[type="tel"]:focus,
+.lp-hero__form-box select:focus,
+.lp-hero__form-box textarea:focus {
+    border-color: #e8701a;
+    box-shadow: 0 0 0 3px rgba(232, 112, 26, 0.14);
+    outline: none;
+    background: #ffffff;
+}
+
+/* Select arrow */
+.lp-hero__form-box select {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23aab4c4' stroke-width='1.8' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 14px center;
+    padding-right: 38px;
+    cursor: pointer;
+    color: #aab4c4;
+}
+
+.lp-hero__form-box select:valid,
+.lp-hero__form-box select.has-value {
+    color: #b0b6c3;
+    border: 1.5px solid #dde3ec;
+}
+
+.lp-hero__form-box .form-group.form-services-select select:focus {
+    color: #000000;
+}
+
+/* Submit button */
+.lp-hero__form-box input[type="submit"],
+.lp-hero__form-box button[type="submit"] {
+    width: 100%;
+    background: #e8701a;
+    color: #ffffff;
+    border: none;
+    border-radius: 7px;
+    padding: 15px 20px;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    letter-spacing: 0.4px;
+    transition: background 0.2s, transform 0.1s, box-shadow 0.2s;
+    margin-top: 4px;
+}
+
+.lp-hero__form-box input[type="submit"]:hover,
+.lp-hero__form-box button[type="submit"]:hover {
+    background: #cf6214;
+    box-shadow: 0 6px 20px rgba(232, 112, 26, 0.35);
+    transform: translateY(-1px);
+}
+
+.lp-hero__form-box input[type="submit"]:active,
+.lp-hero__form-box button[type="submit"]:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+/* Form note */
+.lp-hero__form-note {
+    text-align: center;
+    font-size: 12px;
+    color: #9aa3b0;
+    margin: 12px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    line-height: 1;
+}
+
+/* CF7 validation */
+.lp-hero__form-box .wpcf7-not-valid-tip {
+    font-size: 11.5px;
+    color: #d63031;
+    margin-top: 4px;
+    display: block;
+}
+
+.lp-hero__form-box .wpcf7-not-valid {
+    border-color: #d63031 !important;
+}
+
+.lp-hero__form-box .wpcf7-response-output {
+    font-size: 13px;
+    border-radius: 6px;
+    padding: 10px 14px;
+    margin-top: 12px;
+    border: none !important;
+    background: #e8f5e9;
+    color: #2e7d32;
+}
+
+
+
+/* ── Stats / Client Section ──────────────────────────── */
+.lp-hero__clients {
+    margin-top: 40px;
+    padding-top: 32px;
+}
+
+.lp-hero__clients {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+    position: relative;
+}
+
+/* Vertical dividers between stat items */
+.lp-hero__client p.number:not(:first-child) {
+    position: relative;
+}
+
+.lp-hero__client p.number:not(:first-child)::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 32px;
+    width: 1px;
+    background: rgba(255, 255, 255, 0.15);
+}
+
+/* Each stat item: number + title are siblings, use CSS grid on parent */
+/* number and title are paired — lay them out stacked per column */
+.lp-hero__client {
+    border-right: 1px solid #FFFFFF4D;
+    display: flex;
+    gap: 18px;
+    align-items: center;
+    max-width: 270px;
+}
+
+.lp-hero__client p.number {
+    font-size: clamp(26px, 3vw, 38px);
+    font-weight: 800;
+    color: #ffffff;
+    margin: 0;
+    line-height: 1;
+    text-align: center;
+    letter-spacing: -1px;
+    position: relative;
+    padding-left: 13px;
+}
+
+.lp-hero__client:last-of-type {
+    border-right: none;
+}
+
+.lp-hero__client p.title {
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    text-align: center;
+    margin: 0;
+    line-height: 1.5;
+    font-family: Red Hat Display;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 14px;
+    leading-trim: NONE;
+    line-height: line height/15;
+    letter-spacing: letter spacing/1_5;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: #F0F0F8;
+    padding-right: 13px;
+}
+
+/* ── Responsive ──────────────────────────────────────── */
+@media (max-width: 1024px) {
+    .lp-hero__inner {
+        justify-content: center;
+        gap: 40px;
+        flex-direction: column;
+    }
+
+    .lp-hero__content {
+        padding-right: 0;
+    }
+
+    .lp-hero__form-box {
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+@media (max-width: 991px) {
+    .lp-hero__clients {
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0;
+    }
+
+    .lp-hero__client {
+        border-right: none;
+        border-bottom: 1px solid #FFFFFF4D;
+        padding: 18px 0;
+        border-top: 1px solid #FFFFFF4D;
+        margin: 0 auto;
+    }
+
+    .lp-hero__form-box {
+        max-width: 100%;
+    }
+
+    .lp-hero__subtext {
+        margin-bottom: 20px;
+    }
+
+    .lp-hero__heading {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .lp-hero {
+        padding: 40px 0 50px;
+    }
+
+    .lp-hero__heading {
+        font-size: 26px;
+    }
+
+    .lp-hero__bullets {
+        grid-template-columns: 1fr;
+    }
+
+    .lp-hero__form-box .wpcf7-form {
+        grid-template-columns: 1fr;
+    }
+
+    .lp-hero__form-box {
+        padding: 24px 20px 20px;
+        width: 100%;
+    }
+
+    .lp-stats__inner {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 400px) {
+    .lp-hero__client {
+        gap: 5px;
+    }
+
+    .lp-hero__client p.number {
+        font-size: 24px;
+    }
+
+    .lp-hero__client p.title {
+        font-size: 9px;
+    }
+}
+
+.get-touch.b2b-get-in-touch.lp {
+    padding: 60px 0;
+    background: linear-gradient(89.2deg, #005282 -10.26%, #00121C 62.02%);
+}
+
+.get-touch.b2b-get-in-touch.lp .lp-hire-cta__heading {
+    font-family: Red Hat Display;
+    font-weight: 800;
+    font-style: ExtraBold;
+    font-size: 42px;
+    leading-trim: NONE;
+    line-height: 50.4px;
+    letter-spacing: 0px;
+    vertical-align: middle;
+}
+
+.get-touch.b2b-get-in-touch.lp .btn-secondary {
+    letter-spacing: 1%;
+}
+
+.get-touch.b2b-get-in-touch.lp .lp-hire-cta__subtext {
+    font-family: Red Hat Display;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    leading-trim: NONE;
+    line-height: 22px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    margin-bottom: 30px;
+    max-width: 650px;
+}
+
+.get-touch.b2b-get-in-touch.lp .b2b-cta-bg-image .brew-gif {
+    position: relative;
+}
+
+.get-touch.b2b-get-in-touch.lp .b2b-cta-bg-image .brew-gif::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -2%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(270.71deg, rgba(0, 40, 64, 0) 0.61%, #002236 93.04%);
+    pointer-events: none;
+}
+
+@media (max-width: 768px) {
+    .get-touch.b2b-get-in-touch.lp {
+        padding: 0;
+    }
+
+    .get-touch.b2b-get-in-touch.lp .lp-hire-cta__heading {
+        font-size: 28px;
+        line-height: 34px;
+        margin: 30px 0 5px 0;
+    }
+
+    .get-touch.b2b-get-in-touch .btn-secondary {
+        padding: 10px 20px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .get-touch.b2b-get-in-touch.lp .b2b-cta-bg-image {
+        margin: 20px 0 0 0;
+    }
+
+    .get-touch.b2b-get-in-touch.lp .lp-hire-cta__subtext {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+
+/* ── Logo Bar ────────────────────────────────────────── */
+.lp-logo-bar {
+    background: #f8fafc;
+    padding: 73px 0;
+    border-top: 1px solid #e8edf5;
+    border-bottom: 1px solid #e8edf5;
+    overflow: hidden;
+}
+
+.lp-logo-bar__track-wrap {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Fade edges */
+.lp-logo-bar__track-wrap::before,
+.lp-logo-bar__track-wrap::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 80px;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.lp-logo-bar__track-wrap::before {
+    left: 0;
+    background: linear-gradient(to right, #f8fafc, transparent);
+}
+
+.lp-logo-bar__track-wrap::after {
+    right: 0;
+    background: linear-gradient(to left, #f8fafc, transparent);
+}
+
+.lp-logo-bar__track {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+    width: max-content;
+    animation: lp-logo-scroll 28s linear infinite;
+}
+
+.lp-logo-bar__track:hover {
+    animation-play-state: paused;
+}
+
+@keyframes lp-logo-scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.lp-logo-bar__logo {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+}
+
+.lp-logo-bar__logo img {
+    height: 100%;
+    width: 100%;
+    max-width: 260px;
+    object-fit: contain;
+    transition: filter 0.25s;
+}
+
+.lp-logo-bar__logo img:hover {
+    filter: grayscale(0) opacity(1);
+}
+
+/* ── Services Grid ───────────────────────────────────── */
+.lp-services {
+    background: #ffffff;
+    padding: 70px 0;
+}
+
+.lp-services__header {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.lp-services__heading {
+    font-family: Red Hat Display;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 42px;
+    leading-trim: NONE;
+    line-height: 43.2px;
+    letter-spacing: 0px;
+    vertical-align: middle;
+}
+
+.lp-services__subtext {
+    font-size: 15px;
+    color: #404040;
+    max-width: 580px;
+    margin: 0 auto;
+    font-family: Red Hat Display;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 18px;
+    leading-trim: NONE;
+    line-height: 25px;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.lp-services__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.lp-services__card {
+    position: relative;
+    border: 1px solid #e8edf5;
+    border-radius: 20px;
+    padding: 20px;
+    transition: box-shadow 0.25s, border-color 0.25s, transform 0.2s;
+    background: #fff;
+    box-shadow: 6px 15px 31.1px 0px #A1A1A124;
+
+}
+
+.lp-services__card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 20px;
+    padding: 1px;
+    /* Border thickness */
+    border: 1px solid;
+    background: linear-gradient(180deg, #005282 0%, #1C9AD6 100%);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+    opacity: 0;
+}
+
+.lp-services__card:hover::before {
+    opacity: 1;
+}
+
+.lp-services__icon {
+    width: 44px;
+    height: 44px;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.lp-services__icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.lp-services__card-title {
+    font-family: Manrope;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 16px;
+    leading-trim: NONE;
+    line-height: 30px;
+    letter-spacing: 0%;
+    text-transform: capitalize;
+    color: #191919;
+    margin-bottom: 5px;
+}
+
+.lp-services__card-desc {
+    font-family: Red Hat Display;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 14px;
+    leading-trim: NONE;
+    line-height: 19.2px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #404040;
+}
+
+@media (max-width: 1024px) {
+    .lp-services__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 560px) {
+    .lp-services__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .lp-services {
+        padding: 50px 0;
+    }
+
+    .lp-services__heading {
+        font-size: 28px;
+        line-height: 32px;
+    }
+}
+
+/* ── Stats Bar ───────────────────────────────────────── */
+.lp-stats {
+    background: #0d2045;
+    padding: 42px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.lp-stats__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 0;
+}
+
+.lp-stats__item {
+    text-align: center;
+    padding: 20px 24px;
+    position: relative;
+}
+
+.lp-stats__item:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 20%;
+    height: 60%;
+    width: 1px;
+    background: rgba(255, 255, 255, 0.12);
+}
+
+.lp-stats__number {
+    display: block;
+    font-size: clamp(30px, 4vw, 46px);
+    font-weight: 800;
+    color: #ffffff;
+    line-height: 1;
+    margin-bottom: 8px;
+    letter-spacing: -1px;
+}
+
+.lp-stats__label {
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.55);
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+}
+
+@media (max-width: 600px) {
+    .lp-stats__grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .lp-stats__item:nth-child(2n)::after {
+        display: none;
+    }
+}

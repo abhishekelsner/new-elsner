@@ -1,0 +1,386 @@
+@media screen and (min-width: 992px) {
+    .b2b-contact-block.services-banner{
+        .b2b-contact-left{
+            padding-right: 0px;
+        }
+        .b2b-contact-right{
+            padding-left: 0px;
+        }
+    }
+}
+
+@media (min-width: 1301px) and (max-width: 1600px) {
+
+    .b2b-process.our-process-primary{
+        .process-wrapper{
+            ul{
+                li{
+                    max-width: 285px;
+                     padding: 0 45px;
+
+                    &:after{
+                        right: -30px;
+                    }
+                    
+                }
+            }
+        }
+    }
+    .get-touch.emc-get-touch.shopify-growth-cta{
+        .get-block{
+            padding: 42px 20px;
+    
+            .get-image{
+                position: absolute;
+                right: 0;
+                height: 325px;
+                max-width: 550px;
+            }
+        }
+    }
+}
+@media (min-width: 1025px) and (max-width: 1300px) {
+
+    .b2b-process.our-process-primary{
+        .process-wrapper{
+            ul{
+                //  margin: 0 -20px;
+                justify-content: center;
+
+                li{
+                    padding: 15px;
+                    border: 1px solid #d1d1d1;
+                    border-right: 1px solid #d1d1d1 !important;
+                    margin: 12px;
+
+                    &:after{
+                        content: none;
+                    }
+
+                    &:first-child{
+                        padding-left: 15px;
+                    }
+                    &:last-child{
+                        padding-right: 15px;
+                    }
+                }
+            }
+        }
+    }
+    .projects-wrapper.b2b-featured-sidebar{
+        .project-head{
+            padding: 0;
+        ul{
+
+            li{
+                padding-top: 10px;
+             }
+             li a{
+                font-size: 16px;
+             }
+             li.current{
+                padding: 9px;
+
+                .active{
+                    padding-left: 0;
+                }
+             }
+        }
+    }
+
+    }
+    .get-touch.b2b-get-in-touch{
+        .brew-content{
+            h2{
+                font-size: 34px;
+            }
+        }
+        
+    }
+    .shopify-growth-block{
+       
+        .service-wrapper{
+            max-height: 100%;
+     
+        }
+    }
+    .get-touch.emc-get-touch.shopify-growth-cta{
+        .get-block{
+            padding: 42px 20px;
+    
+            .get-image{
+                position: relative;
+                width: 100%;
+                height: 177px;
+                left: auto;
+                right: auto;
+                width: 100%;
+                max-width: 350px;
+                margin: 25px auto;
+            }
+        }
+    }
+
+}
+@media (min-width: 992px) and (max-width: 1024px) {
+
+    .get-touch.emc-get-touch.shopify-growth-cta{
+        .get-block{
+            padding: 42px 20px;
+    
+            .get-image{
+                position: relative;
+                width: 100%;
+                height: 177px;
+                left: auto;
+                right: auto;
+                width: 100%;
+                max-width: 350px;
+                margin: 25px auto;
+            }
+        }
+    }
+
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    .b2b-contact-block.services-banner.maintenance-banner{
+        .services-heading{
+            h2{
+                font-size: 22px;
+                
+            }
+        }
+    }
+    .get-touch.b2b-get-in-touch{
+        .brew-content{
+            h2{
+                font-size: 30px;
+            }
+        padding: 43px 0;
+    }
+        .b2b-cta-bg-image{
+            position: absolute;
+        }
+    }
+    .projects-wrapper.b2b-featured-sidebar{
+        .project-head{
+            padding: 0;
+        ul{
+
+            li{
+                padding-top: 10px;
+             }
+             li a{
+                font-size: 16px;
+             }
+             li.current{
+                padding: 9px;
+
+                // .active{
+                //     padding-left: 0;
+                // }
+             }
+        }
+    }
+
+    }
+    .b2b-process.our-process-primary{
+        .process-wrapper{
+            ul{
+                margin: 0 -20px;
+                justify-content: center;
+
+                li{
+                    padding: 15px;
+                    border: 1px solid #d1d1d1;
+                    border-right: 1px solid #d1d1d1 !important;
+                    margin: 12px;
+
+                    &:after{
+                        content: none;
+                    }
+
+                    &:first-child{
+                        padding-left: 15px;
+                    }
+                    &:last-child{
+                        padding-right: 15px;
+                    }
+                }
+            }
+        }
+    }
+    .shopify-growth-block{
+       
+        .service-wrapper{
+            max-height: 100%;
+     
+        }
+    }
+    .growth-service-tab .projects-wrapper.b2b-featured-sidebar{
+
+        .project-head{
+    
+            ul{
+                justify-content: center;
+            }
+        }
+    }
+
+}
+@media screen and (max-width: 991px) {
+    .b2b-contact-block.services-banner.maintenance-banner{
+        .services-heading{
+            border-radius: 20px 20px 0px 0px;
+        }
+        .b2b-form{
+            border-radius: 0 0px 16px 16px;
+        }
+    }  
+    .shopify-growth-block{
+       
+        .service-wrapper{
+            max-height: 100%;
+     
+        }
+    }
+    .get-touch.emc-get-touch.shopify-growth-cta{
+        .get-block{
+            padding: 42px 20px;
+    
+            .get-image{
+                position: relative;
+                width: 100%;
+                height: 177px;
+                left: auto;
+                right: auto;
+                width: 100%;
+                max-width: 350px;
+                margin: 25px auto;
+            }
+        }
+    }
+    .maintenance-banner.growth-banner{
+        .services-heading h1{
+            font-weight: bold;
+            font-size: 34px;
+                line-height: 42px;
+
+                strong{
+                    margin: 15px auto;
+                }
+              
+        }
+    }
+}
+@media screen and (max-width: 767px) {
+    .services-banner.maintenance-banner{
+        .services-heading{
+            h1{
+                line-height: normal !important;
+            }
+        }
+    }
+    .get-touch.b2b-get-in-touch{
+        .brew-content{
+            h2{
+                font-size: 30px;
+            }
+        padding: 43px 0;
+    }
+        .b2b-cta-bg-image{
+            position: relative;
+        }
+    }
+    .maintenance-banner {
+        .services-heading {
+            .content-bottom {
+                .top-banner-form {
+                    .btn {
+                        max-width: 100%;
+                        width: 100%;
+                        min-width: 200px;
+                    }
+                    display: flex;
+                    gap: 10px;
+                    flex-direction: column;
+                }
+    
+            }
+
+        }
+    }
+    .projects-wrapper.b2b-featured-sidebar{
+        .project-head{
+            padding: 0;
+        ul{
+
+            li{
+                padding-top: 10px;
+             }
+             li a{
+                font-size: 16px;
+                padding-left: 0;
+             }
+             li.current{
+                padding: 9px;
+
+                .active{
+                    padding-left: 0;
+                }
+             }
+             padding-bottom: 0;
+        }
+    }
+    .tab-wrap{
+        .service-tab-content{
+            margin-top: 20px;
+        }
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    }
+
+    .b2b-process.our-process-primary{
+        .process-wrapper{
+            ul{
+                margin: 0 -15px;
+
+                li{
+                    padding: 15px;
+                    border: 1px solid #d1d1d1;
+                    border-right: 1px solid #d1d1d1 !important;
+
+                    &:after{
+                        content: none;
+                    }
+
+                    &:first-child{
+                        padding-left: 15px;
+                    }
+                    &:last-child{
+                        padding-right: 15px;
+                    }
+                }
+            }
+        }
+    }
+    .shopify-growth-block{
+       
+        .service-wrapper{
+            max-height: 100%;
+     
+        }
+    }
+    .growth-service-tab .projects-wrapper.b2b-featured-sidebar{
+
+        .project-head{
+    
+            ul{
+                justify-content: flex-start;
+            }
+        }
+    }
+   
+}

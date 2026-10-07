@@ -1,0 +1,859 @@
+.maintenance-banner {
+	.services-heading {
+		h1 {
+			font-weight: 400;
+			line-height: 44px;
+		}
+
+		span {
+			font-weight: 700;
+			color: #404040;
+		}
+
+		.content-bottom {
+			.top-banner-form {
+				.btn {
+					max-width: 110px;
+					width: 100%;
+					min-width: 200px;
+					font-size: 15px;
+					border-radius: 10px;
+					background: #FF7700;
+					border-color: transparent;
+					margin-top: 0;
+					letter-spacing: 0;
+					line-height: 26px;
+				}
+
+				.btn:hover {
+					background-color: #fff;
+					border: 1px solid #f70;
+					color: #f70;
+				}
+
+				input {
+					background: #EEEEEE;
+					border: none;
+					padding: 20px;
+					border-radius: 10px;
+					height: auto;
+				}
+
+				display: flex;
+				gap: 10px;
+			}
+
+			max-width: 100%;
+			width: 100%;
+		}
+
+		max-width: 100%;
+		margin-top: 60px;
+	}
+
+}
+.acknowledgement-section{
+	background: #EEEEEE80;
+    padding-top: 40px;
+}
+
+.banner-counter.b2b-counter {
+	ul {
+		li.slider-item {
+			&:after {
+				background: #005282;
+			}
+		}
+	}
+
+	background: rgba(0, 82, 130, 0.1);
+	color: #002840;
+}
+
+.projects-wrapper.b2b-featured-sidebar {
+	.project-head {
+		background: rgba(238, 238, 238, 0.5);
+		border-radius: 8px;
+		padding: 16px;
+	}
+
+	ul {
+		padding-left: 0px;
+
+		li {
+
+			a {
+				font-size: 20px;
+				color: #000000;
+				font-weight: 600;
+				padding-left: 21px;
+			}
+
+			.active {
+				color: #fff;
+
+				&:after {
+					content: none;
+
+				}
+			}
+		}
+
+		li.current {
+			background: #005282;
+			padding: 22px 21px 22px 0px;
+			border-radius: 8px;
+			color: #fff;
+
+			// &:hover{
+			// 	background: #fff;
+			// 	border:1px solid #005282;
+			// 	color: #000;
+
+			// 	a{
+			// 		color: #000;
+
+			// 	}
+			// }
+			
+		}
+	}
+
+
+	.tab-content {
+		.service-tab-content {
+			background: #F7F7F7;
+			padding: 16px;
+			border-radius: 8px;
+			margin-bottom: 20px;
+		}
+	}
+}
+
+.healthcare-box {
+	&:before {
+		content: none;
+	}
+
+	img {
+		margin-bottom: 25px;
+	}
+}
+
+.health-care-bottom-btn {
+	.btn {
+		border-radius: 10px;
+	}
+
+	text-align: center;
+	margin-top: 25px;
+
+}
+
+.b2b-brands-logos {
+
+	.slick-track{
+		align-items: center;
+		display: flex;
+		flex-wrap: nowrap;
+		}
+
+	ul {
+		align-items: center;
+		display: flex;
+		flex-wrap: nowrap;
+		gap: 40px 50px;
+		justify-content: space-between;
+
+		li {
+			min-width: 10%;
+			text-align: left;
+			margin-right: 100px;
+
+			&:hover img{
+				filter: none;
+			}
+		}
+
+		img {
+			filter: grayscale(100%);
+			max-height: 65px;
+			max-width: 160px;
+			-o-object-fit: contain;
+			object-fit: contain;
+			transition: all .4s ease;
+			
+		}
+	}
+
+
+}
+.b2b-process.our-process-primary{
+	.process-wrapper{
+		ul{
+			margin: 0 auto;
+		}
+		li{
+			font-size: 16px;
+			max-width: 352px;
+			padding: 0px 45px;
+			text-align: left;
+			width: 100%;
+			border-right: none !important;
+			position: relative;
+
+			&:after{
+				content: "";
+				background: url('../images/b2b-marketing/b2b-process-arrow.svg') no-repeat center center;
+				height: 100%;
+				position: absolute;
+				left: auto;
+				max-height: 168px;
+				width: 70px;
+				z-index: -1;
+				right: -20px;
+				top: 58px;
+				
+			}
+			&:not(:first-child){
+				&::after{
+					display: block !important;
+    				border: none;
+					border-right: none !important;
+					transform: none;
+				}
+			}
+			&:first-child{
+				padding-left: 0;
+			}
+			&:last-child{
+				padding-right: 0;
+
+				&::after{
+					content: none;
+				}
+			}
+			
+		}
+	}
+	padding: 75px 0;
+}
+.b2b-client-testimonial.blue-section{
+
+	.brew-content{
+		h2{
+			font-size: 42px;
+			margin-bottom: 10px;
+
+			span{
+				color: #f70;
+			}
+		}
+	}
+	.b2b-slide-arrow{
+		.arrow-block{
+			display: flex;
+
+			span{
+				background: #053856;
+				width: 44px;
+				height: 44px;
+				padding: 10px;
+				cursor: pointer;
+			}
+			span.left{
+				margin-right: 30px;
+			}
+		}
+		margin-top: 70px;
+	}
+	.b2b-client-testimonials-slider.slick-slider{
+			
+		.slick-arrow{
+			background: #053856;
+			height: 44px;
+			padding: 10px;
+			width: 44px;
+		}
+		.slick-arrow.slick-prev{
+			left: -50px;
+
+			&::before{
+					color: #fff;
+					 content: "\f177";
+					font-family: Font Awesome\ 6 Free;	
+					font-weight: bold;
+			}
+		}
+		.slick-arrow.slick-next{
+			right: -50px;	
+
+			&::before{
+				color: #fff;
+				 content: "\f178";
+				font-family: Font Awesome\ 6 Free;	
+				font-weight: bold;
+		}
+		}
+	}
+	.slick-slide{
+		margin: 0 10px;
+
+
+		.user-slide{
+			width: 100%;
+			background-color: #fff;
+			padding: 20px;
+			max-width: 100%;
+			height: 100%;
+			min-height: 300px;
+    		overflow: hidden;
+
+			.description{
+				width: 100%;
+    			margin-bottom: 0;
+
+				p {
+
+					width: 100% !important;
+					font-size: 20px;
+					color: #012A50;
+					line-height: normal;
+				}
+			} 
+			.review-data-slide{
+				min-height:auto;
+
+				.head_rate{
+					font-size:19px;
+
+					span.rates{
+						color:#FF2934;
+						font-size: 16px;
+					}
+				}
+			}
+		}
+		.user-details-wrap{
+			.user-detail {
+				.name{
+					font-size: 18px;
+					color: #000;
+					margin-left: 15px
+				}
+			}
+			.user-img{
+				img{
+					border: none;
+					object-fit: contain;
+				}
+			}
+				align-items: center;
+				display: flex;
+				justify-content: flex-start;
+		}
+		
+		
+	}
+	
+	padding: 75px 0;
+
+}
+
+.get-touch.b2b-get-in-touch{
+	.brew-content{
+			h2{
+				font-size: 52px;
+			}
+			&::before{
+				content: "";
+				background: url('../images/b2b-marketing/Abstract-Design.png') no-repeat  center;
+				height: 100%;
+				left: -296px;
+				position: absolute;
+				width: 100%;
+				right: 0px;
+				top: 0px;
+				
+			}
+		padding: 63px 0;
+		position: relative;
+	}
+	.b2b-cta-bg-image{
+				// background: url('../images/b2b-marketing/b2b-cta-image.png') no-repeat center ;
+				// height: 100%;
+				// width: 100%;
+				// background-size: cover;
+				position: absolute;
+				left: auto;
+				right: 0;
+				height: 100%;
+    			padding: 0;
+				
+				.brew-gif{
+					height: 100%;
+					img{
+						width: 100%;
+						height: 100%;
+						object-fit: cover;
+					}
+				}
+	}
+	.btn-secondary{
+		border-radius: 10px;
+		position: relative;
+   		 z-index: 9;
+		text-transform: capitalize;
+	}
+	color: #fff;
+	padding-block: 0;
+	background: linear-gradient(92.74deg, #005282 2.28%, #00121C 98.34%);
+	position: relative;
+	
+}
+.b2b-contact-block.services-banner.maintenance-banner{
+	.services-heading{
+		h2{
+			font-size: 42px;
+			color: #fff;
+		}
+
+		p{
+			color: #fff;
+		}
+		.b2b-commitment{
+			h3{
+				font-size: 18px;
+				font-family: Red Hat Display, sans-serif, serif, monospace;
+			}
+			li{
+				background: #fff;
+				color: #4C4C4D;
+				padding: 10px;
+				margin-top: 15px;
+				border-radius: 100px;
+				position: relative;
+				padding-left: 40px;
+				text-align: left;
+
+				&::before{
+					color: #f70;
+					content: "\f058";
+					font-family: Font Awesome\ 6 Free;
+					font-weight: 600;
+					opacity: 1;
+					padding-left: 18px;
+					transition: all .25s ease-in-out;
+					font-size: 20px;
+					position: absolute;
+					left: -7px;
+				}
+			}
+			// background: #F5F5F5;
+			// border-radius: 8px;
+			// padding: 40px;
+			margin-top: 50px;
+			
+		}
+		height: 100%;
+		background: linear-gradient(180.04deg, #002840 -19.24%, #0068A6 119.9%);
+		color: #fff;
+		padding: 40px;
+		border-radius: 20px 0 0 20px;
+		margin-top: 0;
+		max-width: 100%;
+	}
+	.b2b-form{
+		background: #F5F5F5;
+		padding: 45px;
+		border-radius: 0px 16px 16px 0;
+		height: 100%;
+		
+
+		.form-group{
+
+			label{
+				font-weight: 600;
+			}
+			input{
+				border: none;
+				background: #fff;
+				border-radius: 8px;
+				padding: 20px 24px;
+				color: #98989A;
+				height: 100%;
+				max-height: 60px;
+			}
+			input.btn.btn-primary.wpcf7-submit{
+				max-width: 110px;
+				width: 100%;
+				min-width: 200px;
+				font-size: 15px;
+				border-radius: 10px;
+				background: #FF7700;
+				border-color: transparent;
+				margin-top: 0;
+				letter-spacing: 0;
+				line-height: 19px;
+				color: #fff;
+				font-family: Red Hat Display, sans-serif, serif, monospace;
+				text-transform: capitalize;
+				position: relative;
+				padding-left: 45px;
+
+				// &::before{
+				// 	background: url('../images/b2b-marketing/buton-link-icon.png') no-repeat center ;
+				// 	height: 100%;
+				// 	width: 100%;
+				// 	background-size: cover;
+				// 	position: absolute;
+				// 	left: auto;
+				// 	right: 0;
+				// }
+				&:hover{
+					background-color: #fff;
+					border: 1px solid #f70;
+					color: #f70;
+				}
+				
+
+			}
+			// input.btn.btn-primary:hover{
+			// 		background-color: #fff;
+			// 		border: 1px solid #f70;
+			// 		color: #f70;
+			// }
+			textarea{
+				border: none;
+				background: #fff;
+				border-radius: 8px;
+				padding: 20px 24px;
+				color: #98989A;
+				height: 100%;
+				max-height: 107px;
+				resize: none;
+			}
+					
+			margin-bottom: 20px;
+		}
+
+		.form-group.submit-btn{
+			&::before{
+				content: "\f1d8";
+				font-family: Font Awesome\ 6 Free;
+				// content: url(../images/b2b-marketing/conatct-send-icon.svg) ;
+				// background: url('../images/b2b-marketing/conatct-send-icon.svg') no-repeat center ;
+				left: 17px;
+				position: absolute;
+				right: auto;
+				width: 23px;
+				height: 23px;
+				z-index: 9;
+				top: 16px;
+				color: #fff;
+				// background-size: contain;
+			}
+			
+			position: relative;
+			display: inline-block;
+		}
+		
+	}
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+.b2b-contact-block.services-banner.maintenance-banner .b2b-form .form-group.submit-btn:hover:before {
+    color: #f70;
+	transition: all .3s linear;
+}
+
+//****** Shopifiy Page ***********//
+
+.maintenance-banner.growth-banner{
+	.services-heading h1{
+		font-weight: bold;
+		font-size: 42px;
+   		 line-height: 52px;
+
+		span{
+			color: #f70;
+		}
+		strong{
+			font-size: 16px;
+			margin-bottom: 10px;
+			border: 1px solid #C9EBFF;
+			border-radius: 20px;
+			padding: 13px 20px 13px 50px;
+			width: 100%;
+			max-width: 276px;
+			position: relative;
+			color: #222;
+			font-weight: 500;
+
+			&::before{
+				content: '';
+				position: absolute;
+				width: 13px;
+				height: 13px;
+				background: #FF7700;
+				border-radius: 50%;
+				top: 16px;
+				right: auto;
+				left: 20px;
+				bottom: 0;
+			}
+		}
+		
+	}
+	.content-bottom {
+		.btn{
+			max-width: 275px;
+			margin-top: 0;
+		}
+	}
+}
+.shopify-growth-block{
+	h2{
+		color: #404040;
+		font-weight: 700;
+
+		span{
+			color: #f70;
+		}
+	}
+	.service-wrapper{
+		background: rgba(237, 255, 203, 1);
+    	padding: 20px;
+		border-radius: 30px;
+		height: 100%;
+		max-height: 440px;
+
+		.shopify-growth-solution{
+
+			padding: 20px;
+			height: 100%;
+			border-radius: 20px;
+			
+		}
+		.shopify-growth-solution.first-block{
+			background: linear-gradient(270deg, #EDFFCB 36.59%, #CFEC97 114.25%);
+			
+		}
+		.shopify-growth-solution.last-block{
+			background: linear-gradient(90deg, #EDFFCB 36.59%, #CFEC97 114.25%);
+			
+		}
+		
+	}
+}
+.growth-service-tab {
+	.heading-wrapper{
+		h2{
+			color: #404040;
+			span{
+				color: #f70;
+			}
+		}
+	}
+}
+.growth-service-tab .projects-wrapper.b2b-featured-sidebar{
+	width: 100%;
+    max-width: 1198px;
+    margin: 0 auto;
+
+
+	.project-head{
+		background: transparent;
+
+		ul{
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+			padding: 0;
+
+			li{
+				border: 1px solid #000;
+				border-radius: 23px;
+				flex-direction: row;
+				text-align: center;
+				padding: 0;
+
+
+				a{
+					font-size: 18px;
+					font-weight: 500;
+					padding: 10px 20px;
+	
+					&::after{
+						content: none;
+					}
+				}
+				.current .active{
+					color: #fff !important;
+				}
+			}
+
+		}
+			
+		}
+		.tab-content .service-tab-content{
+			background: transparent;
+			text-align: center;
+		}
+		.mb-30 {
+			margin-bottom: 30px;
+		}
+		.growth-tab{
+			align-items: flex-start;
+			background-color: #F3FBFF;
+			border: 1px solid #C9EBFF;
+			display: flex;
+			flex-direction: column;
+			height: 100%;
+			justify-content: space-between;
+			padding: 30px;
+			position: relative;
+			transition: all .3s ease-out;
+			border-radius: 20px;
+
+			img{
+				margin-bottom: 25px;
+				background: #B9DFF2;
+				padding: 10px;
+				border-radius: 10px;
+			}
+			p.title{
+				color: #404040;
+				font-weight: 700;
+			}
+		}
+}
+.package-plan-section.growth-package{
+	.heading-wrapper{
+		h2{
+			color: #404040;
+			span{
+				color: #f70;
+			}
+		}
+	}
+ 
+		background: #fff;
+	
+	.service-list{
+		border: 1px solid #C9EBFF;
+		border-radius: 14px;
+
+		.package-recomended{
+			text-align: center;
+		}
+		.service-list-content{
+			text-align: center;
+		}
+		p.plan-title{
+			font-size: 22px;
+			font-weight: 700;
+			line-height: 33px;
+			margin-bottom: 15px;
+		}
+		p.plan-price{
+			background: #EEEEEE;
+			padding: 14px 10px;
+			border-radius: 7px;
+			width: 100%;
+			max-width: 126px;
+			margin: 0 auto 20px;
+			font-size: 20px;
+			line-height: 26px;
+			color: #000000;
+			font-weight: 600;
+			
+		}
+		p.plan-price.third-package-price-active{
+			background: #005282;
+			color: #fff;
+		}
+	}
+	a.btn-primary.btn{
+		min-width: 100%;
+		background-color: transparent;
+    	border: 1px solid #005282;
+		color: #005282;
+		border-radius: 8px;
+
+		&:hover{
+			background-color: #005282;
+    		border: 1px solid #005282;
+			color: #fff;
+		}
+		&:active{
+			background-color: #005282;
+    		border: 1px solid #005282;
+			color: #fff;
+		}
+	}
+	a.btn-primary.btn.third-package-button-active{
+		background-color: #005282;
+		border: 1px solid #005282;
+		color: #fff;
+
+	}
+	a.btn-primary.btn.third-package-button-active:hover{
+		background-color: transparent;
+		border: 1px solid #005282;
+		color: #005282;
+	}
+	
+}
+
+.b2b-client-testimonial.blue-section.shopify-growth-testimonials{
+	.slick-slide {
+		.user-slide{
+			background-color:#F4F4F4;
+
+			.description p{
+				color: #404040;
+				font-size: 16px;
+			}
+			.review-data-slide {
+
+				.head_rate span.rates{
+
+					color:#FFB800;
+				}
+			}
+		}
+		
+	}
+}
+.get-touch.emc-get-touch.shopify-growth-cta{
+	.get-block{
+		background:#002840;
+		color: #fff;
+		padding: 42px 110px;
+
+		.get-image{
+			background: url('https://www.elsner.com/wp-content/uploads/2024/05/shopify-cta-image.png') no-repeat center ;
+			position: absolute;
+			width: 100%;
+			height: 407px;
+			left: auto;
+			right: -26px;
+			max-width: 732px;
+			background-position: center;
+   			 background-size: cover;
+		}
+		.brew-gif img{
+			display: none;;
+		}
+
+		.brew-content {
+				h5{
+					color: #019DF9;
+				}
+				h2{
+					color: #fff;
+				}
+		}
+	}
+}

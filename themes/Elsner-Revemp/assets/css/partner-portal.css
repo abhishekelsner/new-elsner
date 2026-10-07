@@ -1,0 +1,615 @@
+:root {
+    --color-black: #000;
+    --color-white: #fff;
+    --color-gray: #4d4d4d;
+    --color-orange: #ff7700;
+    --primary-100: #002840;
+    --primary-200: #005282;
+    --primary-300: #007ac1;
+    --primary-400: #00a7e1;
+    --primary-500: #bee7ff;
+    --primary-600: #f0faff;
+
+    --playfair-font: "Playfair Display";
+    --Redhat-font: "Red Hat Display";
+    --typeBaseFallback: sans-serif, serif, monospace;
+    --h2-font: 38px;
+    --h3-font: 30px;
+    --h4-font: 24px;
+}
+
+.partner-editor {
+    width: 100%;
+}
+
+.partner-editor .partner-editor-box {
+    width: 100%;
+    position: relative;
+    background: #f5f5f5;
+    padding-block: 200px 80px;
+}
+
+.partner-editor-container {
+    position: relative;
+    z-index: 1;
+}
+
+.partner-editor h1,
+.partner-editor h2,
+.partner-editor h3,
+.partner-editor h4,
+.partner-editor h5,
+.partner-editor h6 {
+    margin-bottom: 26px;
+    font-weight: 700;
+    font-family: var(--Redhat-font), var(--typeBaseFallback);
+}
+
+.partner-editor-content .form-box {
+    background-color: var(--color-white);
+    border-radius: 30px;
+    box-shadow: 3px 7px 35px #1E1E1E14;
+    max-width: 590px;
+    padding: 60px 90px;
+    margin: 0 auto;
+}
+
+.partner-editor-content .form-box h1 {
+    text-align: center;
+    font-size: var(--h2-font);
+}
+
+.register-form-link,
+.login-form-link {
+    text-align: center;
+}
+
+.social-login-box .mo-openid-app-icons p {
+    display: none;
+}
+
+.social-login-box .mo-openid-app-icons a.mo_btn {
+    margin: 0 auto !important;
+    position: relative;
+    transform: translateX(-50%);
+    left: 50%;
+    color: var(--color-white) !important;
+}
+
+.partner-editor-content .um-account-main {
+    padding: 0 0 0 3.5em;
+}
+
+.partner-editor-content .form-box input.um-form-field,
+.um-account-main .um-account-tab input.um-form-field {
+    width: 100%;
+    border: 1px solid #6D6C6C4D;
+    background-color: #EBEBEB40;
+    border-radius: 10px;
+    padding: 15px 20px !important;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: .45px;
+    line-height: 1;
+    color: var(--text);
+    outline: none;
+    height: auto !important;
+    min-height: auto !important;
+}
+
+.partner-editor-content .form-box label {
+    font-size: 14px !important;
+    font-weight: 500;
+    letter-spacing: .38px;
+    line-height: 1.2 !important;
+    color: var(--text);
+    margin: 0;
+}
+
+.partner-editor-content .form-box input.um-button {
+    margin-top: 2rem !important;
+    border-radius: 30px !important;
+    min-width: 180px !important;
+    background: var(--primary-200) !important;
+}
+
+.partner-editor-content a.um-link-alt,
+.register-form-link a,
+.login-form-link a {
+    color: var(--primary-200) !important;
+    font-weight: bold;
+}
+
+.partner-editor-content .form-box.partner-register-form {
+    max-width: 900px;
+}
+
+.um.um-register {
+    max-width: 100% !important;
+}
+
+.login-form-link {
+    margin-bottom: 2rem;
+}
+
+.partner-editor .um-register .um-row._um_row_1,
+.partner-editor .um-register ._um_row_2 .um-col-1 {
+    margin: 0 0 10px 0 !important;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.partner-editor .um-register .um-col-121,
+.partner-editor .um-register .um-col-122,
+.partner-editor .um-register ._um_row_2 .um-col-1 .um-field {
+    width: calc(50% - 15px);
+}
+
+.um-um_password_id.um .um-col-alt.um-col-alt-b {
+    padding: 0;
+    margin: 0;
+}
+
+.login-form-box,
+.social-login-box {
+    text-align: center;
+}
+
+.login-form-box ul.um-misc-ul li {
+    text-align: center;
+}
+
+.login-form-box ul.um-misc-ul li a,
+.social-login-box a,
+.um-account-profile-link a {
+    color: var(--primary-200) !important;
+    font-weight: bold !important;
+}
+
+.login-form-box .um-misc-with-img {
+    padding: 15px 0;
+}
+
+.partner-form .um-account-main {
+    padding: 0 0 0 3.5em;
+}
+
+.um-account-main .um-account-tab {
+    padding: 60px 60px;
+    background-color: var(--color-white);
+    border-radius: 30px;
+    box-shadow: 3px 7px 35px #1E1E1E14;
+}
+
+#um_field_general_user_profile_photo .um-button {
+    background: transparent !important;
+    display: block !important;
+    border: 2px dashed #cfcfcf !important;
+    color: var(--color-black) !important;
+    font-size: 14px !important;
+    max-width: 100%;
+    border-radius: 12px !important;
+    padding: 15px 15px !important;
+    height: auto !important;
+    font-weight: 600 !important;
+}
+
+.partner-editor-content .um-account-tab .um-col-alt {
+    text-align: center;
+}
+
+.partner-editor-content .um-account-tab .um-col-alt .um-left {
+    float: none;
+}
+
+.partner-editor-content .um-account-tab input.um-button {
+    width: auto !important;
+    margin: 0 auto !important;
+    font-weight: 500 !important;
+    background: var(--primary-200) !important;
+    border-radius: 30px !important;
+    padding: 15px 30px !important;
+}
+
+.partner-editor-content p.red {
+    margin: 5px 0 0 !important;
+    color: #C74A4A;
+    font-size: 13px;
+}
+
+.partner-editor .um-account-main .um-field>a {
+    font-size: 13px !important;
+    font-weight: 600 !important;
+    line-height: 1.4 !important;
+    letter-spacing: .16px !important;
+    color: var(--color-white) !important;
+    text-decoration: none !important;
+    text-align: center !important;
+    background-color: var(--primary-200) !important;
+    padding: 10px 20px !important;
+    border: none !important;
+    border-radius: 30px !important;
+    display: inline-flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    cursor: pointer !important;
+    transition: all .3s ease 0s !important;
+    position: absolute;
+    right: 0;
+    top: -45px;
+}
+
+.not-found,
+.no-found {
+    text-align: center;
+    font-weight: 600;
+    padding: 10px;
+}
+
+.no-found p {
+    margin: 0;
+}
+
+.partner_portal_fancybox {
+    border-radius: 15px;
+    display: none;
+    width: 100%;
+    max-width: 650px;
+}
+
+.partner_portal_fancybox h2 {
+    font-family: var(--Redhat-font), var(--typeBaseFallback);
+    padding: 15px 26px;
+    background-color: rgba(0, 0, 0, .054);
+    font-size: var(--h4-font);
+}
+
+.um-account-main table th {
+    padding: 15px;
+    background: var(--primary-200);
+    color: var(--color-white);
+}
+
+.um-account-main table td {
+    padding: 10px 15px;
+    border-top: 1px solid #ddd;
+    background: #fff;
+}
+
+td.view-trn button {
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: .16px;
+    text-decoration: none;
+    text-align: center;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .3s ease 0s;
+    color: var(--color-black);
+}
+
+.client-table table td.client-name a {
+    color: var(--color-black);
+}
+
+.um.um-account table {
+    margin-top: 1rem;
+}
+
+.partner-editor-content .um-account-main div.um-account-heading {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 1rem;
+}
+
+h6.total-collection {
+    margin: 0;
+    text-align: right;
+    color: var(--primary-200);
+}
+
+.um-account-side ul.partner-portal-tabs li {
+    background: var(--color-white);
+}
+
+.um-account-side li a span.um-account-arrow {
+    opacity: 1 !important;
+}
+
+.partner-editor-content .um-account-side li a.um-account-link.current,
+.partner-editor-content .um-account-side li a.um-account-link:hover {
+    background: var(--primary-200);
+    color: var(--color-white);
+}
+
+.partner-editor-content .um-account-side li a.um-account-link.current span,
+.partner-editor-content .um-account-side li a.um-account-link:hover span {
+    color: var(--color-white) !important;
+}
+
+.um .um-profile-body .um-button {
+    min-width: 200px !important;
+    width: auto;
+    border-radius: 12px !important;
+    font-weight: 600 !important;
+    display: inline-block;
+    letter-spacing: .5px;
+}
+
+.um .um-profile-body .um-col-alt {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.um .um-profile-body .um-half {
+    width: auto;
+    float: none;
+    line-height: 1;
+}
+
+div#add-lead-form {
+    border-radius: 20px;
+}
+
+div#add-lead-form form label {
+    display: block;
+    font-size: 14px;
+}
+
+div#add-lead-form form input,
+div#add-lead-form form textarea {
+    width: 100%;
+    border: 1px solid #6D6C6C4D;
+    background-color: #EBEBEB40;
+    border-radius: 10px;
+    padding: 12px 15px;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: .45px;
+    line-height: 1;
+    color: var(--text);
+    outline: none;
+}
+
+div#add-lead-form button.button {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: .16px;
+    color: var(--color-white);
+    text-decoration: none;
+    text-align: center;
+    background-color: var(--primary-200);
+    padding: 12px 24px;
+    border: none;
+    border-radius: 30px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all .3s ease 0s;
+}
+
+.um-account .um-account-meta-img .custom-account-redirect {
+    border-radius: 100%;
+}
+
+.um-account .um-account-meta-img .custom-account-redirect img {
+    height: 120px;
+    width: 120px;
+    display: inline-block;
+    background-color: #ddd;
+    border: 1px solid #f5f5f5;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.partner-editor .dataTables_info,
+.partner-editor .paginate_button,
+.partner-editor .paginate_button {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.partner-editor .dataTables_wrapper .dataTables_paginate .paginate_button.current {
+    background-color: var(--primary-200);
+    border-color: var(--primary-200);
+    color: var(--color-white) !important;
+}
+
+.partner-editor .dataTables_wrapper .dataTables_paginate .paginate_button {
+    background: #fff;
+    border: 1px solid #fff;
+}
+
+.partner-editor .dataTables_wrapper .dataTables_length label,
+.partner-editor .um-account-main .dataTables_filter label {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.partner-editor .dataTables_wrapper .dataTables_filter input[type="search"],
+.partner-editor .dataTables_wrapper .dataTables_length select {
+    border: 1px solid #6D6C6C4D !important;
+    background-color: #EBEBEB40;
+    border-radius: 10px;
+    padding: 10px 10px !important;
+    font-size: 14px !important;
+    font-weight: 500;
+    letter-spacing: .45px;
+    line-height: 1;
+    color: var(--text);
+    outline: none !important;
+    height: unset !important;
+}
+
+.partner-editor .dataTables_wrapper .dataTables_length select {
+    margin: 0;
+    min-width: 50px;
+    max-width: 60px;
+}
+
+.dataTables_wrapper .dataTables_filter,
+.dataTables_wrapper .dataTables_length {
+    float: none !important;
+}
+
+.datatable-controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-block: 1rem;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.trn-box table td,
+.trn-box table th {
+    border: 1px solid #979797;
+    padding: 10px;
+    text-align: center;
+}
+
+div#add-lead-form {
+    width: 100% !important;
+    max-width: 600px;
+}
+
+.partner-scroller {
+    overflow-x: auto;
+    padding-bottom: 1rem;
+}
+
+.partner-editor-content .um-field-error {
+    background: transparent;
+    color: #C74A4A;
+    padding: 0;
+    margin-top: 5px;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.partner-editor-content .um-field-error span.um-field-arrow {
+    display: none;
+}
+
+@media screen and (max-width:991px) {
+    .partner-editor .partner-editor-box {
+        padding-block: 150px 60px
+    }
+
+    .partner-editor-content .form-box,
+    .um-account-main .um-account-tab {
+        padding: 50px 40px;
+        max-width: 100%
+    }
+
+    .partner-editor-content .um-account-main {
+        max-width: 100% !important;
+        padding: 0 0 0 1.5em
+    }
+
+    .um-account .um-account-meta-img .custom-account-redirect img {
+        height: 100px;
+        width: 100px
+    }
+
+    .portal-sidebar .user-profile .um-account-meta-img-b a {
+        border: 0
+    }
+
+    .portal-sidebar .user-profile .um-account-meta-img-b .custom-user-photo {
+        width: 70px;
+        height: 70px;
+        background-color: #ddd;
+        border: 1px solid #ddd;
+        object-fit: cover;
+        border-radius: 100%
+    }
+}
+
+@media screen and (max-width:767px) {
+    .partner-editor .partner-editor-box {
+        padding-block: 150px 40px
+    }
+
+    .partner-editor-content .form-box {
+        padding: 40px 30px
+    }
+
+    .um-account-main .um-account-tab {
+        padding: 20px
+    }
+
+    .um-account-main .um-account-tab input.um-form-field {
+        padding: 10px 15px !important
+    }
+
+    td.view-trn button {
+        font-size: 13px;
+        padding: 8px 10px
+    }
+
+    .partner-editor .um-register .um-col-121,
+    .partner-editor .um-register .um-col-122,
+    .partner-editor .um-register ._um_row_2 .um-col-1 .um-field {
+        width: 100%
+    }
+
+    .um-account-main table td {
+        padding: 10px 5px;
+        font-size: 14px
+    }
+
+    .um-account-main table th {
+        padding: 10px 5px;
+        font-size: 14px
+    }
+
+    .um-account-main .um-account-tab .um-field table {
+        margin: 0
+    }
+
+    .partner-editor-content .um-account-tab input.um-button {
+        padding: 15px 20px !important
+    }
+
+    .um-account-main .um-account-tab .um-field .um-field-label {
+        margin: 0
+    }
+
+    .um-account-main .um-account-tab .um-field .um-field-label label {
+        font-size: 14px !important;
+        line-height: 1.2 !important
+    }
+
+    .partner_portal_fancybox,
+    div#add-lead-form {
+        max-width: 95%;
+        padding: 20px
+    }
+
+    .partner_portal_fancybox h2 {
+        padding: 15px
+    }
+
+    .partner-editor .um-account-main .um-field>a {
+        top: 0;
+        position: relative
+    }
+
+    .um-account-main .um-account-tab .um-field {
+        padding: 0
+    }
+}

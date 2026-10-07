@@ -1,0 +1,3540 @@
+* {
+  box-sizing: border-box;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Red Hat Display", sans-serif;
+}
+
+h1 {
+  font-size: 55px;
+}
+
+h2 {
+  font-size: 50px;
+}
+
+p {
+  font-size: 28px;
+  line-height: normal;
+
+  >strong {
+    font-weight: 700;
+    color: #4D4D4D;
+  }
+}
+
+.weekmate-button {
+  .btn {
+    background-color: #005282;
+    border-radius: 20px;
+    padding: 20px 35px;
+    font-size: 22px;
+    letter-spacing: 2.4px;
+    font-weight: 900;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+
+    &:hover {
+      color: #fff;
+    }
+
+    &:before {
+      content: "";
+      display: block;
+      width: 0px;
+      height: 86%;
+      position: absolute;
+      top: 7%;
+      left: 0%;
+      opacity: 0;
+      background: #fff;
+      -webkit-box-shadow: 0 0 50px 30px #fff;
+      box-shadow: 0 0 50px 30px #fff;
+      -webkit-transform: skewX(-20deg);
+      -ms-transform: skewX(-20deg);
+      transform: skew(-20deg);
+    }
+
+    &:hover:before {
+      animation: sh02 .6s 0s linear;
+    }
+  }
+
+  .secondary.btn {
+    background-color: #FF7700;
+    border-radius: 20px;
+    padding: 20px 35px;
+    font-size: 22px;
+    letter-spacing: 2.4px;
+    font-weight: 900;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+  }
+}
+
+@-webkit-keyframes sh02 {
+  0% {
+    opacity: 0;
+    left: 0%;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    left: 100%;
+  }
+}
+
+@keyframes sh02 {
+  0% {
+    opacity: 0;
+    left: 0%;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    left: 100%;
+  }
+}
+
+.weekmate-hero-section {
+  padding-top: 143px;
+  padding-bottom: 53px;
+
+  .heading {
+    max-width: 670px;
+    text-align: center;
+    margin: 0 auto;
+
+    h2 {
+      font-size: 50px;
+      line-height: normal;
+      font-weight: 900;
+    }
+  }
+
+  .hero-section-paragraph {
+    margin-bottom: 20px;
+
+    p {
+  
+      line-height: 40px;
+      font-weight: 400;
+      max-width: 1150px;
+      margin: 0 auto;
+      text-align: center;
+    }
+  }
+
+  .weekmate-button {
+    text-align: center;
+  }
+}
+
+.thin-heading {
+  font-weight: 400;
+
+  p {
+    font-size: 60px;
+    line-height: normal;
+    font-weight: 400;
+  }
+}
+
+.gradient-heading {
+  color: #005282;
+  font-weight: 900;
+}
+
+.why-weekmate {
+  padding: 53px 0;
+}
+
+.why-choose-weekmate-wrapper {
+  .why-weekmate-slide {
+    .slick-slide {
+      .card-wrapper {
+        position: relative;
+        margin: 10px;
+
+        .slider-content-wrapper {
+          border-radius: 60px;
+          color: #fff;
+
+          .slider-content {
+            position: relative;
+            z-index: 1;
+            padding: 20px;
+            max-width: 80%;
+
+            &::after {
+              content: "";
+              width: 100%;
+              height: 100%;
+              position: absolute;
+              inset: 0;
+              border-bottom-right-radius: 35px;
+              border-top-right-radius: 35px;
+              border-top-left-radius: 35px;
+              backdrop-filter: blur(2px);
+              z-index: -1;
+            }
+          }
+        }
+
+        .card-image {
+          border-radius: 35px;
+          height: 430px;
+
+          img {
+            height: auto;
+            width: 100%;
+            max-height: 480px;
+            border-radius: 18px;
+            min-height: 300px;
+          }
+        }
+      }
+    }
+
+    .slick-list {
+      .slick-track {
+        margin-left: 0;
+      }
+    }
+  }
+
+  .card-title {
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 600;
+    color: #ffff;
+  }
+
+  .card-label {
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+  }
+
+  .virtual-assistants-box {
+    .virtual-assistants-box-icon {
+      margin-bottom: 30px;
+    }
+  }
+
+  .paragraph {
+    p {
+      margin-bottom: 40px;
+      font-size: 26px;
+      line-height: 40px;
+    }
+  }
+}
+
+.weekmate-client-success-stories {
+  padding: 53px 0;
+  background-color: #E9F7FF;
+
+  .client-sucess-wrapper {
+    .client-slider {
+      .client-slide {
+        background-color: #fff;
+        height: auto;
+        padding: 60px 30px 30px;
+        position: relative;
+      }
+    }
+
+    .slick-initialized {
+      .slick-slide {
+        margin: 10px;
+        height: auto;
+
+        >div {
+          height: 100%;
+        }
+      }
+    }
+
+    .slick-track {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .tag-wrapper {
+      position: absolute;
+      top: 0;
+      right: 20px;
+    }
+
+    .sider-content-wrapper {
+      p {
+        line-height: normal;
+        font-size: 22px;
+        display: -webkit-box;
+        // -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+
+        &.designation {
+          font-size: 20px;
+        }
+      }
+
+      h4 {
+        font-size: 22px;
+        font-weight: 700;
+        margin-bottom: 5px;
+      }
+    }
+  }
+}
+
+.industries-we-serve {
+  padding: 53px 0;
+
+  .industries-cards-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 80px 65px 65px;
+
+    .industry-card {
+      max-width: calc(25% - 20px);
+      width: 100%;
+      margin: 10px;
+
+      h3 {
+        color: #005282;
+        font-size: 24px;
+        font-weight: 800;
+        margin-bottom: 5px;
+      }
+
+      p {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: normal;
+      }
+    }
+  }
+
+  .industreis-wrapper {
+    border: 4px solid #3C5891;
+    border-radius: 75px;
+    position: relative;
+    margin-top: 50px;
+
+    .heading {
+      padding-bottom: 20px;
+      position: absolute;
+      top: 0;
+      background: #fff;
+      padding: 0 50px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: max-content;
+    }
+  }
+}
+
+.weekmate-development-services {
+  padding: 53px 0;
+
+  .service-image {
+    border-radius: 35px;
+    height: 430px;
+  }
+
+  .service-inner {
+    position: relative;
+    border-radius: 60px;
+
+    .service-image {
+      img {
+        border-radius: 60px;
+      }
+    }
+  }
+
+  .capability-section-wrapper {
+    .slick-initialized {
+      .slick-slide {
+        margin: 10px;
+      }
+    }
+  }
+
+  .development-services-slider {
+    .slick-list {
+      .slick-track {
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+.capability-section-wrapper {
+  .heading {
+    .thin-heading {
+      display: block;
+    }
+  }
+
+  .slider-content-wrapper {
+    border-radius: 60px;
+    color: #fff;
+
+    .slider-content {
+      position: relative;
+      z-index: 1;
+      padding: 40px;
+      max-width: 80%;
+
+      &::after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        inset: 0;
+        border-top-right-radius: 35px;
+        border-top-left-radius: 35px;
+        backdrop-filter: blur(2px);
+        z-index: -1;
+      }
+    }
+
+    .service-text {
+      line-height: normal;
+      font-size: 20px;
+      color: #fff;
+      margin-bottom: 0;
+    }
+
+    .service-title {
+      color: #fff;
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.weekmate-free-consultation {
+  padding: 53px 0;
+
+  .consultation-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .right-side-content-wrapper {
+    max-width: 50%;
+    width: 100%;
+    background: #005282;
+    border-top-right-radius: 35px;
+    border-bottom-right-radius: 35px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .consultation-title {
+      color: #ffff;
+      font-size: 44px;
+    }
+  }
+
+  .consultation-image {
+    max-width: 50%;
+    width: 100%;
+
+    img {
+      border-top-left-radius: 40px;
+      border-bottom-left-radius: 40px;
+      height: 100%;
+    }
+  }
+}
+
+.weekmate-insights-blocks {
+  padding: 53px 0;
+
+  .weekmate-insights-wrapper {
+    .slick-slide {
+      margin: 10px;
+      position: relative;
+    }
+
+    .insights-image {
+      border-radius: 35px;
+      height: 430px;
+
+      img {
+        border-radius: 60px;
+      }
+    }
+
+    .insights-blocks-wrapper {
+      .insights-block {
+        position: relative;
+        border-radius: 60px;
+      }
+
+      .insights-image {
+        img {
+          border-radius: 60px;
+        }
+      }
+    }
+
+    .slider-content-wrapper {
+      border-radius: 60px;
+      color: #fff;
+      padding: 30px;
+
+      .slider-content {
+        position: relative;
+        z-index: 1;
+        padding: 20px;
+        max-width: 80%;
+
+        &::after {
+          content: "";
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          inset: 0;
+          border-top-right-radius: 35px;
+          border-top-left-radius: 35px;
+          backdrop-filter: blur(2px);
+          z-index: -1;
+        }
+
+        .insights-title {
+          color: #fff;
+          font-size: 24px;
+          margin-bottom: 10px;
+        }
+      }
+    }
+
+    .insights-description {
+      line-height: normal;
+      font-size: 20px;
+      color: #fff;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.faq-section {
+  padding: 53px 0;
+  background: linear-gradient(135deg, #E9F7FF 3%, #CDEDFF 50.56%, #80C8F2 112.78%);
+
+  .weekmate-faq-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+
+    .faq-box {
+      max-width: 50%;
+      width: 100%;
+      background: #005282;
+      border-radius: 24px;
+      padding: 48px 40px;
+      color: white;
+      box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+      display: flex;
+      flex-direction: column;
+
+      h2 {
+        font-size: 38px;
+        font-weight: 700;
+        margin-bottom: 24px;
+        color: #fff;
+      }
+    }
+
+    .faq-img-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 30px;
+      max-width: 50%;
+
+      img {
+        display: inline-block;
+        margin: auto;
+      }
+    }
+
+    .accordion {
+      margin-bottom: 15px;
+      height: 100%;
+      max-height: 538px;
+      overflow-y: auto;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+
+    .accordion-item {
+      border-bottom: 1.5px solid #EBEBEB40;
+
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+
+    .accordion-header {
+      width: 100%;
+      background: none;
+      border: none;
+      color: #fff;
+      font-size: 20px;
+      font-weight: 600;
+      padding: 24px 8px;
+      text-align: left;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.2s ease;
+
+      &:hover {
+        background: rgba(255, 255, 255, 0.05);
+      }
+
+      &:focus {
+        outline: 2px solid rgba(255, 255, 255, 0.3);
+        outline-offset: 2px;
+      }
+
+      &::after {
+        content: '';
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='6' viewBox='0 0 12 6' fill='none'%3E%3Cpath d='M11.5 5.5L6 0.5L0.5 5.5' stroke='%23FAFAFA' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+        transition: transform 0.3s ease;
+        opacity: 0.8;
+        right: 0;
+        height: 12px;
+        width: 12px;
+        transform: rotatex(180deg);
+        background-repeat: no-repeat;
+      }
+
+      &.active::after {
+        transform: rotatex(0deg);
+      }
+    }
+
+    .accordion-body {
+      max-height: 0;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      opacity: 0;
+
+      &.active {
+        max-height: 200px;
+        opacity: 1;
+        padding-bottom: 24px;
+        transition: height .3s ease-in-out;
+      }
+
+      p {
+        padding: 0 8px;
+        color: rgba(255, 255, 255, 0.9);
+        line-height: 1.6;
+        font-size: 18px;
+        margin: 0;
+      }
+    }
+
+    .faq-footer {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      padding-top: 24px;
+      border-top: 1.5px solid #EBEBEB40;
+      margin-top: auto;
+
+      span {
+        color: #fff;
+        font-size: 18px;
+        font-weight: 600;
+      }
+    }
+
+    .faq-btn {
+      background: #fff;
+      color: #1B242C;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 10px;
+      font-weight: 700;
+      font-size: 14px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.2s ease;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      text-decoration: none;
+
+      &:after {
+        content: '';
+        transition: transform 0.3s ease;
+        background-repeat: no-repeat;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='11' height='10' viewBox='0 0 11 10' fill='none'%3E%3Cpath d='M1.33301 9.16634L9.66634 0.833008M9.66634 0.833008H1.33301M9.66634 0.833008V9.16634' stroke='%231B242C' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+        right: 0;
+        height: 12px;
+        width: 12px;
+      }
+
+      &:hover {
+        background: rgba(255, 255, 255, 0.95);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+      }
+    }
+
+    .emoji {
+      width: 16px;
+      height: 16px;
+    }
+  }
+}
+
+.product-section {
+  padding: 53px 0;
+  position: relative;
+
+  &:after {
+    content: "";
+    background: linear-gradient(180deg, #005282 0%, rgba(255, 255, 255, 0.5) 88.97%);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    border-top-left-radius: 200px;
+    border-top-right-radius: 200px;
+  }
+
+  .product-section-wrapper {
+    .heading {
+      text-align: center;
+
+      .section-heading {
+        color: #fff;
+        margin-bottom: 0;
+        font-weight: 500;
+      }
+    }
+
+    .section-description {
+      p {
+        font-size: 26px;
+        text-align: center;
+        color: #fff;
+
+        >strong {
+          font-weight: 700;
+          color: #fff;
+        }
+      }
+    }
+
+    .product-wrapper {
+      padding: 10px;
+
+      .product-item {
+        background-color: rgba(255, 255, 255, 1);
+        height: 100%;
+        border-radius: 30px;
+        padding: 30px;
+        box-shadow: 0px 1px 0px #eee;
+
+        .product-content {
+          p {
+            font-size: 20px;
+            line-height: normal;
+            font-weight: 600;
+            margin-bottom: 0;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+          }
+        }
+      }
+    }
+
+    .product-title {
+      h3 {
+        font-size: 26px;
+        font-weight: 800;
+        color: #005282;
+        line-height: normal;
+        margin-top: 10px;
+      }
+    }
+
+    .product-thumb {
+      img {
+        max-width: 100px;
+      }
+    }
+  }
+}
+
+.sider-content-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 100%;
+
+  .designation-wrapper {
+    margin-top: auto;
+  }
+}
+
+.swiper-overflow-visible {
+  .swiper-slide {
+    width: auto;
+  }
+}
+
+// Updated styles for weekmate page
+.weekmate-button {
+  .secondary.btn:hover {
+    color: #005282;
+    background-color: #fff;
+  }
+
+  .btn {
+    color: #005282;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 12px 35px;
+    font-size: 16px;
+    font-weight: 800;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+
+    &:hover {
+      color: #fff;
+      background-color: #005282;
+    }
+
+    &.btn-primary {
+      color: #fff;
+      background-color: #005282;
+    }
+  }
+
+  .secondary.btn {
+    background-color: #FF7700;
+    color: #fff;
+    border-radius: 10px;
+    padding: 12px 35px;
+    font-size: 16px;
+    font-weight: 800;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+
+    &:hover {
+      background-color: #d86501;
+      color: #fff;
+    }
+  }
+}
+
+.weekmate-hero-section {
+  .heading {
+    h2 {
+      font-size: 44px;
+      margin: 0;
+      line-height: normal;
+      font-weight: 700;
+    }
+  }
+
+  .hero-section-paragraph {
+    p {
+      font-size: 22px;
+      line-height: normal;
+      font-weight: 400;
+      max-width: 950px;
+      margin: 0 auto;
+      text-align: center;
+      color: #4d4d4d;
+    }
+  }
+}
+
+.gradient-heading {
+  color: #005282;
+  font-weight: 800;
+}
+
+.why-choose-weekmate-wrapper {
+  .card-label {
+    font-size: 20px;
+    font-weight: 600;
+    color: #4d4d4d;
+  }
+
+  .paragraph {
+    p {
+      margin-bottom: 40px;
+      font-size: 22px;
+      line-height: normal;
+      color: #4d4d4d;
+    }
+  }
+}
+
+.weekmate-free-consultation {
+  .right-side-content-wrapper {
+    .consultation-title {
+      color: #ffff;
+      font-size: 38px;
+    }
+  }
+}
+
+// / ================ product section =================== /
+.product-section {
+  padding: 53px 0;
+  position: relative;
+}
+
+.product-section:after {
+  content: "";
+  background: linear-gradient(180deg, #005282 0%, rgba(255, 255, 255, 0.5) 88.97%);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-top-left-radius: 200px;
+  border-top-right-radius: 200px;
+
+}
+
+.product-section .product-section-wrapper .product-item {
+  background-color: rgba(255, 255, 255, 1);
+  height: 100%;
+  border-radius: 30px;
+  padding: 30px;
+  box-shadow: 0px 1px 0px #eee;
+  transition: all .3s ease;
+
+}
+
+.product-section .product-section-wrapper .product-item:hover {
+  box-shadow: 0px 6px 1px #eeee;
+  transition: all .3s ease;
+}
+
+.product-section .product-section-wrapper .heading {
+  text-align: center;
+
+}
+
+.product-section .product-section-wrapper .section-description p {
+  font-size: 26px;
+  text-align: center;
+  color: #fff;
+}
+
+.product-section .product-section-wrapper .section-description p>strong {
+  font-weight: 700;
+  color: #fff;
+}
+
+.product-section .product-section-wrapper .heading .section-heading {
+  color: #fff;
+  margin-bottom: 0;
+  font-weight: 500;
+}
+
+.product-section .product-section-wrapper .product-wrapper {
+  padding: 10px;
+}
+
+.product-section .product-section-wrapper .product-title h3 {
+  font-size: 24px;
+  font-weight: 800;
+  color: #005282;
+  line-height: normal;
+  margin-top: 10px;
+}
+
+.product-section .product-wrapper .product-item .product-content p {
+  font-size: 20px;
+  line-height: normal;
+  font-weight: 600;
+  margin-bottom: 0;
+  color: #4d4d4d;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden
+}
+
+.sider-content-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 100%;
+}
+
+.client-sucess-wrapper .sider-content-wrapper p.designation {
+  font-size: 20px;
+}
+
+.sider-content-wrapper .designation-wrapper {
+  margin-top: auto;
+}
+
+.swiper-overflow-visible .swiper-slide {
+  width: auto;
+}
+
+
+
+
+.hrms-category-section .category-tabs {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+}
+
+.hrms-category-section h3 {
+  font-family: Red Hat Display, sans-serif, serif, monospace;
+}
+
+.weekmate-single-product-hero-section .content-inner .content-text h3 {
+  padding-top: 20px;
+  margin-bottom: 10px;
+  color: #005282;
+  font-weight: 7000;
+}
+
+.weekmate-single-product-hero-section .content-inner .content-text p {
+  color: #005282;
+  font-weight: 600;
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 22px;
+}
+
+.category-contents .hrms-category-section p,
+.category-contents .hrms-category-section h3 {
+  color: #005282;
+}
+
+.hrms-category-section .category-tab {
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  color: #005282;
+  border: 1px solid #00528254;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: box-shadow .3s ease-in-out;
+  border-radius: 10px;
+}
+
+.hrms-category-section .category-tab.active {
+  box-shadow: 0px 2px 1px 1px #102f4e !important;
+  background-color: #005282;
+  color: #ffff;
+  transition: box-shadow .3s ease-in-out;
+}
+
+.hrms-category-section .category-content-block {
+  display: none;
+}
+
+.hrms-category-section .category-tab:hover,
+.hrms-category-section .category-tab.active:focus {
+  border: 1px solid rgb(0 82 130 / 8%);
+  box-shadow: 0px 2px 1px 1px #c5c6c7 !important;
+  transition: box-shadow .3s ease-in-out;
+}
+
+.hrms-category-section .category-content-block.active {
+  display: block;
+}
+
+
+.hrms-category-section .category-content-block .swiper-slide {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 90px;
+}
+
+.hrms-category-section .content-inner {
+  display: flex;
+  flex-direction: column;
+  background-color: #e3f2fd;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.hrms-category-section .heading {
+  text-align: center;
+  margin-bottom: 0;
+  color: #005282;
+}
+
+.hrms-category-section .content-text {
+  width: 100%;
+  padding: 60px 20px 0px;
+  max-width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: -40px;
+}
+
+.hrms-category-section .content-image {
+  transform: translateY(90px);
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.hrms-category-section .content-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+
+.weekmate-grid-section h3 {
+  font-size: 28px;
+  font-family: Red Hat Display, sans-serif, serif, monospace;
+}
+
+.weekmate-grid-section .heading,
+.weekmate-grid-section .hero-section-paragraph {
+  text-align: center;
+  color: #005282;
+}
+
+.weekmate-grid-section .heading {
+  padding-bottom: 0;
+}
+
+.weekmate-grid-section .hero-section-paragraph {
+  font-size: 22px;
+  padding-bottom: 20px;
+  max-width: 750px;
+  margin: auto;
+  color: #4d4d4d;
+}
+
+.product-content-box-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+.product-content-box-wrapper .product-box {
+  width: 100%;
+
+}
+
+.product-content-box-wrapper .product-box-item {
+  padding: 40px 35px;
+  background: #005282;
+  color: #fff;
+  border-radius: 20px;
+  height: 100%;
+}
+
+.product-content-box-wrapper .product-box-item p {
+  font-size: 18px;
+}
+
+.weekmate-single-product-hero-section .product-content-box-wrapper {
+  display: flex;
+  padding: 40px 0;
+}
+
+.weekmate-single-product-hero-section .hero-section-wrapper .swiper-pagination {
+  bottom: 0;
+}
+
+.weekmate-single-product-hero-section {
+  position: relative;
+}
+
+.weekmate-single-product-hero-section .product-content-box-wrapper .swiper-slide {
+  height: auto;
+}
+
+.weekmate-single-product-hero-section .product-content-box-wrapper .product-box {
+  height: 100%;
+}
+
+.weekmate-single-product-pricing-section h2,
+.weekmate-single-product-pricing-section h3 {
+  font-family: Red Hat Display, sans-serif, serif, monospace;
+}
+
+.weekmate-single-product-pricing-section .narrow-container {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.weekmate-single-product-pricing-section .narrow-container .heading h2 {
+  max-width: 880px;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.weekmate-single-product-pricing-section .section-heading {
+  color: #005282;
+  text-align: center;
+}
+
+.weekmate-single-product-pricing-section .section-heading {
+  color: #005282;
+  text-align: center;
+  max-width: 700px;
+  width: 100%;
+  margin: 0 auto 40px;
+}
+
+.single-product-weekmate-Benefits-section .expertise-slider .slick-track {
+  padding: 30px 0;
+}
+
+.single-product-weekmate-Benefits-section .technology-slide:hover {
+  filter: drop-shadow(2px 4px 6px #ccc);
+  transition: filte .3s ease-in-out;
+}
+
+.single-product-weekmate-Benefits-section .technology-slide {
+  transition: filte .3s ease-in-out;
+}
+
+.single-product-weekmate-Benefits-section .technology-slide .tech-logo {
+  border-bottom: 1px solid #ffffff;
+  padding: 20px 30px;
+}
+
+.single-product-weekmate-Benefits-section .technology-slide .tech-logo img {
+  max-height: 55px;
+}
+
+.single-product-weekmate-Benefits-section .expertise {
+  padding-inline: unset;
+
+}
+
+.weekmate-single-product-pricing-section .pricing-box {
+  background: #005282;
+  color: #fff;
+  padding: 60px 40px;
+  border-radius: 20px;
+}
+
+.weekmate-single-product-pricing-section .pricing-box-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  border: 1px solid #fff;
+  padding: 0 15px 20px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.weekmate-single-product-pricing-section .pricing-title {
+  display: inline-block;
+  position: relative;
+  top: -20px;
+  z-index: 2;
+  font-size: 40px;
+  line-height: 1;
+  color: #fff;
+  font-weight: 900;
+  margin: 0;
+  padding: 0 40px;
+  text-transform: capitalize;
+}
+
+.weekmate-single-product-pricing-section .pricing-title:after {
+  position: absolute;
+  content: "";
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background: #005282;
+  z-index: -1;
+}
+
+.weekmate-single-product-pricing-section .pricing-sub-title {
+  font-size: 25px;
+  line-height: normal;
+  margin-top: 10px;
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+.weekmate-single-product-pricing-section .price {
+  font-size: 38px;
+  line-height: normal;
+  font-weight: 900;
+  padding-bottom: 20px;
+}
+
+.weekmate-single-product-pricing-section .pricing-features {
+  padding: 0;
+  LIST-STYLE: disc;
+  list-style-position: inside;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.weekmate-single-product-pricing-section .pricing-features li {
+  padding: 0 15px;
+  font-size: 16px;
+}
+
+.weekmate-single-product-pricing-section .pricing-note {
+  margin: 0;
+}
+
+.btn.btn-white {
+  background: #fff;
+}
+
+.weekmate-single-product-pricing-section .pricing-button .btn {
+  font-weight: 800;
+  color: #005282;
+  border-radius: 10px;
+}
+
+.weekmate-single-product-pricing-section .pricing-button .btn:hover {
+  border-color: #ffffff;
+  background-color: transparent;
+  color: #ffff;
+}
+
+.weekmate-single-product-pricing-section .pricing-button {
+  text-align: center;
+  margin-top: 40px;
+}
+
+
+.dwp-solution-list h3 {
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.dwp-solution-list ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0 15px
+}
+
+.dwp-solution-list ul li {
+  position: relative;
+  flex: 1 0 calc(12.4% - 5px);
+  background-color: #005282;
+  color: #fff;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 700ms cubic-bezier(0.11, 0.16, 0.43, 0.86);
+  overflow: hidden;
+  max-height: 400px;
+}
+
+.dwp-solution-list ul li.active {
+  width: 60%;
+  flex: 0 0 60%;
+}
+
+.dwp-solution-list li:not(.active) .solution-wrapper {
+  transform: scale(0);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.dwp-solution-list li.active .roate-txt {
+  transform: rotate(0deg) translateX(0) translateY(0);
+  transition: transform 0.2s ease;
+  opacity: 0;
+  visibility: hidden;
+}
+
+
+
+.dwp-solution-list li:not(.active) .solution-wrapper {
+  transform: scale(1);
+}
+
+.dwp-solution-list li .solution-wrapper {
+  transition: transform 0.4s ease;
+  position: relative;
+  z-index: 2;
+}
+
+.dwp-solution-list ul li .bg-image {
+  width: 100%;
+  display: block;
+  height: 160px;
+  margin-left: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.dwp-solution-list ul li .bg-image {
+  transition: all 0.4s ease;
+}
+
+.dwp-solution-list ul li.active .bg-image {
+  max-width: 100%;
+  right: 0;
+}
+
+.dwp-solution-list ul li.active .bg-image {
+  max-width: 100%;
+  background-size: contain;
+  background-position-x: right;
+  height: 235px;
+}
+
+.weekmate-single-product-digital-workplace-section h2 {
+  text-align: center;
+}
+
+.weekmate-single-product-digital-workplace-section h2,
+.weekmate-single-product-hero-section h2 {
+  max-width: 790px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.hrms-category-section .category-tabs {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.hrms-category-section .product-text-nav .text-box:hover {
+  color: #005282;
+}
+
+.hrms-category-section .category-tabs::-webkit-scrollbar {
+  display: none;
+}
+
+.weekmate-single-product-hero-section .text-box.swiper-text-trigger h4 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.weekmate-single-product-hero-section .text-box.swiper-text-trigger p {
+  font-size: 18px;
+  line-height: normal;
+}
+
+.weekmate-single-product-hero-section .text-box.swiper-text-trigger.active h4 {
+
+  color: #005282;
+}
+
+.weekmate-single-product-hero-section .text-box.swiper-text-trigger:not(.active) p,
+.weekmate-single-product-hero-section .text-box.swiper-text-trigger:not(.active) h4 {
+  color: #4d4d4d;
+  font-family: Red Hat Display, sans-serif, serif, monospace;
+}
+
+.weekmate-single-product-hero-section .product-detail-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.product-image-slider {
+  width: 50%;
+  max-width: 600px;
+}
+
+.product-text-nav {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.product-text-nav .text-box {
+  padding: 16px 0;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.product-text-nav .text-box:last-child {
+  border-bottom: none;
+}
+
+.product-text-nav .text-box:hover p,
+.product-text-nav .text-box:hover h4,
+.product-text-nav .text-box.active,
+.product-text-nav .text-box:hover {
+  color: #005282;
+}
+
+
+
+.weekmate-single-product-hero-section .text-with-bg-section {
+  background: #005282;
+  padding: 50px 40px;
+  border-radius: 20px;
+}
+
+.weekmate-single-product-hero-section .text-with-bg-section .heading,
+.text-with-bg-section .hero-section-paragraph {
+  color: #fff;
+}
+
+.weekmate-single-product-hero-section .text-with-bg-section .text-with-bg-wrapper {
+  max-width: 880px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+.weekmate-single-product-hero-section .text-with-bg-section h2 {
+  font-weight: 700;
+}
+
+.custom-py-50 {
+  margin: 60px 0;
+  padding: 20px 0;
+}
+
+.single-product-weekmate-Benefits-section .hero-section-wrapper .heading {
+  max-width: 750px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  color: #005282;
+}
+
+.weekmate-single-product-hero-section .weekmate-heading {
+  text-align: center;
+}
+
+.single-product-weekmate-Benefits-section h2,
+.single-product-weekmate-Benefits-section h4,
+.single-product-weekmate-Benefits-section h3 {
+  font-family: Red Hat Display, sans-serif, serif, monospace;
+}
+
+.software-detail-wrapper .software-detail-item {
+  max-width: 55%;
+  width: 100%;
+  padding: 0 10px;
+}
+
+.software-detail-wrapper .software-detail-item .software-detail-inner {
+  background: #FFA85B;
+  height: 100%;
+  padding: 20px;
+  border-radius: 10px;
+  color: #005282;
+  display: flex;
+  flex-direction: column;
+}
+
+.software-detail-wrapper .software-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-section-wrapper .software-detail-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px 0;
+  margin: 0 -10px;
+}
+
+.software-detail-wrapper .software-content .software-description {
+  flex: 1;
+}
+
+.software-detail-wrapper .software-image {
+  margin-bottom: 12px;
+}
+
+.software-detail-wrapper .software-detail-item .btn-link-effect {
+  color: #005282;
+}
+
+.software-detail-wrapper .software-detail-item:nth-of-type(2),
+.software-detail-wrapper .software-detail-item:nth-of-type(3) {
+  max-width: 45%;
+  width: 100%;
+  padding: 0 10px;
+}
+
+.software-detail-wrapper .software-detail-item:nth-of-type(5) {
+  max-width: 100%;
+}
+
+.software-detail-wrapper .software-detail-item:nth-of-type(2) .software-detail-inner {
+  background: #F7F7F7;
+}
+
+.software-detail-wrapper .software-detail-item:nth-of-type(3) .software-detail-inner {
+  background: #FFF7E8;
+}
+
+.software-detail-wrapper .software-detail-item:nth-of-type(4) .software-detail-inner {
+  background: #D5EEFD;
+}
+
+.software-detail-wrapper .software-detail-item:nth-of-type(5) .software-detail-inner {
+  background: #181717;
+  color: #FFFFFF;
+}
+
+.software-detail-wrapper .software-detail-item:nth-of-type(5) .btn-link-effect {
+  color: #FFFFFF;
+}
+
+.btn-link-effect {
+  transition: .15s ease all;
+  display: inline-block;
+  position: relative;
+  width: fit-content;
+
+}
+
+.btn-link-effect:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background-color: currentColor;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: .15s ease transform;
+}
+
+.btn-link-effect:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background-color: currentColor;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: .15s ease transform;
+}
+
+.btn-link-effect:hover:after {
+  transform-origin: left;
+  transform: scale(1);
+}
+
+.weekmate-single-product-banner-wrapper.services-banner {
+  padding-bottom: 0;
+  min-height: auto;
+  padding-top: 180px;
+}
+
+.weekmate-single-product-banner-wrapper h1 {
+  color: #005282;
+}
+
+.weekmate-single-product-banner-wrapper h1,
+.weekmate-single-product-banner-wrapper h2,
+.weekmate-single-product-banner-wrapper h3 {
+  font-family: "Red Hat Display", sans-serif, serif, monospace;
+
+}
+
+.weekmate-single-product-banner-wrapper {
+  height: fit-content;
+  background: linear-gradient(180deg, #c1d9f0, #fff);
+  padding-block: 130px 0 60px;
+  padding-bottom: 0;
+  height: auto;
+}
+
+.weekmate-single-product-banner-wrapper .weekmate-product-banner {
+  max-width: 880px;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.weekmate-single-product-banner-wrapper .weekmate-product-banner .weekmate-banner-cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0 15px;
+}
+
+.weekmate-single-product-banner-wrapper .description {
+  color: #4D4D4D;
+  font-size: 22px;
+  margin-top: 0;
+  max-width: 760px;
+  margin: 0 auto;
+  padding-bottom: 60px;
+}
+
+@media (min-width: 1620px) {
+  .weekmate-single-product-banner-wrapper .weekmate-product-banner {
+    max-width: 950px;
+  }
+}
+
+
+
+.single-product .technology-slide {
+  background: none;
+  margin-right: 0;
+  max-width: 100%;
+}
+
+// =====================  //
+
+
+// / Transform your existing elements into accordion / 
+.weekmate-single-product-digital-workplace-section {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+}
+
+.weekmate-single-product-digital-workplace-section .section-title {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.weekmate-single-product-digital-workplace-section .dwp-solution-list ul {
+  display: flex;
+  gap: 15px;
+  height: 450px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.weekmate-single-product-digital-workplace-section .dwp-solution-list li {
+  background: rgba(139, 90, 107, 0.9);
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+  min-width: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  box-shadow: 1px 0px 13px rgba(0, 0, 0, .3);
+  transition: all .6s cubic-bezier(.4, 0, .2, 1);
+}
+
+.weekmate-single-product-digital-workplace-section .dwp-solution-list li.active {
+  flex: 3;
+  background-color: #005282;
+}
+
+.weekmate-single-product-digital-workplace-section .dwp-solution-list li:not(.active) {
+  flex: 0.5;
+  background-color: #005282;
+}
+
+.weekmate-single-product-digital-workplace-section .solution-block {
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: #fff;
+  transition: height 0.6s ease;
+}
+
+.weekmate-single-product-digital-workplace-section .active.solution-block {
+  padding: 30px;
+  transition: all .6s cubic-bezier(.4, 0, .2, 1);
+}
+
+.weekmate-single-product-digital-workplace-section .roate-txt {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transform: rotate(180deg);
+  position: absolute;
+  left: 10px;
+  top: 35%;
+  transform: translateY(-50%) rotate(180deg);
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  opacity: 1;
+  transition: all .6s cubic-bezier(.4, 0, .2, 1);
+  z-index: 2;
+}
+
+.weekmate-single-product-digital-workplace-section .dwp-solution-list li.active .roate-txt {
+  opacity: 0;
+  transform: translateY(-50%) rotate(180deg) scale(0);
+}
+
+.weekmate-single-product-digital-workplace-section .solution-wrapper {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease 0.2s;
+  position: relative;
+  z-index: 2;
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+}
+
+.weekmate-single-product-digital-workplace-section .dwp-solution-list li.active .solution-block {
+
+  transition: all 0.6s ease 0.3s;
+}
+
+.weekmate-single-product-digital-workplace-section .dwp-solution-list li.active .solution-wrapper {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.weekmate-single-product-digital-workplace-section .sb-content h3 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: white;
+  opacity: 0;
+  transform: translateY(20px);
+  // transition: all 0.6s ease 0.3s;
+}
+
+.weekmate-single-product-digital-workplace-section .dwp-solution-list li.active .sb-content h3 {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.weekmate-single-product-digital-workplace-section .sb-content p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 20px;
+  opacity: 0;
+  transform: translateY(20px);
+  // transition: all 0.4s ease 0.4s;
+}
+
+.weekmate-single-product-digital-workplace-section .dwp-solution-list li.active .sb-content p {
+  opacity: 1;
+  font-size: 18px;
+  transform: translateY(0);
+}
+
+.weekmate-single-product-digital-workplace-section .learn-link {
+  display: inline-flex;
+  align-items: center;
+  padding: 12px 24px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.weekmate-single-product-digital-workplace-section .learn-link:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+.weekmate-single-product-digital-workplace-section .dwp-solution-list li:hover:not(.active) {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 82, 130, 0.87);
+}
+
+.single-product-weekmate-Benefits-section .expertise-slider .slick-slide {
+  padding: 0 10px;
+}
+
+.single-product-weekmate-Benefits-section .single-product .technology-slide {
+  max-width: 100%;
+  margin-right: 0;
+}
+
+.single-product .single-product-weekmate-Benefits-section .expertise-slider .technology-slide .description-tech p {
+  font-size: 18px;
+  -webkit-line-clamp: unset;
+}
+
+.weekmate.why-weekmate .d-flex {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.weekmate.why-weekmate .virtual-assistants-box {
+  position: relative;
+  z-index: 2;
+  padding: 30px;
+  max-width: calc(25% - 20px);
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 25%;
+  flex: 0 0 25%;
+  width: 100%;
+  margin: 10px;
+  border-radius: 10px;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.weekmate.why-weekmate .virtual-assistants-box.strategies::before {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffd058), to(#ffffff));
+  background: -o-linear-gradient(top, #ffd058 0%, #ffffff 100%);
+  background: linear-gradient(180deg, #ffd058 0%, #ffffff 100%);
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.weekmate.why-weekmate .virtual-assistants-box {
+  position: relative;
+}
+
+.weekmate.why-weekmate .virtual-assistants-box::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  border-radius: 10px;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.weekmate.why-weekmate .virtual-assistants-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 10px;
+  padding: 1px;
+  -webkit-mask: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff)) content-box, -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff));
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff)) content-box, -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff));
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease
+}
+
+.virtual-assistants-box-wrapper {
+  margin: 40px 0 60px
+}
+
+.weekmate.why-weekmate .virtual-assistants-box.growth::before {
+  background: -webkit-gradient(linear, left top, left bottom, from(#308c6d), to(#ffffff));
+  background: -o-linear-gradient(top, #308c6d 0%, #ffffff 100%);
+  background: linear-gradient(180deg, #308c6d 0%, #ffffff 100%);
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease
+}
+
+.weekmate.why-weekmate .virtual-assistants-box.growth:hover::before {
+  background: -o-linear-gradient(89deg, #308c6d 0%, #ffffff 100%);
+  background: linear-gradient(1deg, #308c6d 0%, #ffffff 100%);
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease
+}
+
+
+
+.weekmate.why-weekmate .virtual-assistants-box.strategies::before {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffd058), to(#ffffff));
+  background: -o-linear-gradient(top, #ffd058 0%, #ffffff 100%);
+  background: linear-gradient(180deg, #ffd058 0%, #ffffff 100%);
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease
+}
+
+.weekmate.why-weekmate .virtual-assistants-box.strategies:hover::before {
+  background: -o-linear-gradient(89deg, #ffd058 0%, #ffffff 100%);
+  background: linear-gradient(1deg, #ffd058 0%, #ffffff 100%);
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease
+}
+
+.weekmate.why-weekmate .virtual-assistants-box.solutions::before {
+  background: -o-linear-gradient(269.76deg, #be2899 .21%, #ffffff 95.55%);
+  background: linear-gradient(180.24deg, #be2899 .21%, #ffffff 95.55%);
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease
+}
+
+.weekmate.why-weekmate .virtual-assistants-box.solutions:hover::before {
+  background: -o-linear-gradient(89deg, #be2899 .21%, #ffffff 95.55%);
+  background: linear-gradient(1deg, #be2899 .21%, #ffffff 95.55%);
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease
+}
+
+
+.weekmate.why-weekmate .virtual-assistants-box.business::before {
+  background: -webkit-gradient(linear, left top, left bottom, from(#127adb), to(#ffffff));
+  background: -o-linear-gradient(top, #127adb 0%, #ffffff 100%);
+  background: linear-gradient(180deg, #127adb 0%, #ffffff 100%);
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease
+}
+
+.weekmate.why-weekmate .virtual-assistants-box.business:hover::before {
+  background: -o-linear-gradient(89deg, #127adb 0%, #ffffff 100%);
+  background: linear-gradient(1deg, #127adb 0%, #ffffff 100%);
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease
+}
+
+.weekmate.why-weekmate .virtual-assistants-box.growth:after {
+  background: -webkit-gradient(linear, left top, left bottom, from(#e4fff6), to(#ffffff));
+  background: -o-linear-gradient(top, #e4fff6 0%, #ffffff 100%);
+  background: linear-gradient(180deg, #e4fff6 0%, #ffffff 100%)
+}
+
+.weekmate.why-weekmate .virtual-assistants-box.strategies:after {
+  background: -webkit-gradient(linear, left top, left bottom, from(#fef7ea), to(#ffffff));
+  background: -o-linear-gradient(top, #fef7ea 0%, #ffffff 100%);
+  background: linear-gradient(180deg, #fef7ea 0%, #ffffff 100%)
+}
+
+.weekmate.why-weekmate .virtual-assistants-box.solutions::after {
+  background: -webkit-gradient(linear, left top, left bottom, from(#fcf6f6), to(#ffffff));
+  background: -o-linear-gradient(top, #fcf6f6 0%, #ffffff 100%);
+  background: linear-gradient(180deg, #fcf6f6 0%, #ffffff 100%)
+}
+
+.weekmate.why-weekmate .virtual-assistants-box.business::after {
+  background: -webkit-gradient(linear, left top, left bottom, from(#f4f7f8), to(#ffffff));
+  background: -o-linear-gradient(top, #f4f7f8 0%, #ffffff 100%);
+  background: linear-gradient(180deg, #f4f7f8 0%, #ffffff 100%)
+}
+
+.weekmate-single-product-hero-section .product-image-slider .img-fluid {
+  padding: 10px;
+}
+
+.single-product-weekmate-Benefits-section .slick-prev:before,
+.single-product-weekmate-Benefits-section .slick-next:before {
+  color: #ccc;
+  font-size: 32px;
+}
+
+.single-product-weekmate-Benefits-section .slick-prev {
+  left: -35px;
+}
+
+// / Responsive Design /
+
+
+@media screen and (max-width:1536px) {
+	.product-section {
+		.product-section-wrapper {
+			.product-title {
+				h3 {
+					font-size: 24px;
+				}
+			}
+		}
+	}
+	h1 {
+		font-size: 50px;
+	}
+}
+@media (max-width:1440px) {
+	.floating-eggs {
+		.egg {
+			max-height: 230px;
+			object-fit: contain;
+		}
+	}
+	.hrms-category-section {
+		.category-tabs {
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		.category-tab {
+			max-width: 100%;
+			flex: 0 0 auto;
+		}
+		.category-content-block {
+			.swiper-slide {
+				padding-bottom: 70px;
+			}
+		}
+	}
+	h1 {
+		font-size: 44px;
+	}
+	.heading {
+		h2 {
+			font-size: 38px;
+		}
+	}
+	.single-product-weekmate-Benefits-section {
+		.technology-slide {
+			.description-tech {
+				p {
+					font-size: 16px;
+				}
+			}
+		}
+	}
+	.weekmate-single-product-hero-section {
+		h2 {
+			max-width: 760px;
+			max-width: 690px;
+		}
+	}
+	.weekmate-single-product-pricing-section {
+		.narrow-container {
+			.heading {
+				h2 {
+					max-width: 640px;
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width:1280px) {
+	.product-section {
+		&:after {
+			border-top-left-radius: 160px;
+			border-top-right-radius: 160px;
+			border-top-left-radius: 160px;
+			border-top-right-radius: 160px;
+		}
+		.product-section-wrapper {
+			.section-description {
+				p {
+					font-size: 24px;
+					line-height: normal;
+					font-size: 18px;
+					line-height: normal;
+				}
+			}
+			.product-thumb {
+				img {
+					max-width: 70px;
+				}
+			}
+		}
+	}
+	.capability-section-wrapper {
+		.slider-content-wrapper {
+			.slider-content {
+				padding: 20px;
+				max-width: 100%;
+				padding: 20px;
+				max-width: 100%;
+			}
+		}
+	}
+	h1 {
+		font-size: 42px;
+	}
+	.weekmate-development-services {
+		.service-inner {
+			.service-image {
+				padding-bottom: 90.55%;
+				padding-bottom: 90.55%;
+			}
+		}
+	}
+	.why-choose-weekmate-wrapper {
+		.paragraph {
+			p {
+				font-size: 24px;
+				line-height: normal;
+				font-size: 18px;
+				line-height: normal;
+			}
+		}
+		.slider-content-wrapper {
+			.slider-content {
+				max-width: 100%;
+				max-width: 100%;
+			}
+		}
+	}
+	.hero-section-paragraph {
+		p {
+			font-size: 24px;
+			line-height: normal;
+			font-size: 18px;
+			line-height: normal;
+		}
+	}
+	p {
+		font-size: 24px;
+		line-height: normal;
+		font-size: 18px;
+		line-height: normal;
+	}
+	.heading {
+		h2 {
+			font-size: 44px;
+		}
+	}
+	.weekmate-hero-section {
+		.heading {
+			max-width: 530px;
+			max-width: 530px;
+		}
+	}
+	.weekmate-button {
+		.btn {
+			font-size: 22px;
+			font-size: 16px;
+		}
+		.btn.btn-primary {
+			font-size: 16px;
+		}
+	}
+	.industries-we-serve {
+		.industries-cards-wrapper {
+			padding: 80px 45px 45px;
+			padding: 80px 45px 45px;
+		}
+	}
+	.weekmate-free-consultation {
+		.right-side-content-wrapper {
+			.consultation-title {
+				font-size: 38px;
+			}
+		}
+	}
+	.weekmate-insights-blocks {
+		.weekmate-insights-wrapper {
+			.slider-content {
+				max-width: 100%;
+				max-width: 100%;
+			}
+		}
+	}
+	.weekmate-single-product-hero-section {
+		.text-box.swiper-text-trigger {
+			h4 {
+				font-size: 22px;
+			}
+		}
+		h2 {
+			max-width: 600px;
+		}
+	}
+	.faq-section {
+		.weekmate-faq-wrapper {
+			.faq-box {
+				h2 {
+					font-size: 36px;
+				}
+			}
+			.accordion {
+				max-height: 400px;
+			}
+		}
+	}
+	.page-template-new-service-design-2025 {
+		.read-more {
+			display: -webkit-box;
+			-webkit-line-clamp: 2;
+			-webkit-box-orient: vertical;
+			overflow: hidden;
+		}
+		.read-more-btn {
+			display: inline-block;
+		}
+	}
+	.single-product-weekmate-Benefits-section {
+		.technology-slide {
+			.description-tech {
+				p {
+					font-size: 16px;
+				}
+			}
+		}
+	}
+}
+@media (max-width:1199px) {
+	.faq-section {
+		background: linear-gradient(135deg, #E9F7FF 3%, #CDEDFF 50.56%, #80C8F2 112.78%) !important;
+	}
+	.weekmate-grid-section {
+		.hero-section-paragraph {
+			font-size: 20px;
+		}
+	}
+	.page-template-new-service-design-2025 {
+		.main-tab-bar {
+			ul {
+				li {
+					font-size: 16px;
+					margin: 0 5px;
+				}
+			}
+		}
+		.workflow-section {
+			.workflow-item {
+				padding: 20px;
+			}
+		}
+		.dedicated-main-wrapper {
+			.dedicated-box {
+				padding: 20px;
+			}
+		}
+		ul.why-choose-list {
+			gap: 55px 35px;
+		}
+		.why-choose-wrapper {
+			.btn-secondary {
+				font-size: 18px;
+			}
+		}
+		.tab-grid {
+			.tab-content-item {
+				ul {
+					li {
+						flex: 0 0 calc(50% - 15px);
+					}
+				}
+			}
+		}
+	}
+	.floating-eggs {
+		.egg {
+			max-height: 150px;
+		}
+	}
+}
+@media screen and (max-width:1024px) {
+	.weekmate-hero-section {
+		padding-top: 120px;
+		padding-top: 120px;
+	}
+	.weekmate-free-consultation {
+		.consultation-wrapper {
+			display: flex;
+			flex-wrap: wrap;
+			flex-direction: column;
+			display: flex;
+			flex-wrap: wrap;
+			flex-direction: column;
+		}
+		.right-side-content-wrapper {
+			max-width: 100%;
+			border-bottom-left-radius: 35px;
+			border-bottom-right-radius: 35px;
+			border-top-left-radius: 0px;
+			border-top-right-radius: 0px;
+			max-width: 100%;
+			border-bottom-left-radius: 35px;
+			border-bottom-right-radius: 35px;
+			border-top-left-radius: 0px;
+			border-top-right-radius: 0px;
+			.consultation-title {
+				font-size: 38px;
+			}
+		}
+		.consultation-image {
+			max-width: 100%;
+			max-width: 100%;
+			img {
+				border-top-left-radius: 35px;
+				border-top-right-radius: 35px;
+				border-bottom-left-radius: 0px;
+				height: 100%;
+				border-top-left-radius: 35px;
+				border-top-right-radius: 35px;
+				border-bottom-left-radius: 0px;
+				height: 100%;
+			}
+		}
+	}
+	.product-section {
+		&:after {
+			border-top-left-radius: 130px;
+			border-top-right-radius: 130px;
+			border-top-left-radius: 130px;
+			border-top-right-radius: 130px;
+		}
+		.product-section-wrapper {
+			.section-description {
+				p {
+					font-size: 22px;
+					line-height: normal;
+					font-size: 18px;
+					line-height: normal;
+				}
+			}
+			.product-title {
+				h3 {
+					font-size: 22px;
+				}
+			}
+		}
+	}
+	.why-choose-weekmate-wrapper {
+		.paragraph {
+			p {
+				font-size: 22px;
+				line-height: normal;
+				font-size: 18px;
+				line-height: normal;
+			}
+		}
+	}
+	.hero-section-paragraph {
+		p {
+			font-size: 22px;
+			line-height: normal;
+			font-size: 18px;
+			line-height: normal;
+		}
+	}
+	p {
+		font-size: 22px;
+		line-height: normal;
+		font-size: 18px;
+		line-height: normal;
+	}
+	.industries-we-serve {
+		.industries-cards-wrapper {
+			.industry-card {
+				max-width: calc(33.33% - 20px);
+				margin: 10px;
+				max-width: calc(33.33% - 20px);
+				margin: 10px;
+			}
+		}
+	}
+	.weekmate-button {
+		.btn {
+			font-size: 20px;
+			font-size: 16px;
+		}
+		.btn.btn-primary {
+			font-size: 16px;
+		}
+	}
+	.weekmate-development-services {
+		.service-inner {
+			.service-image {
+				padding-bottom: 65.55%;
+				padding-bottom: 65.55%;
+			}
+		}
+	}
+	.faq-section {
+		.weekmate-faq-wrapper {
+			.faq-box {
+				h2 {
+					font-size: 32px;
+					font-size: 32px;
+				}
+			}
+			.faq-img-wrapper {
+				display: none;
+			}
+			justify-content: center;
+		}
+	}
+	.weekmate-grid-section {
+		.hero-section-paragraph {
+			font-size: 26px;
+		}
+	}
+	.weekmate-single-product-banner-wrapper {
+		.description {
+			font-size: 20px;
+			line-height: normal;
+		}
+	}
+}
+@media (max-width: 991px) {
+  .weekmate-hero-section{
+    .hero-section-paragraph {
+      p{
+        font-size: 18px;
+      }
+    }
+    
+  } 
+	.heading {
+		h2 {
+			font-size: 38px;
+			font-size: 36px;
+		}
+	}
+	.hrms-category-section {
+		.content-text {
+			padding: 40px 20px 0px;
+		}
+		.category-content-block {
+			.swiper-slide {
+				padding-bottom: 70px;
+			}
+		}
+		.content-image {
+			transform: translateY(80px);
+		}
+	}
+	.faq-section {
+		.weekmate-faq-wrapper {
+			.accordion-header {
+				padding: 15px 8px;
+				font-size: 18px;
+				padding: 15px 8px;
+			}
+			.accordion-body {
+				p {
+					font-size: 16px;
+				}
+			}
+			.faq-box {
+				padding: 48px 30px;
+				max-width: 80%;
+			}
+		}
+	}
+	.product-section {
+		.product-section-wrapper {
+			.product-title {
+				h3 {
+					font-size: 24px;
+					font-size: 24px;
+				}
+			}
+			.section-description {
+				p {
+					font-size: 18px;
+			
+				}
+			}
+		}
+	}
+	.weekmate-hero-section {
+		.heading {
+			max-width: 470px;
+			max-width: 470px;
+		}
+	}
+	.why-choose-weekmate-wrapper {
+		.paragraph {
+			p {
+				font-size: 18px;
+			}
+		}
+	}
+	.hero-section-paragraph {
+		p {
+			font-size: 18px;
+
+		}
+	}
+	p {
+		font-size: 18px;
+	
+	}
+	.weekmate-button {
+		.btn {
+			font-size: 16px;
+
+		}
+		.btn.btn-primary {
+			font-size: 16px;
+		}
+	}
+	.weekmate-free-consultation {
+		.right-side-content-wrapper {
+			.consultation-title {
+				font-size: 28px;
+
+			}
+		}
+	}
+	.page-template-new-service-design-2025 {
+		.tab-image {
+			margin-bottom: 15px;
+			padding-left: 0;
+			padding-right: 0;
+			max-width: 100%;
+		}
+		.get-touch.b2b-get-in-touch {
+			.brew-content {
+				max-width: 370px;
+				h2 {
+					font-size: 28px;
+				}
+			}
+		}
+		.why-choose-wrapper {
+			.row {
+				.col-12.col-md-4 {
+					flex: 0 0 50%;
+					max-width: 50%;
+				}
+				.col-12.col-md-5 {
+					flex: 0 0 50%;
+					max-width: 50%;
+				}
+				.col-12.col-md-3 {
+					display: none;
+				}
+			}
+		}
+		ul.why-choose-list {
+			gap: 55px 15px;
+		}
+		.tab-section {
+			padding: 60px 0;
+		}
+		.tab-content {
+			padding: 0 15px;
+		}
+	}
+	.weekmate-grid-section {
+		.hero-section-paragraph {
+			font-size: 22px;
+			max-width: 640px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+	.page-template-new-service-design {
+		.tab-content {
+			max-width: 100%;
+		}
+	}
+	.weekmate-single-product-digital-workplace-section {
+		.dwp-solution-list {
+			ul {
+				flex-direction: column;
+				height: auto;
+				gap: 10px;
+				li {
+					&:not(.active) {
+						.bg-image {
+							height: 100px;
+							max-width: 130px;
+							right: 0;
+						}
+					}
+				}
+			}
+			li {
+				min-height: 80px;
+				min-width: auto;
+				&:not(.active) {
+					padding: 0;
+					.solution-wrapper {
+						.sb-content {
+							padding: 0px;
+							p {
+								height: 0;
+							}
+							h3 {
+								opacity: 1;
+								font-size: 18px;
+							}
+						}
+					}
+				}
+			}
+			li.active {
+				min-height: 210px;
+				padding: 0;
+				.solution-block {
+					.sb-content {
+						max-width: 70%;
+					}
+				}
+			}
+		}
+		.roate-txt {
+			writing-mode: horizontal-tb;
+			text-orientation: initial;
+			transform: none;
+			position: static;
+			font-size: 16px;
+			text-align: center;
+			opacity: 1;
+		}
+		.sb-content {
+			h3 {
+				font-size: 24px;
+			}
+		}
+	}
+	div#linkedinPostsBtn {
+		right: 25px !important;
+	}
+	.product-image-slider {
+		width: 100%;
+	}
+	.product-text-nav {
+		width: 100%;
+		.text-box {
+			text-align: center;
+		}
+	}
+	.dwp-solution-list {
+		ul {
+			gap: 15px;
+			li {
+				flex: unset;
+				max-width: 100%;
+				width: 100%;
+				padding: 30px;
+			}
+			li.active {
+				flex: unset;
+				max-width: 100%;
+				width: 100%;
+				padding: 30px;
+			}
+		}
+		li {
+			&:not(.active) {
+				.roate-txt {
+					display: none;
+				}
+				.solution-wrapper {
+					opacity: 1;
+					visibility: visible;
+				}
+			}
+		}
+	}
+	.weekmate-single-product-hero-section {
+		.text-box.swiper-text-trigger {
+			p {
+				max-width: 600px;
+				margin: auto;
+			}
+		}
+		h2 {
+			max-width: 640px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.content-inner {
+			.content-text {
+				p {
+					font-size: 18px;
+				}
+			}
+		}
+	}
+	.weekmate-single-product-banner-wrapper {
+		.description {
+			max-width: 640px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+	.single-product-weekmate-Benefits-section {
+		.heading {
+			h2 {
+				max-width: 640px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+		}
+	}
+	.weekmate-single-product-banner-wrapper.services-banner {
+		padding-top: 130px;
+	}
+	.weekmate.why-weekmate {
+		.virtual-assistants-box {
+			flex: 0 0 50%;
+			max-width: calc(50% - 20px);
+		}
+	}
+}
+@media screen and (max-width: 767px) {
+	.faq-section {
+		.weekmate-faq-wrapper {
+			.faq-box {
+				h2 {
+					font-size: 28px;
+					font-size: 28px;
+				}
+				padding: 48px 30px;
+				max-width: 100%;
+			}
+		}
+	}
+	.weekmate-hero-section {
+		padding-top: 100px;
+		padding-top: 100px;
+	}
+	.industries-we-serve {
+		.industreis-wrapper {
+			.heading {
+				padding: 0 30px;
+				padding: 0 30px;
+			}
+		}
+		.industries-cards-wrapper {
+			padding: 60px 35px 35px;
+			padding: 60px 35px 35px;
+			.industry-card {
+				max-width: calc(50% - 20px);
+				margin: 10px;
+				max-width: calc(50% - 20px);
+				margin: 10px;
+			}
+		}
+	}
+	.product-section {
+		.product-section-wrapper {
+			.product-item {
+				padding: 25px;
+				padding: 25px;
+			}
+			.product-title {
+				h3 {
+					font-size: 24px;
+					font-size: 24px;
+				}
+			}
+		}
+		&:after {
+			border-top-left-radius: 90px;
+			border-top-right-radius: 90px;
+			border-top-left-radius: 90px;
+			border-top-right-radius: 90px;
+		}
+	}
+	.page-template-new-service-design-2025 {
+		.main-tab-bar {
+			ul {
+				li {
+					padding: 7px 10px;
+					padding: 7px 10px;
+				}
+				overflow: auto;
+				flex-wrap: nowrap;
+				overflow: auto;
+				flex-wrap: nowrap;
+			}
+		}
+		.workflow-section {
+			.workflow-content {
+				h3 {
+					font-size: 20px;
+					font-size: 20px;
+					font-size: 20px;
+					font-size: 20px;
+				}
+			}
+			.block-title {
+				h2 {
+					font-size: 22px;
+				}
+			}
+		}
+		.dedicated-section {
+			.dedicated-title {
+				h3 {
+					font-size: 20px;
+					font-size: 20px;
+					font-size: 20px;
+					font-size: 20px;
+				}
+			}
+			.section-header {
+				.section-logo {
+					max-width: 180px;
+				}
+				flex-direction: column;
+				.section-title {
+					h2 {
+						text-align: center;
+						font-size: 20px;
+						span {
+							font-size: 26px;
+						}
+					}
+					width: 100%;
+				}
+			}
+			.nav-migrate {
+				a.why-choose-cta {
+					display: inline-block;
+					width: fit-content;
+				}
+			}
+		}
+		.get-touch.b2b-get-in-touch {
+			.brew-content {
+				margin: 0 auto;
+				margin: 0 auto;
+				margin: 0 auto;
+				margin: 0 auto;
+				h2 {
+					font-size: 22px;
+				}
+			}
+		}
+		.certified-box-wrapper {
+			.certified-box-item {
+				.certified-content {
+					p {
+						text-align: left;
+						font-size: 16px;
+					}
+				}
+			}
+			.certified-image {
+				.btn-wraper {
+					a {
+						font-size: 16px;
+					}
+				}
+			}
+		}
+		.nav-migrate {
+			p.why-choose-title {
+				font-size: 16px;
+			}
+			a {
+				display: inline-block;
+				width: fit-content;
+			}
+		}
+		.block-title.text-center.max-700 {
+			h2 {
+				font-size: 22px;
+				margin-bottom: 15px;
+			}
+		}
+		.featured-section {
+			.section-header {
+				h2 {
+					font-size: 22px;
+				}
+				flex-direction: column;
+				margin-bottom: 30px;
+			}
+		}
+		.certified-content {
+			.certified-title {
+				h3 {
+					font-size: 22px;
+				}
+			}
+		}
+		.certified-box {
+			.certified-box-wrapper {
+				row-gap: 25px;
+			}
+		}
+		.why-choose-wrapper {
+			.row {
+				.col-12.col-md-4 {
+					flex: 0 0 100%;
+					max-width: 100%;
+				}
+				.col-12.col-md-5 {
+					flex: 0 0 100%;
+					max-width: 100%;
+				}
+				align-items: center;
+				row-gap: 30px;
+			}
+			.btn-secondary {
+				width: fit-content;
+			}
+		}
+		.why-choose-section {
+			li.why-choose-item {
+				max-width: calc(50% - 15px);
+				text-align: center;
+			}
+			span.item-number {
+				font-size: 32px;
+			}
+		}
+		ul.why-choose-list {
+			gap: 30px;
+		}
+		.nav-migrates-wrapper {
+			padding-right: 0;
+			flex-direction: column;
+			gap: 5px;
+			padding-left: 35px;
+		}
+		.tab-section {
+			padding: 40px 0;
+		}
+	}
+	.weekmate-grid-section {
+		.hero-section-paragraph {
+			font-size: 20px;
+		}
+	}
+	.weekmate-single-product-banner-wrapper {
+		h1 {
+			font-size: 32px;
+			margin: auto;
+			text-align: center;
+		}
+		.weekmate-product-banner {
+			.weekmate-banner-cta {
+				flex-direction: column;
+				gap: 15px;
+			}
+		}
+		.description {
+			margin-bottom: 20px;
+			padding-bottom: 30px;
+			font-size: 18px;
+		}
+	}
+	.software-detail-wrapper {
+		.software-detail-item {
+			&:nth-of-type(2) {
+				max-width: 100%;
+			}
+			&:nth-of-type(3) {
+				max-width: 100%;
+			}
+			max-width: 100%;
+		}
+	}
+	.hrms-category-section {
+		.category-content-block {
+			.swiper-slide {
+				padding-bottom: 50px;
+			}
+		}
+		.content-image {
+			transform: translateY(60px);
+			max-width: 90%;
+		}
+		.content-text {
+			padding: 40px 20px 0px;
+		}
+	}
+	.page-template-new-service-design {
+		.nav-migrate {
+			a {
+				font-size: 16px;
+			}
+		}
+	}
+	.product-content-box-wrapper {
+		.product-box {
+			max-width: 100%;
+		}
+	}
+	.product-detail-section {
+		flex-direction: column;
+		gap: 30px;
+	}
+	.product-text-nav {
+		.text-box {
+			text-align: center;
+		}
+	}
+	.custom-py-50 {
+		margin: 40px 0;
+	}
+	.weekmate-single-product-pricing-section {
+		.price {
+			font-size: 22px;
+		}
+		.pricing-title {
+			font-size: 22px;
+			top: -10px;
+			padding: 0 40px;
+		}
+		.pricing-features {
+			flex-direction: column;
+		}
+		.pricing-box {
+			padding: 40px 30px;
+		}
+		.pricing-sub-title {
+			font-size: 22px;
+			margin-bottom: 15px;
+		}
+	}
+	.floating-eggs {
+		.egg {
+			max-height: 120px;
+			width: 25px;
+		}
+	}
+	.egg-1 {
+		left: 0;
+		animation-delay: 0s;
+	}
+	.egg-2 {
+		right: 0px;
+		animation-delay: 0.5s;
+	}
+	h1 {
+		font-size: 38px;
+	}
+	.heading {
+		h2 {
+			font-size: 32px;
+		}
+	}
+}
+@media (max-width: 575px) {
+    .weekmate-hero-section{
+    .hero-section-paragraph {
+      p{
+        font-size: 16px;
+      }
+    }
+    
+  } 
+	.weekmate.why-weekmate {
+		.virtual-assistants-box {
+			max-width: calc(100% - 20px);
+			-webkit-box-flex: 0;
+			-ms-flex: 0 0 100%;
+			flex: 0 0 100%;
+		}
+	}
+	.weekmate-single-product-hero-section {
+		.content-inner {
+			.content-text {
+				p {
+					font-size: 16px;
+				}
+			}
+		}
+		.text-box.swiper-text-trigger {
+			h4 {
+				font-size: 18px;
+			}
+			p {
+				font-size: 16px;
+			}
+		}
+	}
+	.hrms-category-section {
+		.content-text {
+			max-width: 100%;
+		}
+	}
+	.product-content-box-wrapper {
+		.product-box-item {
+			p {
+				font-size: 18px;
+			}
+		}
+	}
+	.weekmate-single-product-digital-workplace-section {
+		.dwp-solution-list {
+			li.active {
+				.solution-block {
+					.sb-content {
+						max-width: 100%;
+					}
+				}
+			}
+			ul {
+				li {
+					.bg-image {
+						opacity: .5;
+					}
+				}
+			}
+		}
+	}
+	.dwp-solution-list {
+		li {
+			&:not(.active) {
+				.roate-txt {
+					display: none;
+				}
+			}
+		}
+	}
+	.heading {
+		h2 {
+			font-size: 28px;
+			font-size: 28px;
+		}
+	}
+	h1 {
+		font-size: 32px;
+	}
+	.faq-section {
+		.weekmate-faq-wrapper {
+			.faq-box {
+				font-size: 16px;
+				padding: 48px 30px;
+				font-size: 16px;
+				h2 {
+					font-size: 22px;
+					font-size: 26px;
+				}
+			}
+			.accordion-header {
+				font-size: 18px;
+				font-size: 18px;
+			}
+			.faq-footer {
+				flex-direction: column;
+				gap: 20px;
+				flex-direction: column;
+				gap: 20px;
+			}
+			height: auto;
+			height: 670px;
+			height: auto;
+		}
+	}
+	.weekmate-free-consultation {
+		.right-side-content-wrapper {
+			padding: 30px;
+			padding: 30px;
+			.consultation-title {
+				font-size: 22px;
+			}
+		}
+	}
+	.client-sucess-wrapper {
+		.sider-content-wrapper {
+			h4 {
+				font-size: 18px;
+				font-size: 18px;
+			}
+			p {
+				font-size: 20px;
+				font-size: 20px;
+			}
+			.designation {
+				font-size: 16px;
+				font-size: 16px;
+			}
+		}
+	}
+	.weekmate-insights-blocks {
+		.weekmate-insights-wrapper {
+			.slider-content-wrapper {
+				padding: 15px;
+				padding: 15px;
+			}
+			.insights-description {
+				font-size: 16px;
+				font-size: 16px;
+			}
+			.slider-content {
+				.insights-title {
+					font-size: 22px;
+					font-size: 22px;
+				}
+			}
+		}
+	}
+	.industries-we-serve {
+		.industreis-wrapper {
+			border-radius: 30px;
+			margin-top: 20px;
+			border: 2px solid #3C5891;
+			border-radius: 30px;
+			margin-top: 20px;
+			border: 2px solid #3C5891;
+			.heading {
+				padding: 0 10px;
+				padding: 0 10px;
+			}
+		}
+		.industries-cards-wrapper {
+			padding: 30px 30px 30px;
+			padding: 30px 30px 30px;
+			.industry-card {
+				max-width: calc(100% - 20px);
+				margin: 10px;
+				max-width: calc(100% - 20px);
+				margin: 10px;
+				h3 {
+					font-size: 20px;
+					font-size: 20px;
+				}
+				p {
+					font-size: 16px;
+					margin-bottom: 0;
+					font-size: 16px;
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+	.product-section {
+		.product-section-wrapper {
+			.product-item {
+				border-radius: 20px;
+				max-width: 80%;
+				margin: 0 auto;
+				text-align: center;
+				border-radius: 20px;
+				max-width: 80%;
+				margin: 0 auto;
+				text-align: center;
+			}
+			.product-title {
+				h3 {
+					margin-bottom: 5px;
+					font-size: 20px;
+					margin-bottom: 5px;
+					font-size: 20px;
+				}
+			}
+			.product-thumb {
+				img {
+					width: 90px;
+					width: 90px;
+				}
+			}
+			.section-description {
+				p {
+					font-size: 16px;
+					font-size: 16px;
+				}
+			}
+		}
+		.product-wrapper {
+			.product-item {
+				.product-content {
+					p {
+						font-size: 14px;
+						font-size: 14px;
+					}
+				}
+			}
+		}
+		&:after {
+			border-top-left-radius: 60px;
+			border-top-right-radius: 60px;
+			background: linear-gradient(221deg, #005282 0%, rgba(255, 255, 255, 0.5) 88.97%);
+			border-top-left-radius: 60px;
+			border-top-right-radius: 60px;
+			background: linear-gradient(221deg, #005282 0%, rgba(255, 255, 255, 0.5) 88.97%);
+		}
+	}
+	.capability-section-wrapper {
+		.slider-content-wrapper {
+			.service-text {
+				font-size: 18px;
+				font-size: 18px;
+			}
+		}
+	}
+	.weekmate-single-product-pricing-section {
+		.pricing-title {
+			font-size: 20px;
+			padding: 0 10px;
+		}
+	}
+	.weekmate-hero-section {
+		.heading {
+			max-width: 340px;
+			max-width: 340px;
+		}
+	}
+	.why-choose-weekmate-wrapper {
+		.paragraph {
+			p {
+				font-size: 16px;
+		
+			}
+		}
+		.card-image {
+			border-radius: 20px;
+			border-radius: 20px;
+		}
+	}
+	.hero-section-paragraph {
+		p {
+			font-size: 16px;
+			font-size: 16px;
+		}
+	}
+	p {
+		font-size: 16px;
+		font-size: 16px;
+	}
+	.weekmate-button {
+		.btn.btn-primary {
+			padding: 12px 25px;
+			letter-spacing: 2px;
+			font-size: 14px;
+		}
+		.secondary.btn {
+			padding: 12px 25px;
+			letter-spacing: 2px;
+			font-size: 14px;
+			padding: 15px 25px;
+			letter-spacing: 2px;
+			font-size: 14px;
+		}
+		.btn {
+			padding: 12px 25px;
+			letter-spacing: 2px;
+			font-size: 14px;
+			padding: 15px 25px;
+			letter-spacing: 2px;
+			font-size: 14px;
+		}
+	}
+	.single-product-weekmate-Benefits-section {
+		.expertise-slider {
+			.slick-track {
+				padding: 15px 0;
+			}
+		}
+	}
+	.weekmate-development-services {
+		.service-image {
+			border-radius: 20px;
+			border-radius: 20px;
+		}
+	}
+	.weekmate-insights-wrapper {
+		.insights-image {
+			border-radius: 20px;
+			border-radius: 20px;
+		}
+	}
+	.weekmate-grid-section {
+		.hero-section-paragraph {
+			font-size: 16px;
+		}
+	}
+	.linkedinPostsBtn-wrapper {
+		div#linkedinPopup {
+			right: 0px;
+		}
+	}
+}
+@media (max-width: 475px) {
+	.gradient-heading {
+		color:#005282;
+		font-weight: 700;
+	}
+	.heading {
+		h2 {
+			font-size: 26px;
+		}
+	}
+	h1 {
+		font-size: 28px;
+	}
+	.hrms-category-section {
+		.category-tab {
+			flex: 100%;
+			max-width: 100%;
+			font-size: 14px;
+			padding: 7px 20px;
+		}
+	}
+}
+.page-template-WeekMate .wpcf7 form .wpcf7-response-output {
+    position: unset !important;
+}
+.single-product .wpcf7 form .wpcf7-response-output {
+    position: unset !important;
+}
+.modal-body p{
+    font-size:18px !important;
+}
+.modal-body input.wpcf7-form-control.has-spinner.wpcf7-submit{
+	background-color: #005282 !important;
+}
+.modal-body h2{
+	font-family: Playfair Display, sans-serif, serif, monospace;
+}

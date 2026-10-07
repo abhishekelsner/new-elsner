@@ -1,0 +1,2845 @@
+<?php
+/**
+ * Template Name: Testimonial Template
+ * 
+ * Expected args:
+ * $args['post_id']
+ */
+?>
+<section class="testimonials-section section section-padding blue-section">
+    <div class="container">
+
+                    <div class="block-title text-center white">
+               <h2>What Our Happy <span>Clients say about us ?<span></span></span></h2>
+            </div>
+        
+                <div class="testimonials-main-slider-wrapper">
+            <div class="testimonials-image-wrapper">
+                <div class="testimonials-image-slider slick-initialized slick-slider"><div class="slick-list" style="padding: 0px 40px;"><div class="slick-track" style="opacity: 1; width: 2400px; transform: translate3d(0px, 0px, 0px);"><div class="slick-slide slick-current slick-center" data-slick-index="0" aria-hidden="true" style="width: 400px;"><div><div class="testi-image-slide" style="width: 100%; display: inline-block;">
+                            <div class="testimonial-left">
+    
+                                                                    <img src="https://elsner-new.elsnerdev.com/wp-content/uploads/2026/06/Nadir_Carpenter_1781849558204.png" alt="Nadir Carpenter" loading="lazy" data-src="https://elsner-new.elsnerdev.com/wp-content/uploads/2026/06/Nadir_Carpenter_1781849558204.png" decoding="async" class=" lazyloaded" data-eio-rwidth="380" data-eio-rheight="400"><noscript><img src="https://elsner-new.elsnerdev.com/wp-content/uploads/2026/06/Nadir_Carpenter_1781849558204.png"
+                                        alt="Nadir Carpenter"
+                                        loading="lazy" data-eio="l"></noscript>
+                                    
+                                                                    <a href="https://www.youtube.com/watch?v=pEbw4tTu6-I" class="testimonial-play" data-fancybox="testimonial-video" data-type="iframe" tabindex="-1">
+                                        <svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"></polygon></svg>
+                                    </a>
+                                    
+                            </div><!-- .testimonial-left -->
+                        </div></div></div><div class="slick-slide next-slide" data-slick-index="1" aria-hidden="true" style="width: 400px;" tabindex="-1"><div><div class="testi-image-slide" style="width: 100%; display: inline-block;">
+                            <div class="testimonial-left">
+    
+                                                                    <img src="https://elsner-new.elsnerdev.com/wp-content/uploads/2026/06/David_Bolin_1781849558012.png" alt="David Bolin" loading="lazy" data-src="https://elsner-new.elsnerdev.com/wp-content/uploads/2026/06/David_Bolin_1781849558012.png" decoding="async" class=" lazyloaded" data-eio-rwidth="380" data-eio-rheight="400"><noscript><img src="https://elsner-new.elsnerdev.com/wp-content/uploads/2026/06/David_Bolin_1781849558012.png"
+                                        alt="David Bolin"
+                                        loading="lazy" data-eio="l"></noscript>
+                                    
+                                                                    <a href="https://www.youtube.com/watch?v=O_8M_JryjhY" class="testimonial-play" data-fancybox="testimonial-video" data-type="iframe" tabindex="-1">
+                                        <svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"></polygon></svg>
+                                    </a>
+                                    
+                            </div><!-- .testimonial-left -->
+                        </div></div></div><div class="slick-slide" data-slick-index="2" aria-hidden="true" style="width: 400px;" tabindex="-1"><div><div class="testi-image-slide" style="width: 100%; display: inline-block;">
+                            <div class="testimonial-left">
+    
+                                                                    <img src="https://elsner-new.elsnerdev.com/wp-content/uploads/2026/06/Doug_Robb_1781849558135.png" alt="Doug Robb" loading="lazy" data-src="https://elsner-new.elsnerdev.com/wp-content/uploads/2026/06/Doug_Robb_1781849558135.png" decoding="async" class=" lazyloaded" data-eio-rwidth="380" data-eio-rheight="400"><noscript><img src="https://elsner-new.elsnerdev.com/wp-content/uploads/2026/06/Doug_Robb_1781849558135.png"
+                                        alt="Doug Robb"
+                                        loading="lazy" data-eio="l"></noscript>
+                                    
+                                                                    <a href="https://www.youtube.com/watch?v=VSXZVpr_qSw" class="testimonial-play" data-fancybox="testimonial-video" data-type="iframe" tabindex="-1">
+                                        <svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"></polygon></svg>
+                                    </a>
+                                    
+                            </div><!-- .testimonial-left -->
+                        </div></div></div><div class="slick-slide" data-slick-index="3" aria-hidden="true" style="width: 400px;" tabindex="-1"><div><div class="testi-image-slide" style="width: 100%; display: inline-block;">
+                            <div class="testimonial-left">
+    
+                                                                    <img src="https://elsner-new.elsnerdev.com/wp-content/uploads/2026/06/Gabi-Kling.png" alt="Gabi Kling" loading="lazy" data-src="https://elsner-new.elsnerdev.com/wp-content/uploads/2026/06/Gabi-Kling.png" decoding="async" class=" lazyloaded" data-eio-rwidth="380" data-eio-rheight="400"><noscript><img src="https://elsner-new.elsnerdev.com/wp-content/uploads/2026/06/Gabi-Kling.png"
+                                        alt="Gabi Kling"
+                                        loading="lazy" data-eio="l"></noscript>
+                                    
+                                                                    <a href="https://www.youtube.com/watch?v=5Srmt1lXfPs" class="testimonial-play" data-fancybox="testimonial-video" data-type="iframe" tabindex="-1">
+                                        <svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"></polygon></svg>
+                                    </a>
+                                    
+                            </div><!-- .testimonial-left -->
+                        </div></div></div><div class="slick-slide" data-slick-index="4" aria-hidden="true" style="width: 400px;" tabindex="-1"><div><div class="testi-image-slide" style="width: 100%; display: inline-block;">
+                            <div class="testimonial-left">
+    
+                                                                    <img src="https://elsner-new.elsnerdev.com/wp-content/uploads/2026/06/Daniela_Fernandez_Gutierrez_1781849557910.png" alt="Daniela Fernandez Gutierrez" loading="lazy" data-src="https://elsner-new.elsnerdev.com/wp-content/uploads/2026/06/Daniela_Fernandez_Gutierrez_1781849557910.png" decoding="async" class=" lazyloaded" data-eio-rwidth="380" data-eio-rheight="400"><noscript><img src="https://elsner-new.elsnerdev.com/wp-content/uploads/2026/06/Daniela_Fernandez_Gutierrez_1781849557910.png"
+                                        alt="Daniela Fernandez Gutierrez"
+                                        loading="lazy" data-eio="l"></noscript>
+                                    
+                                                                    <a href="https://www.youtube.com/watch?v=suhqSI5J9-0" class="testimonial-play" data-fancybox="testimonial-video" data-type="iframe" tabindex="-1">
+                                        <svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"></polygon></svg>
+                                    </a>
+                                    
+                            </div><!-- .testimonial-left -->
+                        </div></div></div><div class="slick-slide" data-slick-index="5" aria-hidden="true" style="width: 400px;" tabindex="-1"><div><div class="testi-image-slide" style="width: 100%; display: inline-block;">
+                            <div class="testimonial-left">
+    
+                                                                    <img src="https://elsner-new.elsnerdev.com/wp-content/uploads/2026/06/Sean.png" alt="Sean" loading="lazy" data-src="https://elsner-new.elsnerdev.com/wp-content/uploads/2026/06/Sean.png" decoding="async" class=" lazyloaded" data-eio-rwidth="380" data-eio-rheight="400"><noscript><img src="https://elsner-new.elsnerdev.com/wp-content/uploads/2026/06/Sean.png"
+                                        alt="Sean"
+                                        loading="lazy" data-eio="l"></noscript>
+                                    
+                                                                    <a href="https://www.youtube.com/watch?v=i1TfiX3GUC0" class="testimonial-play" data-fancybox="testimonial-video" data-type="iframe" tabindex="-1">
+                                        <svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"></polygon></svg>
+                                    </a>
+                                    
+                            </div><!-- .testimonial-left -->
+                        </div></div></div></div></div></div>
+            </div>
+            <div class="testimonials-content-wrapper">
+                <div class="testimonials-wrapper slick-initialized slick-slider slick-dotted"><div class="slick-list draggable"><div class="slick-track" style="opacity: 1; width: 4980px; transform: translate3d(0px, 0px, 0px);"><div class="slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" style="width: 802px;" role="tabpanel" id="slick-slide20"><div><div class="testimonial-item" style="width: 100%; display: inline-block;">
+                            <div class="testimonial-card-new">
+                                <div class="testimonial-right">
+                                    <div class="testimonial-author">
+                                                                                    <h3>Nadir Carpenter</h3>
+                                                                                                                            <p>
+                                                Flying Awards                                                                                            </p>
+                                                                            </div>
+
+                                                                            <div class="testimonial-content">
+                                            <p>I will say that, so far, it's been a very good experience dealing with Elsner. We look forward to completing this project with them and possibly doing more work together in the future.</p>
+                                        </div>
+                                    
+                                    
+                                                                    </div>
+
+                            </div>
+                        </div></div></div><div class="slick-slide" data-slick-index="1" aria-hidden="true" style="width: 802px;" tabindex="-1" role="tabpanel" id="slick-slide21"><div><div class="testimonial-item" style="width: 100%; display: inline-block;">
+                            <div class="testimonial-card-new">
+                                <div class="testimonial-right">
+                                    <div class="testimonial-author">
+                                                                                    <h3>David Bolin</h3>
+                                                                                                                            <p>
+                                                 Electronic Design Editor, Celebrating Grace                                                                                            </p>
+                                                                            </div>
+
+                                                                            <div class="testimonial-content">
+                                            <p>Since 2014, Elsner Technologies has helped us build our stores and manage them. I've always appreciated the quick response their developers have taken to the technological challenges we've faced. Perhaps you're looking for the right team to manage your online presence.</p>
+                                        </div>
+                                    
+                                    
+                                                                    </div>
+
+                            </div>
+                        </div></div></div><div class="slick-slide" data-slick-index="2" aria-hidden="true" style="width: 802px;" tabindex="-1" role="tabpanel" id="slick-slide22"><div><div class="testimonial-item" style="width: 100%; display: inline-block;">
+                            <div class="testimonial-card-new">
+                                <div class="testimonial-right">
+                                    <div class="testimonial-author">
+                                                                                    <h3>Doug Robb</h3>
+                                                                                                                            <p>
+                                                Director Communovate                                                                                            </p>
+                                                                            </div>
+
+                                                                            <div class="testimonial-content">
+                                            <p> I feel like the Elsner team is part of my team, which is a great way to be. So, it's fantastic to know that I have that resource on tap whenever I need it, and they've been responsive, professional, and obviously very competent.</p>
+                                        </div>
+                                    
+                                    
+                                                                    </div>
+
+                            </div>
+                        </div></div></div><div class="slick-slide" data-slick-index="3" aria-hidden="true" style="width: 802px;" tabindex="-1" role="tabpanel" id="slick-slide23"><div><div class="testimonial-item" style="width: 100%; display: inline-block;">
+                            <div class="testimonial-card-new">
+                                <div class="testimonial-right">
+                                    <div class="testimonial-author">
+                                                                                    <h3>Gabi Kling</h3>
+                                                                                                                            <p>
+                                                Flying W Awards                                                                                            </p>
+                                                                            </div>
+
+                                                                            <div class="testimonial-content">
+                                            <p>We've been working with Elsner since the end of 2018. For the past six years, they have been our website developers and have helped us with our e-commerce platform. Since partnering with Elsner, our online business has more than doubled.</p>
+                                        </div>
+                                    
+                                    
+                                                                    </div>
+
+                            </div>
+                        </div></div></div><div class="slick-slide" data-slick-index="4" aria-hidden="true" style="width: 802px;" tabindex="-1" role="tabpanel" id="slick-slide24"><div><div class="testimonial-item" style="width: 100%; display: inline-block;">
+                            <div class="testimonial-card-new">
+                                <div class="testimonial-right">
+                                    <div class="testimonial-author">
+                                                                                    <h3>Daniela Fernandez Gutierrez</h3>
+                                                                                                                            <p>
+                                                CEO, Trips Ideales LLC                                                                                            </p>
+                                                                            </div>
+
+                                                                            <div class="testimonial-content">
+                                            <p>I wanted to thank Elsner Technologies, especially Drew, the engineer who helped me install the plugin on my website, making the payment process easier and more secure for my clients.</p>
+                                        </div>
+                                    
+                                    
+                                                                    </div>
+
+                            </div>
+                        </div></div></div><div class="slick-slide" data-slick-index="5" aria-hidden="true" style="width: 802px;" tabindex="-1" role="tabpanel" id="slick-slide25"><div><div class="testimonial-item" style="width: 100%; display: inline-block;">
+                            <div class="testimonial-card-new">
+                                <div class="testimonial-right">
+                                    <div class="testimonial-author">
+                                                                                    <h3>Sean</h3>
+                                                                                                                            <p>
+                                                Manager                                                                                            </p>
+                                                                            </div>
+
+                                                                            <div class="testimonial-content">
+                                            <p>I would highly recommend them to anybody. Their technical skills are great, their communication is great, and if you're looking for help to get your business off the ground, or if you need to bring on an entirely new development team to run any aspect of it, I would highly recommend them to you.&nbsp;</p>
+                                        </div>
+                                    
+                                    
+                                                                    </div>
+
+                            </div>
+                        </div></div></div></div></div><ul class="slick-dots" style="" role="tablist"><li class="slick-active" role="presentation"><button type="button" role="tab" id="slick-slide-control20" aria-controls="slick-slide20" aria-label="1 of 6" tabindex="0" aria-selected="true">1</button></li><li role="presentation"><button type="button" role="tab" id="slick-slide-control21" aria-controls="slick-slide21" aria-label="2 of 6" tabindex="-1">2</button></li><li role="presentation"><button type="button" role="tab" id="slick-slide-control22" aria-controls="slick-slide22" aria-label="3 of 6" tabindex="-1">3</button></li><li role="presentation"><button type="button" role="tab" id="slick-slide-control23" aria-controls="slick-slide23" aria-label="4 of 6" tabindex="-1">4</button></li><li role="presentation"><button type="button" role="tab" id="slick-slide-control24" aria-controls="slick-slide24" aria-label="5 of 6" tabindex="-1">5</button></li><li role="presentation"><button type="button" role="tab" id="slick-slide-control25" aria-controls="slick-slide25" aria-label="6 of 6" tabindex="-1">6</button></li></ul></div>
+            </div>
+        </div>
+        <div class="testi-bottom-row">
+            <div class="testi-dots-placeholder"></div>
+            <a href="https://www.elsner.com/clientele-and-testimonials/" class="testi-read-more">Read more stories <span>›</span></a>
+        </div>
+
+            </div>
+</section>
+
+<style>
+* {
+    box-sizing: border-box
+}
+
+:root {
+    --font-heading: "Playfair Display";
+    --color-hero-bg: #002840;
+    --color-brand: #007ac1;
+    --color-brand-dark: #005386;
+    --color-text-main: #000;
+    --color-text-muted: #8d8d8d;
+    --color-white: #fff;
+    --color-surface: #fff;
+    --color-section-light: #f9fafb;
+    --color-cta-light: #d8f1ff
+}
+
+.block-title h1,.block-title h2,.block-title h3,.block-title h4,.block-title h5,.block-title h6 {
+    color: var(--color-brand);
+    font-family: var(--font-heading);
+    font-weight: 700;
+    line-height: normal;
+    margin: 0 0 10px
+}
+
+.main-page p,p {
+    font-family: Red Hat Display
+}
+
+p {
+    color: var(--color-text-main);
+    line-height: 1.6;
+    margin: 0 0 10px
+}
+
+.page-template-Rev-Template .section-padding {
+    margin: 60px 0;
+    padding: 0
+}
+
+.hero-section {
+    align-items: center;
+    background: var(--color-hero-bg);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    min-height: 100dvh;
+    overflow: hidden;
+    padding: 120px 0 80px;
+    position: relative
+}
+
+.hero-section .hero-wrapper .hero-content {
+    margin: 0 auto;
+    max-width: 915px;
+    text-align: center
+}
+
+.hero-section .hero-wrapper .hero-content h1 {
+    color: var(--color-white);
+    font-family: var(--font-heading);
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 1.2;
+    margin-bottom: 4px;
+    text-align: center;
+    text-transform: uppercase
+}
+
+.hero-section .hero-wrapper .hero-content p {
+    color: var(--color-white);
+    font-size: 18px;
+    letter-spacing: .36px;
+    line-height: 1.6;
+    margin: 0 auto;
+    max-width: 611px
+}
+
+.client-logos-section .client-logos-section-wrapper {
+    align-items: center;
+    display: flex;
+    margin: 0
+}
+
+.client-logos-section .block-title h2 {
+    color: var(--color-brand);
+    font-family: var(--font-heading);
+    font-size: 35px;
+    font-weight: 500;
+    margin-bottom: 0
+}
+
+.client-logos-section .client-logos-wrapper .client-logo-item img {
+    margin: 0 auto;
+    max-height: 60px;
+    max-width: 154px
+}
+
+.client-logos-section .client-logos-wrapper .slick-track {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap
+}
+
+.client-logos-section .client-logos-section-wrapper .block-title {
+    -o-border-image: linear-gradient(180deg,rgba(0,189,242,.2) -4.32%,#1696e0 48.53%,rgba(0,189,242,.2) 102.99%);
+    border-image: linear-gradient(180deg,rgba(0,189,242,.2) -4.32%,#1696e0 48.53%,rgba(0,189,242,.2) 102.99%);
+    border-image-slice: 1;
+    border-right: 2px solid transparent;
+    padding: 40px 0
+}
+
+.counter-section .counter-wrapper {
+    background: var(--color-surface);
+    border-radius: 20px;
+    padding: 54px 34px;
+    position: relative
+}
+
+.counter-section .counter-wrapper:before {
+    background: linear-gradient(180deg,rgba(97,191,245,.2) -22.34%,#007ac1 95.79%);
+    border-radius: 20px;
+    content: "";
+    inset: 0;
+    -webkit-mask: linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    padding: 2px;
+    pointer-events: none;
+    position: absolute
+}
+
+.counter-section .counter-wrapper .counter-item {
+    align-items: center;
+    display: flex;
+    gap: 8px
+}
+
+.counter-section .counter-wrapper .counter-item .counter-number {
+    color: var(--color-brand);
+    font-size: 40px;
+    font-weight: 900
+}
+
+.counter-section .counter-wrapper .counter-item .counter-label p {
+    color: var(--color-text-main);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 32.5px;
+    margin-bottom: 0
+}
+
+.our-expertise-section {
+    padding: 80px 0
+}
+
+.our-expertise-section .block-title {
+    margin-bottom: 40px;
+    position: relative;
+    text-align: center
+}
+
+.our-expertise-section .block-title h2 {
+    color: var(--color-brand);
+    display: inline-block;
+    font-size: 35px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0 40px;
+    position: relative;
+    z-index: 2
+}
+
+.our-expertise-section .block-title h2:after,.our-expertise-section .block-title h2:before {
+    background: linear-gradient(90deg,transparent,#0891b2);
+    content: "";
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    width: 100%
+}
+
+.our-expertise-section .block-title h2:before {
+    background: linear-gradient(90deg,transparent,#0891b2);
+    margin-right: 20px;
+    right: 100%
+}
+
+.our-expertise-section .block-title h2:after {
+    background: linear-gradient(270deg,transparent,#0891b2);
+    left: 100%;
+    margin-left: 20px
+}
+
+.our-expertise-section .expertise-wrapper {
+    position: relative
+}
+
+.our-expertise-section .slick-slide {
+    height: auto;
+    padding: 0 15px
+}
+
+.our-expertise-section .slick-slide div {
+    height: 100%
+}
+
+.our-expertise-section .slick-track {
+    display: flex
+}
+
+.page-template-Rev-Template .featured-in-section .block-title {
+    margin-bottom: 40px;
+    position: relative;
+    text-align: center
+}
+
+.page-template-Rev-Template .featured-in-section .block-title h2 {
+    color: var(--color-brand);
+    display: block;
+    font-size: 35px;
+    font-weight: 700;
+    margin: 0;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    z-index: 2
+}
+
+.page-template-Rev-Template .featured-in-section .block-title h2:after,.page-template-Rev-Template .featured-in-section .block-title h2:before {
+    content: "";
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 35%
+}
+
+.page-template-Rev-Template .featured-in-section .block-title h2:before {
+    background: linear-gradient(90deg,transparent,#0891b2);
+    left: 0
+}
+
+.page-template-Rev-Template .featured-in-section .block-title h2:after {
+    background: linear-gradient(270deg,transparent,#0891b2);
+    right: 0
+}
+
+.our-expertise-section .expertise-item {
+    align-items: flex-start;
+    background: hsla(0,0%,85%,.4);
+    border-radius: 16px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 30px 40px;
+    text-align: center;
+    transition: all .3s ease
+}
+
+.our-expertise-section .expertise-item:hover {
+    background: linear-gradient(179.84deg,hsla(0,4%,89%,.4) .14%,rgba(0,122,193,.4) 122.93%);
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.251);
+    transition: all .3s ease
+}
+
+.our-expertise-section .expertise-item .expertise-icon {
+    align-items: center;
+    border-radius: 50%;
+    display: flex;
+    height: 50px;
+    height: auto;
+    justify-content: center;
+    transition: all .3s ease;
+    width: 50px
+}
+
+.our-expertise-section .expertise-icon img {
+    height: 50px;
+    -o-object-fit: contain;
+    object-fit: contain;
+    transition: all .3s ease;
+    width: 50px
+}
+
+.our-expertise-section .expertise-item h3 {
+    color: var(--color-brand);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.4;
+    margin: 10px 0 15px
+}
+
+h2,h3,h4 {
+    font-family: Red Hat Display,sans-serif
+}
+
+.meet-our-team-section .block-title {
+    text-align: center
+}
+
+.meet-our-team-section .block-title h2 {
+    color: var(--color-brand);
+    display: inline-block;
+    font-family: var(--font-heading);
+    font-size: 35px;
+    font-weight: 700;
+    padding-bottom: 14px;
+    position: relative
+}
+
+.meet-our-team-section .event-card {
+    background: #fff;
+    border: 1px solid hsla(0,0%,71%,.82);
+    border-radius: 14px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0 0 10px;
+    overflow: hidden;
+    transition: box-shadow .3s ease,transform .3s ease
+}
+
+.meet-our-team-section .event-card:hover {
+    box-shadow: 0 2px 18px rgba(30,41,59,.08);
+    transform: translateY(-4px)
+}
+
+.meet-our-team-section .event-card .event-img {
+    padding: 14px 14px 0
+}
+
+.meet-our-team-section .event-card .event-img img {
+    border-radius: 10px;
+    display: block;
+    max-height: 176px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    width: 100%
+}
+
+.meet-our-team-section .event-card .event-content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding: 20px 22px 24px
+}
+
+.meet-our-team-section .event-card .event-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    list-style: none;
+    margin-bottom: 16px
+}
+
+.country-flag-wrapper {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 5px
+}
+
+.country-flag-wrapper h4 {
+    color: var(--color-brand-dark);
+    font-size: 16px;
+    font-weight: 700
+}
+
+.meet-our-team-section .event-card .event-meta li {
+    align-items: center;
+    color: #8d8d8d;
+    display: flex;
+    font-size: 14px;
+    font-weight: 500;
+    gap: 10px
+}
+
+.meet-our-team-section .event-card .event-meta .cta-icon {
+    display: block;
+    min-width: 30px
+}
+
+.meet-our-team-section .event-card .event-content p {
+    color: var(--color-text-main);
+    flex: 1;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.55;
+    margin-bottom: 0
+}
+
+.meet-our-team-section .event-card .event-btn {
+    align-items: center;
+    color: #1e293b;
+    display: inline-flex;
+    font-size: 14px;
+    font-weight: 600;
+    gap: 6px;
+    margin-top: auto;
+    text-decoration: none;
+    transition: color .25s,gap .25s
+}
+
+.meet-our-team-section .event-card .event-btn:hover {
+    color: #1a6dd4;
+    gap: 10px
+}
+
+.meet-our-team-section .event-card .event-btn .cta-icon {
+    background: none;
+    border-radius: 0;
+    height: 18px;
+    min-width: 18px;
+    padding: 0;
+    transition: transform .25s;
+    width: 18px
+}
+
+.meet-our-team-section .event-card .event-btn:hover .cta-icon {
+    transform: translate(2px,-2px)
+}
+
+.success-stories-section .block-title h2 {
+    color: var(--color-brand);
+    font-family: var(--font-heading);
+    font-size: 35px;
+    font-weight: 700
+}
+
+.success-stories-section .btn-primary:hover svg path {
+    fill: var(--color-brand);
+    color: var(--color-brand)
+}
+
+.success-stories-section .btn-primary:hover {
+    background: #fff;
+    color: var(--color-brand);
+    transition: all .3s ease
+}
+
+.success-stories-section .btn-primary {
+    align-items: center;
+    background: var(--color-brand);
+    border-color: var(--color-brand);
+    display: flex;
+    font-size: 20px;
+    gap: 8px;
+    letter-spacing: normal;
+    margin: 0 auto;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+    padding: 8px 16px;
+    text-transform: capitalize;
+    transition: all .3s ease
+}
+
+.success-stories-section .success-stories-wrapper .case-study-item .case-study-image img {
+    border-radius: 8px;
+    max-height: 282px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    width: 100%
+}
+
+.success-stories-section .success-stories-wrapper .case-study-item .case-study-content h3 {
+    color: var(--color-brand);
+    font-family: var(--font-heading);
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 20px
+}
+
+.success-stories-section .success-stories-wrapper .case-study-item .case-study-content p {
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    color: var(--color-text-main);
+    display: -webkit-box;
+    font-size: 16px;
+    font-weight: 400;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+.our-expertise-section .expertise-item p {
+    color: var(--color-text-main);
+    font-size: 16px;
+    line-height: 1.7;
+    margin: 0
+}
+
+.our-expertise-section {
+    overflow-x: hidden
+}
+
+.our-expertise-section .expertise-wrapper .expertise-slider-header {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px
+}
+
+.cta-banner-section {
+    position: relative;
+    width: 100%
+}
+
+.cta-banner-section .cta-banner-wrapper {
+    background: linear-gradient(90deg,#005282,#00121c);
+    border-radius: 20px;
+    box-shadow: 0 4px 21.4px 10px rgba(60,88,145,.161);
+    overflow: hidden;
+    padding: 30px 70px 50px;
+    position: relative
+}
+
+.cta-banner-section .text-center {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    position: relative;
+    text-align: center;
+    z-index: 2
+}
+
+.cta-banner-section .cta-title {
+    animation: fadeInUp .8s ease-out;
+    font-family: var(--font-heading);
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 5px;
+    max-width: 800px
+}
+
+.cta-banner-section .cta-description {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6;
+    margin: 0;
+    max-width: 650px
+}
+
+.cta-banner-section .cta-button {
+    animation: fadeInUp .8s ease-out .4s both;
+    margin-top: 12px
+}
+
+.cta-banner-section .btn {
+    align-items: center;
+    border-radius: 50px;
+    display: inline-flex;
+    font-size: 16px;
+    font-weight: 600;
+    gap: 12px;
+    padding: 16px 36px;
+    position: relative;
+    text-decoration: none;
+    transition: all .3s cubic-bezier(.4,0,.2,1)
+}
+
+.cta-banner-section .cta-btn-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between
+}
+
+.cta-banner-section .btn-primary {
+    background: var(--color-cta-light);
+    box-shadow: 0 4px 20px hsla(0,0%,100%,.2);
+    color: var(--color-text-main);
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: capitalize
+}
+
+.cta-banner-section .btn-primary:hover {
+    background: #f0f8ff;
+    box-shadow: 0 8px 30px hsla(0,0%,100%,.3);
+    transform: translateY(-2px)
+}
+
+.cta-banner-section .btn-primary:active {
+    transform: translateY(0)
+}
+
+.why-choose-elsner-section {
+    position: relative;
+    width: 100%
+}
+
+.why-choose-elsner-section-wrapper:before {
+    background: linear-gradient(180deg,rgba(97,191,245,.2) -22.34%,#007ac1 95.79%);
+    border-radius: 20px;
+    content: "";
+    inset: 0;
+    -webkit-mask: linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    padding: 2px;
+    pointer-events: none;
+    position: absolute;
+    transform: translateY(45px);
+    z-index: 1
+}
+
+.why-choose-elsner-section-wrapper {
+    padding: 20px;
+    position: relative
+}
+
+.why-choose-elsner-section .block-title {
+    text-align: center
+}
+
+.why-choose-elsner-section .block-title h2 {
+    background: #d8f1ff;
+    background: #fff;
+    font-family: var(--font-heading);
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 0 auto;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+    position: relative;
+    z-index: 1
+}
+
+.why-choose-elsner-section .section-description {
+    margin: 0 auto;
+    max-width: 643px;
+    text-align: center
+}
+
+.why-choose-elsner-section .section-description p {
+    color: var(--color-text-main);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.6;
+    margin: 0
+}
+
+.why-choose-elsner-section .features-wrapper {
+    margin-top: 0;
+    position: relative
+}
+
+.why-choose-elsner-section .features-wrapper .row {
+    justify-content: center
+}
+
+.why-choose-elsner-section .feature-item {
+    position: relative;
+    text-align: center;
+    z-index: 1
+}
+
+.why-choose-elsner-section .feature-item.text-center {
+    text-align: center
+}
+
+.why-choose-elsner-section .feature-icon {
+    align-items: center;
+    background: #fff;
+    display: flex;
+    height: 80px;
+    justify-content: center;
+    margin: 0 auto 25px;
+    padding: 5px;
+    position: relative;
+    width: 80px;
+    z-index: 2
+}
+
+.why-choose-elsner-section .feature-icon img {
+    display: block;
+    height: 80px;
+    -o-object-fit: contain;
+    object-fit: contain;
+    width: 80px
+}
+
+.why-choose-elsner-section .feature-item h4 {
+    color: #000;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0 5px
+}
+
+.why-choose-elsner-section .text-center {
+    text-align: center
+}
+
+.page-template-Rev-Template .featured-in-section {
+    padding: 40px 0
+}
+
+.featured-in-section .block-title h2 {
+    color: #007ac1;
+    display: inline-block;
+    font-family: var(--font-heading);
+    font-size: 35px;
+    font-weight: 700;
+    padding-bottom: 14px;
+    position: relative
+}
+
+.featured-in-section .row {
+    justify-content: center;
+    row-gap: 24px
+}
+
+.featured-in-section .featured-logo-item {
+    align-items: center;
+    border-radius: 20px;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    padding: 20px;
+    transition: all .3s ease
+}
+
+.featured-in-section .featured-logo-item:hover {
+    border-color: #d1d5db;
+    box-shadow: 0 10px 30px rgba(0,0,0,.08);
+    transform: translateY(-4px)
+}
+
+.featured-in-section .featured-logo-item img {
+    filter: grayscale(100%);
+    height: auto;
+    max-height: 60px;
+    max-width: 100%;
+    -o-object-fit: contain;
+    object-fit: contain;
+    transition: all .3s ease;
+    width: auto
+}
+
+.featured-in-section .featured-logo-item:hover img {
+    filter: grayscale(0);
+    opacity: 1
+}
+
+@media (max-width: 575px) {
+    .featured-in-section .block-title h2 {
+        font-size:24px
+    }
+
+    .featured-in-section .featured-logo-item {
+        padding: 18px
+    }
+}
+
+.industries-served-section {
+    background-color: #fff;
+    padding: 60px 0
+}
+
+.industries-served-section .container {
+    margin: 0 auto;
+    max-width: 1100px;
+    padding: 0 20px
+}
+
+.industries-served-section .block-title h2 {
+    color: #007ac1;
+    font-family: Playfair Display;
+    font-size: 35px;
+    font-weight: 700;
+    letter-spacing: .5px;
+    text-align: center;
+    text-transform: none
+}
+
+.industries-served-section .industries-wrapper {
+    border-radius: 4px;
+    overflow: hidden
+}
+
+.industries-served-section .industries-grid {
+    display: flex;
+    flex-direction: column
+}
+
+.industries-served-section .industry-item {
+    align-items: center;
+    border-bottom: 1px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(270deg,hsla(0,0%,100%,0),#005486 37.98%,rgba(0,84,134,.721) 63.94%,hsla(0,0%,100%,0));
+    display: flex;
+    min-height: 100px
+}
+
+.industries-served-section .industry-item:last-child {
+    border-bottom: none
+}
+
+.industries-served-section .industry-name {
+    align-items: center;
+    color: #000;
+    display: flex;
+    font-family: Red Hat Display;
+    font-size: 24px;
+    font-weight: 500;
+    height: 100%;
+    justify-content: center;
+    margin: 0
+}
+
+.industries-served-section .industry-logos {
+    flex: 1;
+    min-width: 0
+}
+
+.industries-served-section .industry-logos .row {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0
+}
+
+.industries-served-section .industry-logos .col-lg-3,.industries-served-section .industry-logos .col-md-4,.industries-served-section .industry-logos .col-sm-6 {
+    padding: 0;
+    position: relative
+}
+
+.industries-served-section .industry-logos .col-lg-3:after,.industries-served-section .industry-logos .col-md-4:after,.industries-served-section .industry-logos .col-sm-6:after {
+    background: linear-gradient(270deg,hsla(0,0%,100%,0) -25.71%,#034f7b 53.13%,hsla(0,0%,100%,0) 131.98%);
+    content: "";
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 1px
+}
+
+.industries-served-section .industry-logos .col-lg-3:last-child:after,.industries-served-section .industry-logos .col-md-4:last-child:after,.industries-served-section .industry-logos .col-sm-6:last-child:after {
+    background: transparent;
+    border-right: none
+}
+
+.industries-served-section .industry-logo-item {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    min-height: 100px;
+    padding: 24px 16px
+}
+
+.industries-served-section .industry-logo-item img {
+    height: auto;
+    max-height: 58px;
+    max-width: 100%;
+    -o-object-fit: contain;
+    object-fit: contain;
+    width: auto
+}
+
+.technology-partners-section {
+    background: #fff
+}
+
+.technology-partners-section .section-padding {
+    padding: 80px 0
+}
+
+.technology-partners-section .container {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 15px;
+    width: 100%
+}
+
+.technology-partners-section .block-title {
+    padding-bottom: 0
+}
+
+.technology-partners-section .block-title h2 {
+    color: #007ac1;
+    display: inline-block;
+    font-family: Playfair Display;
+    font-size: 35px;
+    font-weight: 700;
+    padding-bottom: 14px;
+    position: relative
+}
+
+.technology-partners-section .col-lg-4 {
+    padding: 15px
+}
+
+.technology-partners-section .partner-item {
+    background: #fff;
+    border: 1px solid hsla(0,0%,71%,.82);
+    border-radius: 10px;
+    height: 100%;
+    padding: 45px 40px;
+    position: relative
+}
+
+.technology-partners-section .partner-item:before {
+    background: linear-gradient(133.89deg,#007ac1 12.61%,#003a5b 103.09%);
+    border-radius: 10px;
+    content: "";
+    inset: 0;
+    -webkit-mask: linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    opacity: 0;
+    padding: 1px;
+    pointer-events: none;
+    position: absolute;
+    transition: opacity .3s ease
+}
+
+.technology-partners-section .partner-item:hover {
+    border-color: transparent
+}
+
+.technology-partners-section .partner-item:hover:before {
+    opacity: 1
+}
+
+.technology-partners-section .partner-logo {
+    align-items: center;
+    display: flex;
+    margin: 0 auto 20px;
+    overflow: hidden
+}
+
+.technology-partners-section .partner-logo img {
+    max-height: 55px;
+    max-width: 197px;
+    min-height: 55px;
+    -o-object-fit: contain;
+    object-fit: contain
+}
+
+.technology-partners-section .partner-item h3 {
+    color: #000;
+    font-family: Red Hat Display;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.3;
+    margin-bottom: 15px
+}
+
+.technology-partners-section .partner-item p {
+    align-items: flex-start;
+    color: #000;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    font-family: Red Hat Display;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 0
+}
+
+.testimonials-section.section.section-padding.blue-section {
+    align-items: center;
+    background: radial-gradient(115.35% 113.12% at 125.38% -55.15%,#0281da 4.81%,#004d84 71.15%,#00192b 100%);
+    color: #fff!important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 650px;
+    overflow: hidden;
+    padding: 50px 0;
+    width: 100%
+}
+
+.testimonials-section.section.section-padding.blue-section:before {
+    background: radial-gradient(ellipse 70% 50% at 50% 58%,rgba(30,90,140,.38) 0,transparent 70%),radial-gradient(ellipse 35% 28% at 18% 62%,rgba(20,60,100,.22) 0,transparent 60%),radial-gradient(ellipse 35% 28% at 82% 62%,rgba(20,60,100,.22) 0,transparent 60%);
+    content: "";
+    inset: 0;
+    pointer-events: none;
+    position: absolute;
+    z-index: 0
+}
+
+.testimonials-section h2 {
+    color: #fff;
+    font-family: Playfair Display;
+    font-size: 35px;
+    font-weight: 700;
+    letter-spacing: .4px
+}
+
+.testimonials-section .container {
+    overflow-x: hidden
+}
+
+.testimonials-section .slick-list {
+    overflow-x: hidden;
+    width: 100%
+}
+
+.testimonials-section .slick-slide {
+    flex: 0 0 250px;
+    margin: 0 14px;
+    transition: flex-basis .45s cubic-bezier(.4,0,.2,1),width .45s cubic-bezier(.4,0,.2,1);
+    width: 250px
+}
+
+.testimonials-section .testimonial-author {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    display: flex;
+    flex-direction: column
+}
+
+.testimonials-section .testimonial-item .card-img-wrapper {
+    border: 1px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 4px 14px rgba(0,0,0,.45);
+    height: 100px;
+    margin: 0 auto;
+    overflow: hidden;
+    transition: width .45s cubic-bezier(.4,0,.2,1),height .45s cubic-bezier(.4,0,.2,1),border-color .45s ease;
+    width: 100px
+}
+
+.testimonials-section .author-photo img {
+    display: block;
+    -o-object-fit: cover;
+    object-fit: cover
+}
+
+.testimonials-section .testimonial-item .card-name {
+    color: #fff;
+    font-family: Red Hat Display;
+    font-size: 35px;
+    font-weight: 500;
+    margin-top: 20px
+}
+
+.testimonials-section .testimonial-item .card-content p {
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    color: #fff;
+    display: -webkit-box;
+    font-family: Red Hat Display;
+    font-size: 18px;
+    font-weight: 400;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+.testimonials-section .author-info {
+    width: 100%
+}
+
+.testimonials-section .testimonials-wrapper .slick-slide {
+    opacity: .8;
+    transition: all .4s ease
+}
+
+.testimonials-section .testimonials-wrapper .slick-slide.slick-current.slick-center {
+    transform: scale(1)
+}
+
+.testimonials-section .slick-slide>div {
+    display: flex;
+    flex-direction: column;
+    height: 100%
+}
+
+.testimonials-section .slick-slide.slick-current.slick-center .testimonial-item {
+    background: linear-gradient(145deg,#0b4f6c,#0a6f9c 50%,#084b6e);
+    border-color: rgba(120,190,240,.28);
+    box-shadow: 0 12px 50px rgba(0,0,0,.45),0 0 55px rgba(40,100,160,.2);
+    filter: brightness(1);
+    padding: 48px 32px 38px
+}
+
+.testimonials-section .slick-slide.slick-current.slick-center .author-photo {
+    border-color: hsla(0,0%,100%,.35);
+    height: 86px;
+    width: 86px
+}
+
+.testimonials-section .slick-slide.slick-current.slick-center .author-info>.author-name {
+    font-size: 19px
+}
+
+.testimonials-section .slick-slide.slick-current.slick-center .testimonial-text p {
+    color: rgba(210,232,248,.93);
+    font-size: 14px
+}
+
+.testimonials-section .nav-dots {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 4px
+}
+
+.testimonials-section .nav-dots button {
+    background: rgba(150,195,230,.3);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 10px;
+    transition: background .3s,transform .3s;
+    width: 10px
+}
+
+.testimonials-section .nav-dots button.active {
+    background: #7ab8e0;
+    transform: scale(1.3)
+}
+
+.testimonials-section .nav-dots button:hover {
+    background: rgba(150,195,230,.55)
+}
+
+.testimonials-section .arrow-btn {
+    align-items: center;
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+    background: rgba(20,60,100,.5);
+    border: 1px solid rgba(100,170,220,.2);
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    font-size: 20px;
+    height: 36px;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: background .25s,border-color .25s;
+    width: 36px;
+    z-index: 3
+}
+
+.testimonials-section .arrow-btn:hover {
+    background: rgba(30,80,130,.7);
+    border-color: rgba(120,190,240,.4)
+}
+
+.testimonials-section .arrow-btn.prev {
+    left: 6px
+}
+
+.testimonials-section .arrow-btn.next {
+    right: 6px
+}
+
+.testimonials-wrapper .slick-center {
+    opacity: 1;
+    transform: scale(1)
+}
+
+.contact-business-section .contact-left-box {
+    background: linear-gradient(180deg,#d8f0ff,#87d1ff);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0,100,160,.08);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 100%;
+    padding: 38px 34px 36px
+}
+
+.contact-business-section .contact-left-box>h2 {
+    color: #005386;
+    font-family: Playfair Display;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 22px
+}
+
+.contact-business-section .our-location {
+    border-bottom: 1px solid transparent;
+    border-image-slice: 1;
+    display: grid;
+    flex: 1;
+    gap: 24px 28px;
+    grid-template-columns: 1fr;
+    padding-bottom: 24px
+}
+
+.contact-business-section .location-item:nth-child(3) {
+    grid-column: 1
+}
+
+.contact-business-section .location-item .flag-row {
+    align-items: center;
+    display: flex;
+    gap: 8px;
+    margin-bottom: 4px
+}
+
+.contact-business-section .location-item .flag-row img {
+    height: auto;
+    width: 28px
+}
+
+.contact-business-section .location-item h4 {
+    color: #005386;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0
+}
+
+.contact-business-section .location-item>p {
+    color: #000;
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 0
+}
+
+.contact-business-section .location-item p.phone {
+    align-items: center;
+    color: #2c3e50;
+    display: flex;
+    font-size: 16px;
+    font-weight: 600;
+    gap: 6px;
+    margin-top: 6px
+}
+
+.contact-business-section .location-item p.phone .phone-icon {
+    color: #2c3e50;
+    font-size: 14px
+}
+
+.contact-business-section .direct-contact {
+    margin-top: 24px
+}
+
+.contact-business-section .direct-contact h4 {
+    color: #005386;
+    font-family: Playfair Display;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 16px
+}
+
+.contact-business-section .direct-contact p {
+    align-items: center;
+    color: #000;
+    display: flex;
+    font-family: Red Hat Display;
+    font-size: 16px;
+    font-weight: 500;
+    gap: 8px;
+    margin-bottom: 12px
+}
+
+.contact-business-section .direct-contact p .contact-icon {
+    align-items: center;
+    background: hsla(0,0%,100%,.45);
+    border-radius: 50%;
+    display: flex;
+    flex-shrink: 0;
+    height: 30px;
+    justify-content: center;
+    width: 30px
+}
+
+.contact-business-section .direct-contact p .contact-icon svg {
+    color: #2c3e50;
+    height: 16px;
+    width: 16px
+}
+
+.contact-business-section .direct-contact p a {
+    color: #2c3e50;
+    font-weight: 600
+}
+
+.contact-business-section .contact-form-box {
+    padding-top: 10px
+}
+
+.contact-business-section .contact-form-box h2 {
+    color: #007ac1;
+    font-family: Playfair Display;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 10px
+}
+
+.contact-business-section .contact-form-box>p {
+    color: #3a3939;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 28px
+}
+
+.contact-business-section .cf7-row p {
+    display: flex;
+    gap: 14px;
+    margin-bottom: 14px
+}
+
+.contact-business-section .cf7-row.full {
+    flex-direction: column;
+    position: relative
+}
+
+.contact-business-section .cf7-row input[type=email],.contact-business-section .cf7-row input[type=tel],.contact-business-section .cf7-row input[type=text] {
+    background: #fff;
+    border: 1px solid #bcf0ff;
+    border-radius: 8px;
+    color: #000;
+    flex: 1;
+    font-family: Red Hat Display;
+    font-size: 16px;
+    font-weight: 600;
+    min-width: 0;
+    outline: none;
+    padding: 13px 16px;
+    transition: border-color .25s;
+    width: 100%
+}
+
+.contact-business-section .cf7-row p .wpcf7-spinner {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(0)
+}
+
+.contact-business-section .cf7-row input::-moz-placeholder,.contact-business-section .cf7-row.full textarea::-moz-placeholder {
+    color: #000;
+    font-family: Red Hat Display;
+    font-size: 16px;
+    font-weight: 600
+}
+
+.contact-business-section .cf7-row input::placeholder,.contact-business-section .cf7-row.full textarea::placeholder {
+    color: #000;
+    font-family: Red Hat Display;
+    font-size: 16px;
+    font-weight: 600
+}
+
+.contact-business-section .cf7-row input:focus {
+    border-color: #2e86c1
+}
+
+.contact-business-section .cf7-row.full textarea {
+    background: #fff;
+    border: 1px solid #bcf0ff;
+    border-radius: 8px;
+    color: #000;
+    font-family: Red Hat Display;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 600;
+    max-height: 130px;
+    min-height: 110px;
+    outline: none;
+    padding: 14px 16px;
+    resize: vertical;
+    transition: border-color .25s;
+    width: 100%
+}
+
+.contact-business-section .cf7-row.full textarea:focus {
+    border-color: #007ac1
+}
+
+.contact-business-section .cf7-row.full input[type=submit] {
+    background: #007ac1;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 12px 31.3px 0 rgba(0,0,0,.251)!important;
+    color: #fff;
+    cursor: pointer;
+    font-family: Red Hat Display;
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 4px;
+    padding: 10px;
+    transition: background .25s,transform .15s;
+    width: 100%
+}
+
+.contact-business-section .wpcf7-form-control-wrap {
+    width: 100%
+}
+
+.contact-business-section .cf7-row.full input[type=submit]:hover {
+    background: #2471a3;
+    transform: translateY(-1px)
+}
+
+.contact-business-section .cf7-row.full input[type=submit]:active {
+    transform: translateY(0)
+}
+
+.contact-business-section .socialblock {
+    margin-top: 26px;
+    text-align: center
+}
+
+.contact-business-section .social-heading h4 {
+    background-color: #fff;
+    color: #514c4c;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    padding: 0 40px;
+    position: relative
+}
+
+.contact-business-section .social-heading {
+    position: relative
+}
+
+.contact-business-section .social-heading:before {
+    background: #d3cfcf;
+    content: "";
+    height: 1px;
+    position: absolute;
+    right: 0;
+    top: 33%;
+    width: 100%
+}
+
+.contact-business-section .social-icons {
+    display: flex;
+    gap: 32px;
+    justify-content: space-between
+}
+
+.contact-business-section .social-icons a {
+    align-items: center;
+    color: #2e86c1;
+    display: flex;
+    height: 38px;
+    justify-content: center;
+    transition: color .25s,transform .2s;
+    width: 38px;
+    width: 120px
+}
+
+.contact-business-section .social-icons a:hover {
+    color: #007ac1;
+    transform: translateY(-2px)
+}
+
+.contact-business-section .social-icons a svg {
+    height: 22px;
+    width: 22px
+}
+
+.home-page.faq-section {
+    background-color: #fff;
+    padding-bottom: 20px
+}
+
+.home-page.faq-section .faq-wrapper {
+    max-width: 100%
+}
+
+.home-page.faq-section .container {
+    margin: 0 auto
+}
+
+.home-page.faq-section .block-title {
+    text-align: center
+}
+
+.home-page.faq-section .block-title h2 {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.3;
+    margin: 0
+}
+
+.home-page.faq-section #accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 12px
+}
+
+.home-page.faq-section .faq_card {
+    background-color: #f0f2fa;
+    border-left: 6px solid #007ac1;
+    border-radius: 4px 16px 16px 4px;
+    margin-bottom: 0;
+    overflow: hidden;
+    padding: 0
+}
+
+.home-page.faq-section .faq-header {
+    margin: 0;
+    padding: 0
+}
+
+.home-page.faq-section .card-link {
+    align-items: center;
+    color: #007ac1;
+    cursor: pointer;
+    display: flex;
+    font-size: 1rem;
+    font-size: 16px;
+    font-weight: 600;
+    font-weight: 700;
+    gap: 16px;
+    justify-content: space-between;
+    padding: 30px 32px 0;
+    text-decoration: none;
+    transition: padding .2s ease;
+    width: 100%
+}
+
+.home-page.faq-section .card-link[aria-expanded=false] {
+    padding: 30px 32px
+}
+
+.home-page.faq-section .card-link:after {
+    border-bottom: 2px solid #007ac1;
+    border-right: 2px solid #007ac1;
+    content: "";
+    flex-shrink: 0;
+    height: 8px;
+    margin-top: -4px;
+    transform: rotate(45deg);
+    transition: transform .3s ease;
+    width: 8px
+}
+
+.home-page.faq-section .faq-header a.card-link.collapsed:after,.home-page.faq-section .faq-header a.card-link:after {
+    content: "";
+    position: static
+}
+
+.home-page.faq-section .card-link[aria-expanded=true]:after {
+    margin-top: 4px;
+    transform: rotate(-135deg)
+}
+
+.home-page.faq-section .faq-body {
+    border-top: none;
+    color: #5da0c7;
+    font-size: .9375rem;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.7;
+    padding: 5px 30px 32px
+}
+
+.home-page.faq-section .faq-body p {
+    color: #5da0c7;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 0
+}
+
+.home-page.faq-section .faq-body ul {
+    list-style: circle;
+    margin-left: 18px;
+    padding-left: 0
+}
+
+.home-page.faq-section .faq-body ul li {
+    padding-bottom: 0;
+    padding-left: 4px
+}
+
+@media screen and (max-width: 1399px) {
+    .faq-header,.home-page .faq-body {
+        padding:0
+    }
+}
+
+@media (max-width: 1200px) {
+    .hero-section .hero-wrapper .hero-content h1 {
+        font-size:60px
+    }
+
+    .hero-section .hero-wrapper .hero-content p,.why-choose-elsner-section .feature-item h4 {
+        font-size: 16px
+    }
+
+    .counter-section .counter-wrapper .counter-item .counter-number {
+        font-size: 26px
+    }
+
+    .counter-section .counter-wrapper .counter-item .counter-label p {
+        line-height: normal
+    }
+
+    .hero-section {
+        min-height: 650px
+    }
+}
+
+@media (max-width: 991px) {
+    .technology-partners-section .col-lg-4 {
+        flex:0 0 50%;
+        max-width: 50%
+    }
+
+    .success-stories-section .success-stories-wrapper .row .case-study-item {
+        margin-bottom: 30px
+    }
+
+    .why-choose-elsner-section {
+        position: relative
+    }
+
+    .why-choose-elsner-section:before {
+        background: linear-gradient(rgba(97,191,245,.2) -22.34%,#007ac1 95.79%);
+        border-radius: 20px;
+        content: "";
+        inset: 0;
+        bottom: 40px;
+        margin: 0 15px;
+        -webkit-mask: linear-gradient(#fff,#fff 0) content-box,linear-gradient(#fff,#fff 0);
+        -webkit-mask-composite: xor;
+        mask: linear-gradient(#fff,#fff 0) content-box exclude,linear-gradient(#fff,#fff 0);
+        padding: 2px;
+        pointer-events: none;
+        position: absolute;
+        transform: translateY(38px);
+        z-index: 1
+    }
+
+    .client-logos-section .block-title h2 {
+        font-size: 28px
+    }
+
+    .counter-section .counter-wrapper .counter-item {
+        margin-bottom: 16px
+    }
+
+    .meet-our-team-section .event-card {
+        margin-bottom: 30px
+    }
+
+    .why-choose-elsner-section-wrapper:before {
+        display: none
+    }
+
+    .why-choose-elsner-section .feature-item {
+        margin-top: 15px
+    }
+
+    .why-choose-elsner-section .section-description {
+        margin-bottom: 0
+    }
+
+    .industries-served-section .industry-logos .col-lg-3:last-child:after,.industries-served-section .industry-logos .col-md-4:last-child:after,.industries-served-section .industry-logos .col-sm-6:last-child:after {
+        background-color: none
+    }
+
+    .hero-section .hero-wrapper .hero-content h1 {
+        font-size: 50px
+    }
+
+    .contact-business-section .contact-form-box h2,.cta-banner-section .cta-title {
+        font-size: 32px
+    }
+
+    .cta-banner-section .cta-title,.featured-in-section .block-title h2,.industries-served-section .block-title h2,.meet-our-team-section .block-title h2,.our-expertise-section .block-title h2,.success-stories-section .block-title h2,.technology-partners-section .block-title h2,.testimonials-section .block-title h2,.why-choose-elsner-section .block-title h2 {
+        font-size: 28px
+    }
+
+    .meet-our-team-section .event-card {
+        height: auto
+    }
+
+    .why-choose-elsner-section .features-wrapper {
+        padding: 40px
+    }
+
+    .home-page.faq-section .faq_card {
+        padding: 25px
+    }
+}
+
+@media (max-width: 768px) {
+    .page-template-Rev-Template .section-padding {
+        margin:40px 0;
+        padding: 0
+    }
+
+    .contact-business-section .location-item h4 {
+        font-size: 14px
+    }
+
+    .contact-business-section .location-item>p {
+        font-size: 16px
+    }
+
+    .contact-business-section .location-item p.phone {
+        font-size: 14px
+    }
+
+    .cta-banner-section {
+        padding: 40px 0
+    }
+
+    .hero-section .hero-wrapper .hero-content h1 {
+        font-size: 44px
+    }
+
+    .cta-banner-section .cta-banner-wrapper {
+        border-radius: 16px;
+        padding: 40px 30px
+    }
+
+    .cta-banner-section .cta-title {
+        font-size: 32px
+    }
+
+    .cta-banner-section .cta-description {
+        font-size: 16px
+    }
+
+    .cta-banner-section .btn {
+        font-size: 15px;
+        padding: 14px 28px
+    }
+
+    .why-choose-elsner-section .features-wrapper {
+        padding-bottom: 40px
+    }
+
+    .why-choose-elsner-section:before {
+        transform: translateY(34px)
+    }
+
+    .industries-served-section .industry-item {
+        align-items: stretch;
+        flex-direction: column
+    }
+
+    .cta-banner-section .cta-title,.featured-in-section .block-title h2,.industries-served-section .block-title h2,.meet-our-team-section .block-title h2,.our-expertise-section .block-title h2,.success-stories-section .block-title h2,.technology-partners-section .block-title h2,.testimonials-section .block-title h2,.why-choose-elsner-section .block-title h2 {
+        font-size: 26px;
+        padding: 0
+    }
+
+    .industries-served-section .industry-name {
+        border-right: none;
+        font-size: 16px;
+        justify-content: center;
+        min-width: unset;
+        padding: 14px 16px;
+        text-align: center;
+        width: 100%
+    }
+
+    .our-expertise-section .block-title h2 .our-expertise-section .expertise-item {
+        padding: 30px
+    }
+
+    .our-expertise-section .expertise-item h3 {
+        font-size: 24px
+    }
+
+    .client-logos-section .client-logos-wrapper .client-logo-item img {
+        max-width: 120px
+    }
+
+    .industries-served-section .industry-logo-item {
+        border-bottom: 0
+    }
+
+    .client-logos-section .block-title h2 {
+        font-size: 26px
+    }
+
+    .success-stories-wrapper .case-study-item {
+        margin-bottom: 20px
+    }
+
+    .our-expertise-section .block-title h2:after,.our-expertise-section .block-title h2:before {
+        display: none
+    }
+
+    .page-template-Rev-Template .featured-in-section {
+        font-size: 28px;
+        margin-top: 20px
+    }
+
+    .technology-partners-section .partner-item {
+        padding: 35px
+    }
+
+    .contact-business-section .contact-form-box {
+        padding-top: 33px
+    }
+
+    .client-logos-section .client-logos-section-wrapper .block-title {
+        border: none;
+        text-align: center
+    }
+
+    .client-logos-section .client-logos-section-wrapper {
+        flex-direction: column
+    }
+
+    .home-page.faq-section {
+        padding: 60px 16px
+    }
+
+    .home-page.faq-section .block-title h2 {
+        font-size: 1.625rem
+    }
+
+    .home-page.faq-section .card-link {
+        font-size: .9375rem
+    }
+
+    .home-page.faq-section .faq-body {
+        font-size: .9rem
+    }
+}
+
+@media (max-width: 575px) {
+    .technology-partners-section .partner-item {
+        padding:30px
+    }
+
+    .testimonials-section .block-title h2 {
+        font-size: 22px
+    }
+
+    .technology-partners-section .col-lg-4 {
+        flex: 0 0 100%;
+        max-width: 100%
+    }
+
+    .page-template-Rev-Template .featured-in-section .block-title h2:after,.page-template-Rev-Template .featured-in-section .block-title h2:before {
+        display: none
+    }
+
+    .hero-section .hero-wrapper .hero-content h1 {
+        font-size: 32px
+    }
+
+    .hero-section {
+        min-height: 550px
+    }
+
+    .industries-served-section .industry-logo-item,.industries-served-section .industry-name {
+        min-height: auto;
+        padding: 10px
+    }
+
+    .industries-served-section .industry-logos .col-lg-3:after,.industries-served-section .industry-logos .col-md-4:after,.industries-served-section .industry-logos .col-sm-6:after {
+        display: none
+    }
+
+    .our-expertise-section .expertise-item {
+        padding: 30px
+    }
+
+    .technology-partners-section .section-padding {
+        padding: 50px 0
+    }
+
+    .technology-partners-section .block-title h2 {
+        font-size: 26px
+    }
+
+    .client-logos-section .block-title h2 {
+        font-size: 24px
+    }
+
+    .counter-section .counter-wrapper {
+        padding: 34px
+    }
+
+    .client-logos-section .client-logos-wrapper .client-logo-item img {
+        max-width: 70px
+    }
+
+    .success-stories-section .btn-primary {
+        font-size: 18px
+    }
+
+    .contact-business-section .cf7-row p {
+        flex-wrap: wrap;
+        gap: 1px
+    }
+
+    .contact-business-section .our-location {
+        grid-template-columns: 1fr
+    }
+
+    .counter-wrapper .counter-icon img {
+        max-width: 50px
+    }
+
+    .our-expertise-section .block-title {
+        margin-bottom: 20px
+    }
+
+    .home-page.faq-section .faq_card {
+        border-radius: 4px 8px 8px 4px;
+        padding: 20px
+    }
+}
+
+@media (max-width: 480px) {
+    .cta-banner-section .cta-banner-wrapper {
+        padding:32px 24px
+    }
+
+    .cta-banner-section .cta-title {
+        font-size: 26px;
+        margin-bottom: 20px
+    }
+
+    .cta-banner-section .cta-description {
+        font-size: 15px
+    }
+
+    .industries-served-section .block-title h2 {
+        font-size: 22px
+    }
+
+    .industries-served-section .industry-logo-item {
+        min-height: 80px;
+        padding: 18px 10px
+    }
+
+    .industries-served-section .industry-logo-item img {
+        max-height: 44px
+    }
+
+    .featured-in-section .row {
+        row-gap: 19px
+    }
+
+    .why-choose-elsner-section:before {
+        bottom: 20px;
+        margin: 0 10px;
+        transform: translateY(34px)
+    }
+
+    .client-logos-section .block-title h2 {
+        font-size: 22px
+    }
+
+    .home-page.faq-section {
+        padding: 48px 12px
+    }
+
+    .home-page.faq-section .block-title h2 {
+        font-size: 1.375rem
+    }
+
+    .home-page.faq-section .card-link {
+        font-size: .875rem
+    }
+
+    .faq-section .faq-body p,.home-page.faq-section .faq-body {
+        font-size: .875rem;
+        padding: 3px 0 0
+    }
+
+    .home-page.faq-section #accordion {
+        gap: 8px
+    }
+
+    .home-page.faq-section .faq_card {
+        border-left: 3px solid #007ac1
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px)
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0)
+    }
+}
+
+.testimonials-section {
+    padding: 80px 0;
+    position: relative
+}
+
+.testimonials-wrapper .slick-dots {
+    left: auto;
+    margin-top: 32px;
+    max-width: calc(100% - 460px);
+    padding-left: 0;
+    right: 0;
+    text-align: left
+}
+
+.testimonials-wrapper .slick-dots li button:before {
+    color: #4a6fa5;
+    font-size: 10px;
+    opacity: 1
+}
+
+.testimonials-wrapper .slick-dots li.slick-active button:before {
+    color: #1e90ff;
+    opacity: 1
+}
+
+.testimonial-card-new {
+    align-items: center;
+    display: flex;
+    gap: 60px;
+    padding: 20px 10px 10px
+}
+
+.testimonial-play {
+    align-items: center;
+    border-radius: 50%;
+    bottom: 19px;
+    box-shadow: 0 4px 20px rgba(0,0,0,.4);
+    cursor: pointer;
+    display: flex;
+    height: 60px;
+    justify-content: center;
+    position: absolute;
+    right: 90px;
+    text-decoration: none;
+    transform: translate(-50%,-50%);
+    transition: transform .25s ease,background .2s ease,box-shadow .2s ease;
+    width: 60px;
+    z-index: 4
+}
+
+.testimonial-play svg {
+    display: block;
+    height: 22px;
+    margin-left: 4px;
+    width: 22px
+}
+
+.testimonial-play:hover {
+    background: #fff;
+    box-shadow: 0 6px 28px rgba(0,0,0,.5);
+    transform: translate(-50%,-50%) scale(1.1)
+}
+
+.testimonial-play--no-video {
+    display: none
+}
+
+@media (max-width: 900px) {
+    .testimonial-play {
+        left:125px
+    }
+}
+
+@media (max-width: 768px) {
+    .testimonial-play {
+        left:50%;
+        transform: translate(-50%,-50%)
+    }
+
+    .testimonial-play:hover {
+        transform: translate(-50%,-50%) scale(1.1)
+    }
+}
+
+.testimonial-left {
+    flex: 0 0 380px;
+    height: 380px;
+    max-width: 380px;
+    position: relative
+}
+
+.testimonial-left:after {
+    bottom: 0;
+    height: 320px;
+    opacity: .4;
+    right: 0;
+    transform: rotate(6deg);
+    width: 280px;
+    z-index: 1
+}
+
+.testimonial-left:before {
+    bottom: 10px;
+    height: 340px;
+    left: 20px;
+    opacity: .65;
+    transform: rotate(-3deg);
+    width: 300px;
+    z-index: 2
+}
+
+.testimonial-left img {
+    border: 2px solid #1e5cbf;
+    border-radius: 16px;
+    display: block;
+    filter: grayscale(30%);
+    height: 360px;
+    left: 0;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: top center;
+    object-position: top center;
+    position: absolute;
+    top: 0;
+    width: 320px;
+    z-index: 3
+}
+
+.testimonial-right {
+    flex: 1;
+    padding-right: 20px
+}
+
+.testimonial-author {
+    align-items: flex-start;
+    border-left: 4px solid #e8622a;
+    display: flex;
+    gap: 8px;
+    margin-bottom: 28px;
+    padding-left: 20px
+}
+
+.testimonial-author h3 {
+    color: #fff;
+    font-size: 28px;
+    font-weight: 800;
+    margin: 0
+}
+
+.testimonial-author p {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 500;
+    margin: 0
+}
+
+.testimonial-content {
+    border-bottom: 1px solid hsla(0,0%,100%,.1);
+    margin-bottom: 28px;
+    margin-top: 22px;
+    padding-bottom: 30px
+}
+
+.testimonial-content p {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.8;
+    margin: 0
+}
+
+.testimonial-rating {
+    font-size: 22px;
+    letter-spacing: 2px;
+    margin-bottom: 20px
+}
+
+.testimonial-rating .fa-star {
+    color: #e8622a
+}
+
+.block-title.text-center.white h2 {
+    font-size: 42px;
+    font-weight: 700
+}
+
+.block-title.text-center.white h2 span {
+    color: #f70;
+    font-size: 42px;
+    font-weight: 700
+}
+
+.testimonials-wrapper ul.slick-dots li button {
+    border: 1px solid #fff
+}
+
+.testimonials-wrapper ul.slick-dots li.slick-active button {
+    background: #fff;
+    width: 10px
+}
+
+.testimonial-logo img {
+    max-height: 40px;
+    opacity: .8;
+    width: auto
+}
+
+.testi-bottom-row {
+    bottom: 12px;
+    position: absolute;
+    right: 0
+}
+
+.testimonials-section .container {
+    position: relative
+}
+
+.testimonials-wrapper .slick-dots {
+    left: 20px;
+    max-width: 100%
+}
+
+.testimonials-section.section.section-padding.blue-section {
+    background-image: url(https://elsner-new.elsnerdev.com/wp-content/uploads/2026/06/Frame_1547754122_1781246280618-2-3.png);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative
+}
+
+.testimonials-wrapper .slick-dots li button {
+    background: #fff
+}
+
+.testimonials-wrapper ul.slick-dots li.slick-active button {
+    background: #37b5ff;
+    border: 2px solid #fff;
+    transform: scale(1.3)
+}
+
+.testi-bottom-row .testi-read-more {
+    color: #fff
+}
+
+.testi-bottom-row .testi-read-more:hover {
+    color: #f70
+}
+
+.testi-bottom-row .testi-read-more span {
+    align-items: center;
+    display: inline-flex;
+    height: 24px;
+    justify-content: center;
+    margin-left: 8px;
+    width: 24px
+}
+
+.testimonial-play {
+    background: transparent
+}
+
+.testimonial-play:hover svg {
+    fill: #0a1f3c
+}
+
+.testimonial-play svg {
+    fill: #fff
+}
+
+.testimonials-section .testimonials-wrapper .slick-slide {
+    transform: scale(1)
+}
+
+.testi-image-slide {
+    outline: none
+}
+
+.testi-image-slide .testimonial-left {
+    overflow: hidden;
+    position: relative
+}
+
+.testi-image-slide .testimonial-left img {
+    display: block;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    transform: scale(1.08);
+    transition: transform .9s cubic-bezier(.25,.46,.45,.94),filter .7s ease;
+    width: 100%
+}
+
+.testi-image-slider .slick-current .testimonial-left img {
+    filter: brightness(1);
+    transform: scale(1)
+}
+
+.testi-content-slider {
+    flex: 1;
+    overflow: hidden
+}
+
+.testi-content-slide {
+    outline: none
+}
+
+.testi-content-slide .testimonial-right {
+    background: none;
+    border-radius: 0 16px 16px 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 400px;
+    padding: 48px 44px
+}
+
+.testimonials-main-slider-wrapper {
+    align-items: center;
+    display: flex;
+    gap: 60px;
+    padding: 20px 10px 10px
+}
+
+.testimonials-image-wrapper {
+    flex: 0 0 480px;
+    max-width: 480px;
+    position: relative
+}
+
+.testimonials-content-wrapper {
+    flex: 1;
+    max-width: calc(100% - 540px);
+    padding-right: 20px;
+    width: 100%
+}
+
+.testimonial-card-new {
+    width: 100%
+}
+
+.testimonials-image-slider .slick-slide {
+    opacity: .4;
+    transform: scale(.85)
+}
+
+.testimonials-image-slider .slick-center {
+    opacity: 1;
+    transform: scale(1);
+    z-index: 10
+}
+
+.testi-image-slide .testimonial-left img {
+    transform: scale(1)
+}
+
+.testimonials-image-slider .slick-slide:not(.slick-center) {
+    z-index: 1
+}
+
+.testi-image-slide .testimonial-left {
+    border-radius: 0;
+    height: 400px;
+    width: 100%
+}
+
+.testimonials-section .testimonials-image-slider .slick-slide {
+    margin: 0
+}
+
+.testimonials-image-slider .slick-slide {
+    opacity: .5;
+    transform: scale(.8);
+    transition: all .4s ease;
+    z-index: 1
+}
+
+.testimonials-image-slider .slick-center,.testimonials-image-slider .slick-slide.slick-active {
+    opacity: 1;
+    position: relative;
+    transform: scale(1);
+    z-index: 10
+}
+
+.testimonials-image-slider .slick-center+.slick-slide {
+    transform: translateX(-40px) scale(.9)
+}
+
+.testimonials-image-slider .slick-center~.slick-slide {
+    transform: translateX(-80px) scale(.8);
+    transform: translateX(-320px) scale(.8) rotate(5deg)
+}
+
+.testimonial-play {
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+    background: hsla(0,0%,100%,.11);
+    background: rgba(255,119,0,.361);
+    bottom: 20px;
+    right: 20px;
+    transform: none
+}
+
+.testimonial-play:hover {
+    transform: scale(1.1)
+}
+
+@media (max-width: 1024px) {
+    .testi-image-slider {
+        min-width:300px;
+        width: 300px
+    }
+
+    .testi-image-slide .testimonial-left {
+        height: 360px;
+        width: 300px
+    }
+
+    .testi-content-slide .testimonial-right {
+        min-height: 360px;
+        padding: 36px 32px
+    }
+}
+
+@media (max-width: 991px) {
+    .testimonials-content-wrapper {
+        max-width:100%;
+        padding-right: 0;
+        width: 100%
+    }
+
+    .testimonials-main-slider-wrapper {
+        flex-direction: column;
+        gap: 30px;
+        padding: 0 10px 10px
+    }
+
+    .testimonials-image-slider .slick-center+.slick-slide,.testimonials-image-slider .slick-center~.slick-slide {
+        transform: scale(1)
+    }
+
+    .testi-image-slide .testimonial-left img {
+        left: 0
+    }
+
+    .block-title.text-center.white h2,.block-title.text-center.white h2 span {
+        font-size: 28px
+    }
+
+    .testimonial-card-new {
+        flex-direction: column;
+        gap: 40px
+    }
+
+    .testimonial-left {
+        display: flex;
+        flex: none;
+        height: 300px;
+        justify-content: center;
+        max-width: 100%;
+        width: 100%
+    }
+
+    .testimonial-left:before {
+        height: 270px;
+        left: 50%;
+        transform: translateX(-70%) rotate(-3deg);
+        width: 240px
+    }
+
+    .testimonial-left:after {
+        height: 250px;
+        left: 50%;
+        right: auto;
+        transform: translateX(-30%) rotate(6deg);
+        width: 220px
+    }
+
+    .testimonial-left img {
+        height: 290px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 260px
+    }
+
+    .testimonial-right {
+        padding-right: 0
+    }
+
+    .testimonials-wrapper .slick-dots {
+        margin-top: 40px;
+        max-width: 100%;
+        position: static;
+        text-align: center
+    }
+
+    .testi-bottom-row {
+        bottom: 60px;
+        right: 50%;
+        text-align: center;
+        transform: translateX(50%);
+        width: calc(100% - 30px)
+    }
+}
+
+@media (max-width: 767px) {
+    .testimonials-image-wrapper {
+        flex:0 0 100%;
+        max-width: 100%;
+        width: 100%
+    }
+
+    .testimonial-play {
+        left: auto;
+        right: 20px
+    }
+
+    .testimonial-card-new {
+        padding: 0
+    }
+
+    .testimonials-section .slick-slide {
+        margin: 0
+    }
+
+    .block-title.text-center.white h2,.block-title.text-center.white h2 span {
+        font-size: 26px
+    }
+
+    .testimonial-author p {
+        font-size: 18px
+    }
+
+    .testimonial-author {
+        gap: 10px
+    }
+
+    .testimonial-content {
+        margin-bottom: 0
+    }
+
+    .testimonial-content p {
+        font-size: 14px
+    }
+
+    .testi-image-slider {
+        min-width: unset;
+        width: 100%
+    }
+
+    .testi-image-slide .testimonial-left {
+        border-radius: 16px 16px 0 0;
+        height: 260px;
+        width: 100%
+    }
+
+    .testi-content-slide .testimonial-right {
+        border-radius: 0 0 16px 16px;
+        min-height: unset;
+        padding: 28px 24px
+    }
+}
+
+@media (max-width: 576px) {
+    .testimonial-left {
+        height:260px
+    }
+
+    .testimonial-left img {
+        height: 250px;
+        width: 220px
+    }
+
+    .testimonial-left:before {
+        height: 230px;
+        width: 200px
+    }
+
+    .testimonial-left:after {
+        height: 215px;
+        width: 190px
+    }
+
+    .testimonial-author h3 {
+        font-size: 18px
+    }
+
+    .block-title.text-center.white h2,.block-title.text-center.white h2 span {
+        font-size: 22px
+    }
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+
+    const wrapper = document.querySelector('.testimonials-wrapper');
+    if (!wrapper) return;
+
+    const items = wrapper.querySelectorAll('.testimonial-item');
+    if (!items.length) return;
+
+    if (wrapper.querySelector('.testi-dual-wrapper')) return;
+
+    const imageSlider = document.createElement('div');
+    imageSlider.className = 'testi-image-slider';
+
+    const contentSlider = document.createElement('div');
+    contentSlider.className = 'testi-content-slider';
+
+    items.forEach(item => {
+        const left = item.querySelector('.testimonial-left')?.cloneNode(true);
+        const right = item.querySelector('.testimonial-right')?.cloneNode(true);
+
+        if (left) {
+            const imageSlide = document.createElement('div');
+            imageSlide.className = 'testi-image-slide';
+            imageSlide.appendChild(left);
+            imageSlider.appendChild(imageSlide);
+        }
+
+        if (right) {
+            const contentSlide = document.createElement('div');
+            contentSlide.className = 'testi-content-slide';
+            contentSlide.appendChild(right);
+            contentSlider.appendChild(contentSlide);
+        }
+    });
+
+    wrapper.innerHTML = '';
+
+    const dualWrapper = document.createElement('div');
+    dualWrapper.className = 'testi-dual-wrapper';
+
+    dualWrapper.appendChild(imageSlider);
+    dualWrapper.appendChild(contentSlider);
+
+    wrapper.appendChild(dualWrapper);
+
+    // Initialize your vanilla JS slider here
+});
+</script>

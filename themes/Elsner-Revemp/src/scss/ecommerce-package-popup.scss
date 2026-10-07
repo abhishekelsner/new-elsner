@@ -1,0 +1,200 @@
+/*Ecommerce Popup*/
+$redhat-fonts-style: "Red Hat Display";
+$color-orange: #ff7700;
+
+.page-template-ecommerce-maintenence-package {
+    .modal-backdrop.show {
+        opacity: 1;
+        background: rgba(0, 0, 0, 0.70);
+        backdrop-filter: blur(2px);
+    }
+}
+
+div#ecommerce-popup {
+    z-index: 9999;
+
+    .modal-header {
+        position: absolute;
+        top: 0;
+        z-index: 2;
+        left: auto;
+        right: 0;
+        border: none;
+        padding: 0 0;
+
+        .close {
+            background: #fff;
+            border: 1px solid #404040;
+            border-radius: 6px;
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 34px;
+            line-height: 1;
+            font-weight: 700;
+            margin: 20px 17px 10px 10px;
+        }
+    }
+
+    .terms-and-condition {
+        color: #969696;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .modal-body {
+        padding: 0;
+    }
+
+    .modal-dialog {
+        max-width: 878px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        transform: translateY(0);
+        margin: 0 auto;
+    }
+
+    // &:after {
+    //   background: rgba(0, 0, 0, 0.70);
+    //   backdrop-filter: blur(2px);
+    //   content: "";
+    //   position: fixed;
+    //   top: 0;
+    //   left: 0;
+    //   width: 100%;
+    //   height: 100%;
+    //   z-index: -1;
+    // }
+    .flex-row {
+        display: flex;
+    }
+
+    .form-headingtext {
+        h2 {
+            font-family: $redhat-fonts-style;
+            font-size: 30px;
+            max-width: 321px;
+            width: 100%;
+            line-height: 1.3333;
+            margin-bottom: 10px;
+
+            span {
+                color: $color-orange;
+            }
+        }
+    }
+
+    .col.modal-right-col.modal-form {
+        position: relative;
+        z-index: 1;
+        color: #404040;
+        width: 100%;
+        max-width: 49%;
+        padding: 82px 30px 40px;
+
+        &:after {
+            content: "";
+            border-radius: 0px 20px 20px 0px;
+            background: #FFF;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            backdrop-filter: blur(2px);
+        }
+
+    }
+
+    .ecommerce-left-image {
+        text-align: right;
+    }
+
+    .ecommerce-left-image>img {
+        width: 100%;
+        object-fit: cover;
+        object-position: center center;
+        border-radius: 15px 0 0 15px;
+    }
+
+    .col.modal-left-col.modal-info {
+        padding: 20px 0 20px 20px;
+        max-width: 51%;
+        width: 100%;
+    }
+
+    .modal-dialog .modal-content {
+        background: #005282;
+        border-radius: 20px;
+        color: #fff;
+    }
+
+    span.title-label {
+        color: #808080;
+        font-size: 16px;
+        margin-bottom: 15px;
+        display: block;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    .form-group+p {
+        position: relative;
+
+        span.wpcf7-spinner {
+            position: absolute;
+            left: auto;
+            right: 0;
+            top: 15px;
+            margin: 0 10px;
+        }
+    }
+
+    .contact-form.project-form {
+        margin-top: 30px;
+    }
+
+    .wpcf7-form-control:not(.wpcf7-submit) {
+        border-radius: 6px;
+        border: 1px solid #C0C0C0;
+        background: #FFF;
+        padding: 8px 14px;
+        font-size: 16px;
+        width: 100%;
+    }
+
+    .wpcf7-submit {
+        width: 100%;
+        border-radius: 6px;
+        background: #F56F07;
+        padding: 10px 20px;
+        letter-spacing: 0;
+
+        &:hover {
+            color: #f56f07;
+            background: transparent;
+        }
+
+        &:focus {
+            color: #fff;
+        }
+    }
+
+    .wpcf7 form {
+        .wpcf7-not-valid-tip {
+            font-size: 12px;
+        }
+
+        .wpcf7-response-output {
+            font-size: 12px;
+            margin: 10px 0 5px 0;
+            text-align: center;
+        }
+    }
+}

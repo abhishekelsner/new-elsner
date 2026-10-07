@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700&family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+$color-black: #000;
+$color-white: #fff;
+$color-gray: #4d4d4d;
+$color-orange: #ff7700;
+$color_red: #dc3232;
+$color_green: #46b450;
+
+$primary-100: #002840;
+$primary-200: #005282;
+$primary-300: #007ac1;
+$primary-400: #00a7e1;
+$primary-500: #bee7ff;
+$primary-600: #f0faff;
+
+$secondary-100: #c5c5c5;
+$secondary-200: #707070;
+$secondary-300: #e9e9e9;
+$secondary-400: #f3f3f3;
+
+$transpatent-color: transparent;
+
+$playfair-fonts-style: "Playfair Display";
+$redhat-fonts-style: "Red Hat Display";
+$typebasefallback: sans-serif, serif, monospace;
+$redhat_fonts: $redhat-fonts-style, $typebasefallback;
+$playfair_font: $playfair-fonts-style, $typebasefallback;
+$abril_fonts: "Abril Fatface", sans-serif;
+
+
+$font-awesome: "Font Awesome 6 Free";
+
+$body-font: (
+  //null: 13px,
+  null: 16px,
+  768px: 18px,
+  1620px: 18px
+);
+
+$h1-font: (
+  null: 40px,
+  768px: 52px,
+  1620px: 70px,
+);
+
+$h2-font: (
+  null: 30px,
+  768px: 32px,
+  1620px: 38px,
+);
+
+$h3-font: (
+  null: 22px,
+  768px: 24px,
+  1399px: 26px,
+  1620px: 30px,
+);
+
+$h4-font: (
+  null: 18px,
+  768px: 20px,
+  1620px: 24px,
+);
+
+$h5-font: (
+  null: 16px,
+  768px: 18px,
+  1620px: 20px,
+);
+
+$h6-font: (
+  null: 16px,
+  768px: 18px,
+  1620px: 18px,
+);
+
+$font-heading: (
+  null: 38px,
+  768px: 42px,
+  1620px: 48px,
+);
+
+$page-heading1: (
+  null: 38px,
+  768px: 38px,
+  1620px: 42px,
+);
+
+$font-heading1: (
+  null: 42px,
+  768px: 50px,
+  1620px: 55px,
+);
+$font-heading2: (
+  null: 32px,
+  768px: 36px,
+  1620px: 42px,
+);
+$font-heading3: (
+  null: 24px,
+  768px: 28px,
+  1620px: 36px,
+);
+
+$font-xxxl: (
+  null: 22px,
+  768px: 26px,
+  1620px: 32px,
+);
+$font-xxl: (
+  null: 20px,
+  768px: 24px,
+  1620px: 28px,
+);
+
+$font-xl: (
+  null: 16px,
+  768px: 18px,
+  1399px: 20px,
+  1620px: 24px,
+);
+
+$font-lg: (
+  null: 16px,
+  768px: 18px,
+  1620px: 20px,
+);
+
+$font-md: (
+  null: 16px,
+  768px: 18px,
+  1399px: 18px,
+  1620px: 18px,
+);
+$font-sm: (
+  null: 16px,
+  768px: 16px,
+);
+$font-xs: (
+  null: 14px,
+  768px: 16px,
+);
+$font-xxs: 12px;
+
+@mixin font-size($fs-map) {
+  @each $fs-breakpoint, $fs-font-size in $fs-map {
+    @if $fs-breakpoint ==null {
+      font-size: $fs-font-size;
+    }
+
+    @else {
+      @media screen and (min-width: $fs-breakpoint) {
+        font-size: $fs-font-size;
+      }
+    }
+  }
+}
