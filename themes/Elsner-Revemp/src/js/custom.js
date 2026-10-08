@@ -140,7 +140,8 @@ jQuery(document).ready(function (e) {
 			e(".client-testimonial-seciton h5").html(i);
 		}),
 		e(".wright_review").click(function () {
-			window.open("https://g.page/r/CajOGNhGyszeEB0/review", "_blank", "width=600,height=400");
+			// window.open("https://g.page/r/CajOGNhGyszeEB0/review", "_blank", "width=600,height=400");
+			window.open("https://g.page/r/CajOGNhGyszeEB0/review", "_blank", "width=600,height=400,noopener,noreferrer");
 		});
 
 	jQuery(".clutch-badges-slider.slick-slider").slick({
