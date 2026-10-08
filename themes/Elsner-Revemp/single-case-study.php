@@ -21,19 +21,7 @@ get_header();
 $id = '';
 while (have_posts()) : the_post();
 
-
-    // $case_study_form = get_field('case_study_form');
-    // if(empty($case_study_form)){
-    //     get_template_part('template-parts/single-portfolio/work-detail-banner', 'section');
-    //     get_template_part('template-parts/single-portfolio/work-detail-img', 'section');
-    //     get_template_part('template-parts/single-portfolio/challenge', 'section');
-    //     get_template_part('template-parts/single-portfolio/solution-provided', 'section');
-    // get_template_part('template-parts/single-portfolio/work-idea', 'section', array('post_id' => get_the_ID()));
-    // }
-    
-    // get_template_part('template-parts/single-portfolio/request-quote', 'section', array('post_id' => get_the_ID()));
-    //get_template_part('template-parts/single-portfolio/project-making', 'section');
-    
+   
     $checked_display = (array) get_field('checked_display_new');
 
     if ( in_array('yes', $checked_display, true) ) {
@@ -58,9 +46,7 @@ while (have_posts()) : the_post();
         get_template_part('template-parts/single-case-study/recent-new-portfolio-projects', 'section', ['post_id' => get_the_ID()]);
     }
 
-    //get_template_part('template-parts/single-portfolio/project-team', 'section');
 endwhile;
 
-//get_template_part('template-parts/global-template/get-in-touch', 'section', array('post_id' => get_the_ID()));
 
 get_footer();
