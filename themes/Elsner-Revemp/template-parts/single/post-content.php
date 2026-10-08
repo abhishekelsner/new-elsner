@@ -182,7 +182,7 @@ global $contact_us_link;
                 <div class="blog_footer">
                     <div class="author_thumbnail">
                         <div class="thumb_cover">
-                            <img src="https://www.elsner.com/wp-content/uploads/2024/09/Tarun-Bansal.png" width="160" height="160"  rel="noopener noreferrer">
+                            <img src="https://www.elsner.com/wp-content/uploads/2024/09/Tarun-Bansal.png" width="160" height="160" alt="tarun-bansal">
                         </div>
                         <div class="author-desc">
                             <h4>About Author</h4>
@@ -212,7 +212,7 @@ global $contact_us_link;
                 <div class="blog_footer">
                     <div class="author_thumbnail">
                         <div class="thumb_cover">
-                            <img src="https://www.elsner.com/wp-content/uploads/2024/09/Dipak-patil.png" width="160" height="160"  rel="noopener noreferrer">
+                            <img src="https://www.elsner.com/wp-content/uploads/2024/09/Dipak-patil.png" width="160" height="160" alt="deepak-paatil">
                         </div>
                         <div class="author-desc">
                             <h4>About Author</h4>
@@ -241,7 +241,7 @@ global $contact_us_link;
                 <div class="blog_footer">
                     <div class="author_thumbnail">
                         <div class="thumb_cover">
-                            <img src="https://www.elsner.com/wp-content/uploads/2024/09/Manoj-Mondal.png" width="160" height="160"  rel="noopener noreferrer">
+                            <img src="https://www.elsner.com/wp-content/uploads/2024/09/Manoj-Mondal.png" width="160" height="160" alt="manoj-mondal">
                         </div>
                         <div class="author-desc">
                             <h4>About Author</h4>
