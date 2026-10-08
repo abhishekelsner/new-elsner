@@ -21,13 +21,13 @@ $value                  = $parts[1];
             <div class="col-md-6">
                 <div class="talk-us-content">
                     <div class="heading-wrapper text-left white-text">
-                        <h2><?php echo str_replace('%page_title%', ucfirst($value . ' Developer'), $section_title); ?></h2>
+                        <h2><?php echo esc_html(str_replace('%page_title%', ucfirst($value . ' Developer'), $section_title)); ?></h2>
                     </div>
                     <div class="cont">
                         <?php if (have_rows('feature', 'option')) : ?>
                             <?php while (have_rows('feature', 'option')) : the_row(); ?>
                                 <h2><span style="font-weight: 400;"><?php echo get_sub_field('feature_label'); ?></span></h2>
-                                <p><?php echo str_replace('%page_title%', ucfirst($value), get_sub_field('feature_content')); ?></p>
+                                <p><?php echo esc_html(str_replace('%page_title%', ucfirst($value), get_sub_field('feature_content'))); ?></p>
                             <?php endwhile; ?>
                         <?php endif; ?>
                     </div>
