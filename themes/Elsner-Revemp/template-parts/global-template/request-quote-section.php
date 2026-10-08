@@ -24,7 +24,7 @@ $value = $parts[1];
                     <h3 class="white-text">
                         <?php
                             $developerType = ($value == 'mern') ? strtoupper($value) : ucfirst($value);
-                            echo "Hire a $developerType Developer Now!";
+                            echo esc_html("Hire a $developerType Developer Now!");
                         ?>
                     </h3>
                     <div class="form-quote">
