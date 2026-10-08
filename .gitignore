@@ -9,7 +9,7 @@ themes/Elsner-Revemp/node_modules
 themes/Elsner-Revemp/==ultimate-member
 themes/==export-posts-csv.php
 themes/==template-testimonials.php
-
+themes/Elsner-Revemp/inc/paypal/paypal.class.php
 # Environment variables & Secrets
 .env
 .env.*
