@@ -377,7 +377,7 @@ function add_serial_number_mail($WPCF7_ContactForm)
 			return;
 
 		$mail = $WPCF7_ContactForm->prop('mail');
-		$mail['subject'] = $mail['subject'] . ' #' . mt_rand(100000, 999999);
+		$mail['subject'] = $mail['subject'] . ' #' . random_int(100000, 999999);
 		// Save the email body
 		$WPCF7_ContactForm->set_properties(array("mail" => $mail));
 		return $WPCF7_ContactForm;
