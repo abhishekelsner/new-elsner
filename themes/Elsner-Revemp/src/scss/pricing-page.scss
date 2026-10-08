@@ -13,7 +13,7 @@
 
 /* ── Title ─────────────────────────────── */
 .benefit-cards__title {
-    font-family: Red Hat Display;
+    font-family: Red Hat Display, sans-serif;
     font-weight: 700;
     font-style: Bold;
     font-size: 43.2px;
@@ -68,7 +68,7 @@
 
 /* ── Card title ────────────────────────── */
 .benefit-cards__card-title {
-    font-family: Red Hat Display;
+    font-family: Red Hat Display, sans-serif;
     font-weight: 700;
     font-style: Bold;
     font-size: 28px;
@@ -81,7 +81,7 @@
 
 /* ── Card content ──────────────────────── */
 .benefit-cards__card-content {
-    font-family: Red Hat Display;
+    font-family: Red Hat Display, sans-serif;
     font-weight: 400;
     font-style: Regular;
     font-size: 16px;
@@ -355,7 +355,7 @@
 
 /* ── Card title ────────────────────────── */
 .ways-cards__card-title {
-    font-family: Montserrat;
+    font-family: Montserrat, sans-serif;
     font-weight: 700;
     font-style: Bold;
     font-size: 21.3px;
@@ -366,7 +366,7 @@
 
 /* ── Card content ──────────────────────── */
 .ways-cards__card-content {
-    font-family: Montserrat;
+    font-family: Montserrat, sans-serif;
     font-weight: 500;
     font-style: Medium;
     font-size: 16px;
@@ -378,7 +378,7 @@
 
 /* ── Link ──────────────────────────────── */
 .ways-cards__link {
-   font-family: Montserrat;
+   font-family: Montserrat, sans-serif;
     font-weight: 600;
     font-style: SemiBold;
     font-size: 15px;
@@ -423,7 +423,7 @@
 
 /* ── Title ───────────────────────────────────────────────────────────────── */
 .pricing-faq__title {
-    font-family: Red Hat Display;
+    font-family: Red Hat Display, sans-serif;
     font-weight: 700;
     font-style: Bold;
     font-size: 34px;
@@ -541,7 +541,7 @@
 .pricing-faq__question {
     flex: 1;
     padding-right: 16px;
-    font-family: Red Hat Display;
+    font-family: Red Hat Display, sans-serif;
     font-weight: 700;
     font-style: Bold;
     font-size: 25.5px;
@@ -575,7 +575,7 @@
 
 .pricing-faq__answer {
     padding: 0 20px 24px 20px;
-    font-family: Red Hat Display;
+    font-family: Red Hat Display, sans-serif;
     font-weight: 400;
     font-style: Regular;
     font-size: 17px;
@@ -701,7 +701,7 @@
     color: var(--ppb-white);
     width: fit-content;
     position: relative; /* required */
-    font-family: Red Hat Display;
+    font-family: Red Hat Display, sans-serif;
 }
 
 .ppb-banner__subtitle::after {
@@ -719,7 +719,7 @@
 
 /* Title */
 .ppb-banner__title {
-    font-family: Red Hat Display;
+    font-family: Red Hat Display, sans-serif;
     margin: 0;
     font-size: 64px;
     font-weight: 700;
@@ -734,7 +734,7 @@
     font-size: 18px;
     line-height: 1.7;
     color: #F4F4F4;
-    font-family: Red Hat Display;
+    font-family: Red Hat Display, sans-serif;
     font-weight: 500;
 }
 
@@ -1042,7 +1042,6 @@
 /* ---------- Grid — side cards tuck behind featured ---------- */
 .seo-cards-section .scs-grid {
     display: flex;
-    justify-content: space-around;
     align-items: center;
     gap: 0;
     position: relative;
@@ -1131,7 +1130,7 @@
 
 /* ---------- Card Title ---------- */
 .seo-cards-section .scs-card-title {
-    font-family: Red Hat Display;
+    font-family: Red Hat Display, sans-serif;
     font-weight: 700;
     font-size: 30px;
     line-height: 100%;
@@ -1150,7 +1149,7 @@
 
 /* ---------- Card Subtitle ---------- */
 .seo-cards-section .scs-card-subtitle {
-    font-family: Red Hat Display;
+    font-family: Red Hat Display, sans-serif;
     font-weight: 400;
     font-size: 17px;
     line-height: 100%;
@@ -1176,7 +1175,7 @@
 
 /* ---------- Card Text ---------- */
 .seo-cards-section .scs-card-text {
-    font-family: Red Hat Display;
+    font-family: Red Hat Display, sans-serif;
     font-weight: 500;
     font-style: Medium;
     font-size: 12.8px;
@@ -1207,7 +1206,7 @@
     display: flex;
     align-items: flex-start;
     gap: 10px;
-    font-family: Red Hat Display;
+    font-family: Red Hat Display, sans-serif;
     font-weight: 400;
     font-style: Regular;
     font-size: 18px;
@@ -1246,7 +1245,7 @@
     cursor: pointer;
     transition: background var(--transition), box-shadow var(--transition), transform var(--transition);
     align-self: flex-start;
-    font-family: Red Hat Display;
+    font-family: Red Hat Display, sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 100%;
@@ -1425,7 +1424,7 @@
     color: var(--spt-plan-name-color);
     margin-bottom: 10px;
     letter-spacing: -0.01em;
-    font-family: Red Hat Display;
+    font-family: Red Hat Display, sans-serif;
 }
 
 /* Plan CTA button */
@@ -1434,7 +1433,7 @@
     padding: 10px 24px;
     background: linear-gradient(104.32deg, #005282 0%, #00A1FF 100%);
     color: var(--spt-btn-color);
-    font-family: Montserrat;
+    font-family: Montserrat, sans-serif;
     font-size: 14px;
     font-weight: 500;
     border-radius: 3px;
@@ -1449,7 +1448,7 @@
 
 /* ── Category rows (dark header) ───────────────────────────────── */
 .spt-category-row .spt-cat-title {
-    font-family: Red Hat Display;
+    font-family: Red Hat Display, sans-serif;
     font-size: 16px;
     font-weight: 700;
     padding: 32px 20px;
@@ -1564,7 +1563,6 @@
     line-height: 1.5;
     padding: 7px 11px;
     border-radius: 6px;
-    white-space: nowrap;
     max-width: 240px;
     white-space: normal;
     pointer-events: none;
@@ -1643,7 +1641,7 @@
 }
 
 .pc-clients__title {
-    font-family: Red Hat Display;
+    font-family: Red Hat Display, sans-serif;
     font-weight: 700;
     font-style: Bold;
     font-size: 43.2px;

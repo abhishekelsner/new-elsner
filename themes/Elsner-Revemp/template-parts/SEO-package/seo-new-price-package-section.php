@@ -768,6 +768,7 @@ if ( $enable_support_package && have_rows('all_support_packages', $post_id)) :
             <table class="comparison-table">
                 <thead>
                     <tr class="table-header">
+                        <th class="feature-cell" scope="col"><?php esc_html_e( 'Features', 'elsner' ); ?></th>
                         <?php if( isset($package_html['package_header']) ){
                             echo implode(' ', $package_html['package_header']);
                         } ?>

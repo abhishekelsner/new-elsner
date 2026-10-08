@@ -686,8 +686,6 @@ body.active-secondmenu {
         font-size: 14px;
         display: flex;
         align-items: center;
-        display: flex;
-        align-items: center;
         gap: 8px;
 
         i {
@@ -717,10 +715,6 @@ body.active-secondmenu {
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 30px;
-    margin-bottom: 32px;
-    /* display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 32px; */
     margin-bottom: 32px;
 
     .footer-menu-col {
@@ -817,7 +811,6 @@ body.active-secondmenu {
       flex-wrap: wrap;
       gap: 15px;
       justify-content: flex-end;
-      display: flex;
       align-items: center;
       flex: 1;
 
@@ -1196,7 +1189,6 @@ ul.navmenu>li>a.btn.btn-primary::before {
   height: 100%;
   background: rgba(0, 0, 0, 0.7);
   z-index: 9999;
-  display: flex;
   align-items: center;
   justify-content: center;
   display: none;
@@ -1542,10 +1534,8 @@ $color_2: #ffff;
     flex: auto;
     justify-content: center;
     width: 100%;
-  
-        justify-content: center;
-        align-items: center;
-        text-align: center;
+    align-items: center;
+    text-align: center;
   }
 
   

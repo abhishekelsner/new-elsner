@@ -56,7 +56,7 @@
 }
 
 .elsner-header .elsner-header-menu .mega-center-content ul li {
-    font-family: 'Red Hat Display';
+    font-family: 'Red Hat Display', sans-serif;
     font-size: 16px;
     padding-bottom: 10px;
     padding-right: 0px;
@@ -107,7 +107,7 @@
     border-radius: 2px;
     color: #000;
     cursor: pointer;
-    font-family: 'Red Hat Display';
+    font-family: 'Red Hat Display', sans-serif;
     font-size: 16px;
     font-weight: 500;
     padding: 4.5px 10px
@@ -212,7 +212,7 @@
     -webkit-transition: color .3s ease;
     -o-transition: color .3s ease;
     transition: color .3s ease;
-    font-family: 'Red Hat Display';
+    font-family: 'Red Hat Display', sans-serif;
 }
 
 .elsner-header-menu .mega-latest:hover {
@@ -318,7 +318,7 @@
 }
 
 .elsner-header .industries-mega .industry-panel h3 {
-    font-family: 'Red Hat Display';
+    font-family: 'Red Hat Display', sans-serif;
     font-size: 20px;
     font-weight: 500;
     margin-bottom: 10px
@@ -329,7 +329,7 @@
     font-size: 18px;
     font-weight: 400;
     line-height: 1.6;
-    font-family: 'Red Hat Display';
+    font-family: 'Red Hat Display', sans-serif;
 }
 
 .elsner-header .industries-mega .industry-btn {
@@ -345,7 +345,7 @@
     width: -moz-max-content;
     width: -webkit-max-content;
     width: max-content;
-    font-family: 'Red Hat Display';
+    font-family: 'Red Hat Display', sans-serif;
 }
 
 .elsner-header .industries-mega .industry-btn:hover {
@@ -398,7 +398,7 @@
 }
 
 .elsner-header .resource-link-list li {
-    font-family: "Red Hat Display";
+    font-family: "Red Hat Display", sans-serif;
     font-size: 16px;
     margin: 5px;
     max-width: 100%;
@@ -410,7 +410,7 @@
 
 .elsner-header .resource-link-list li a {
     color: #000;
-    font-family: 'Red Hat Display';
+    font-family: 'Red Hat Display', sans-serif;
     font-size: 16px;
     font-weight: 600;
     -webkit-transition: color .3s;
@@ -593,7 +593,7 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    font-family: 'Red Hat Display';
+    font-family: 'Red Hat Display', sans-serif;
     font-weight: 500;
     gap: 10px
 }
@@ -643,9 +643,7 @@
 
 .elsner-header .industries-mega .industry-btn .btn-icon {
     -webkit-transition: -webkit-transform .25s ease;
-    transition: -webkit-transform .25s ease;
     -o-transition: transform .25s ease;
-    transition: transform .25s ease;
     transition: transform .25s ease, -webkit-transform .25s ease;
 }
 
@@ -672,7 +670,7 @@
     display: -ms-flexbox;
     display: flex;
     gap: 7px;
-    font-family: 'Red Hat Display';
+    font-family: 'Red Hat Display', sans-serif;
 }
 
 .elsner-header .menu-item.has-mega>a:after {
@@ -729,7 +727,7 @@
 }
 
 .elsner-header ul.navmenu>li>a {
-    font-family: 'Red Hat Display';
+    font-family: 'Red Hat Display', sans-serif;
     font-size: 18px;
     text-transform: none
 }
@@ -1211,9 +1209,7 @@ html:has(.is-clicked) {
     .elsner-header .menu-item.has-mega>a:after {
         float: right;
         -webkit-transition: -webkit-transform .3s ease;
-        transition: -webkit-transform .3s ease;
         -o-transition: transform .3s ease;
-        transition: transform .3s ease;
         transition: transform .3s ease, -webkit-transform .3s ease;
     }
     .elsner-header .industries-mega .mega-menu {

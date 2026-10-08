@@ -271,7 +271,7 @@
 .project-head ul li a:after {
     color: #f70;
     content: "\f105";
-    font-family: Font Awesome\ 6 Free;
+    font-family: Font Awesome\ 6 Free, sans-serif;
     font-weight: 600;
     opacity: 0;
     padding-left: 18px;
@@ -1656,7 +1656,7 @@ h5.subheading {
 
 .faq-header a.card-link:after {
     content: "\f106";
-    font-family: Font Awesome\ 6 Free;
+    font-family: Font Awesome\ 6 Free, sans-serif;
     font-weight: 600;
     position: absolute;
     right: -15px;
@@ -1887,7 +1887,7 @@ section.process-service {
 
 .expertise-header .card-link:after {
     content: "\f106";
-    font-family: Font Awesome\ 6 Free;
+    font-family: Font Awesome\ 6 Free, sans-serif;
     font-size: 16px;
     font-weight: 600;
     position: absolute;
@@ -3014,7 +3014,7 @@ section.career-hiring {
 .map-address-info a:before {
     color: #007ac1;
     content: "\f095";
-    font-family: Font Awesome\ 6 Free;
+    font-family: Font Awesome\ 6 Free, sans-serif;
     font-weight: 900;
     margin-right: 10px
 }
@@ -3026,7 +3026,7 @@ section.career-hiring {
 .map-address-info a.tel-no:before {
     color: #00a7e1;
     content: "\f095";
-    font-family: Font Awesome\ 6 Free;
+    font-family: Font Awesome\ 6 Free, sans-serif;
     font-weight: 600;
     margin-right: 6px
 }
@@ -3208,7 +3208,7 @@ form.search-form .search-btn {
 
 form.search-form .search-btn:before {
     content: "\f002";
-    font-family: Font Awesome\ 6 Free;
+    font-family: Font Awesome\ 6 Free, sans-serif;
     font-size: 16px;
     font-weight: 600
 }
@@ -3322,7 +3322,7 @@ span.category {
 
 .latest-blog-foot a.btn-read-more:after {
     content: "\f061";
-    font-family: Font Awesome\ 6 Free;
+    font-family: Font Awesome\ 6 Free, sans-serif;
     font-weight: 600;
     position: absolute;
     right: 0;
@@ -3539,7 +3539,7 @@ section.blog-detail-banner .block-box-banner-wrapper {
 
 .post-navigation .nav-links .nav-previous:before {
     content: "\f053";
-    font-family: Font Awesome\ 6 Free;
+    font-family: Font Awesome\ 6 Free, sans-serif;
     font-weight: 600;
     margin-right: 6px
 }
@@ -3555,7 +3555,7 @@ section.blog-detail-banner .block-box-banner-wrapper {
 
 .post-navigation .nav-links .nav-next:after {
     content: "\f054";
-    font-family: Font Awesome\ 6 Free;
+    font-family: Font Awesome\ 6 Free, sans-serif;
     font-weight: 600;
     margin-left: 6px
 }
@@ -4237,7 +4237,7 @@ ul.check_ul li:before {
 
 .why-steps-block .why-steps:before {
     content: "\f0da";
-    font-family: Font Awesome\ 6 Free;
+    font-family: Font Awesome\ 6 Free, sans-serif;
     font-weight: 600;
     position: absolute;
     right: -30px;
@@ -4950,7 +4950,7 @@ ul.check_ul li:before {
 .package-list ul li .list-span:before {
     color: #f70;
     content: "\f00c";
-    font-family: Font Awesome\ 6 Free;
+    font-family: Font Awesome\ 6 Free, sans-serif;
     font-weight: 600
 }
 
@@ -5949,7 +5949,7 @@ div#Clients {
 
 .seo-package-service-section .see-more-link:after {
     content: "\f107";
-    font-family: Font Awesome\ 6 Free;
+    font-family: Font Awesome\ 6 Free, sans-serif;
     font-size: 20px;
     font-weight: 600;
     line-height: 1;
@@ -6030,7 +6030,7 @@ section.get-touch.emc-get-touch .get-block .brew-gif {
 
 section.get-touch.emc-get-touch .brew-content h5 {
     color: #505050;
-    font-family: Red Hat Display;
+    font-family: Red Hat Display, sans-serif;
     font-size: 20px;
     font-style: normal;
     margin-bottom: 20px
@@ -6084,7 +6084,7 @@ section.get-touch.emc-get-touch .brew-content .btn {
 .why-elsner-tech .content-inner h2,
 .why-elsner-tech .heading-wrapper h2,
 .why-elsner-tech .request-content h2 {
-    font-family: Red Hat Display;
+    font-family: Red Hat Display, sans-serif;
     font-size: 42px;
     letter-spacing: 0
 }
@@ -6376,7 +6376,7 @@ section.get-touch.emc-get-touch .brew-content .btn {
 }
 
 .original-price {
-    font-family: Red Hat Display
+    font-family: Red Hat Display, sans-serif
 }
 
 .original-price .old-price {
@@ -6580,7 +6580,7 @@ section.get-touch.emc-get-touch .brew-content .btn {
 }
 
 .testimonials-form .col-content-form h2 {
-    font-family: Red Hat Display;
+    font-family: Red Hat Display, sans-serif;
     font-weight: 700;
     letter-spacing: 0;
     margin-bottom: 28px
@@ -6763,7 +6763,7 @@ ul.navmenu li i.fa {
 .page-template-shopify-growth-plan .b2b-contact-block.services-banner.maintenance-banner .services-heading .b2b-commitment li:before {
     color: #f70;
     content: "\f058";
-    font-family: Font Awesome\ 6 Free;
+    font-family: Font Awesome\ 6 Free, sans-serif;
     font-size: 20px;
     font-weight: 600;
     left: -7px;
@@ -9315,7 +9315,7 @@ section.featured-section.new-services-dev .featured-main-box .image-wrapper img 
 }
 
 .new-case-study-solution .organizations-section .org-title {
-    font-family: Red Hat Display !important
+    font-family: Red Hat Display, sans-serif !important
 }
 
 section.new-case-study-solution-screenshot .solution-slider-section .solution-slider .solution-img-title {
@@ -10819,7 +10819,7 @@ div#linkedinPostsBtn {
 }
 
 .page-template-new-service-template-2026 .development-services__heading h2 {
-    font-family: Figtree;
+    font-family: Figtree, sans-serif;
     font-size: 32px;
     font-weight: 400;
     line-height: 1.4;
@@ -10875,7 +10875,7 @@ div#linkedinPostsBtn {
 
 .page-template-new-service-template-2026 .service-card__title {
     color: #383838;
-    font-family: Manrope;
+    font-family: Manrope, sans-serif;
     font-size: 20px;
     font-weight: 800;
     line-height: 1
@@ -10937,7 +10937,7 @@ div#linkedinPostsBtn {
 
 .page-template-new-service-template-2026 .cta-banner__title {
     color: #fff;
-    font-family: Manrope;
+    font-family: Manrope, sans-serif;
     font-size: 30px;
     font-weight: 700;
     line-height: 1.1;
@@ -11057,7 +11057,7 @@ div#linkedinPostsBtn {
 }
 
 .page-template-new-service-template-2026 .why-development__title {
-    font-family: Figtree;
+    font-family: Figtree, sans-serif;
     font-size: 42px;
     font-weight: 700;
     line-height: 1;
@@ -11066,7 +11066,7 @@ div#linkedinPostsBtn {
 
 .page-template-new-service-template-2026 .why-development__description {
     color: #606060;
-    font-family: Figtree;
+    font-family: Figtree, sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 1.6
@@ -11092,7 +11092,7 @@ div#linkedinPostsBtn {
 
 .page-template-new-service-template-2026 .why-development__card-title {
     color: #383838;
-    font-family: Manrope;
+    font-family: Manrope, sans-serif;
     font-size: 20px;
     font-weight: 800;
     line-height: 100%;
@@ -11101,7 +11101,7 @@ div#linkedinPostsBtn {
 
 .page-template-new-service-template-2026 .why-development__card-description {
     color: #4a4a4a;
-    font-family: Manrope;
+    font-family: Manrope, sans-serif;
     font-size: 14px;
     font-weight: 400;
     letter-spacing: 1%;
@@ -11147,7 +11147,7 @@ div#linkedinPostsBtn {
 }
 
 .page-template-new-service-template-2026 .integrations__title {
-    font-family: Figtree;
+    font-family: Figtree, sans-serif;
     font-size: 32px;
     font-weight: 700;
     margin-bottom: 40px
@@ -11179,7 +11179,7 @@ div#linkedinPostsBtn {
     color: #6b7280;
     cursor: pointer;
     flex: 0 0 auto;
-    font-family: Manrope;
+    font-family: Manrope, sans-serif;
     font-size: 16px;
     font-weight: 600;
     margin-bottom: -2px;
@@ -11305,7 +11305,7 @@ div#linkedinPostsBtn {
 
 .page-template-new-service-template-2026 .why-choose__title {
     color: #f70;
-    font-family: Figtree;
+    font-family: Figtree, sans-serif;
     font-size: 42px;
     font-weight: 600;
     line-height: 1.25;
@@ -11314,7 +11314,7 @@ div#linkedinPostsBtn {
 
 .page-template-new-service-template-2026 .why-choose__description {
     color: #404040;
-    font-family: Figtree;
+    font-family: Figtree, sans-serif;
     font-size: 19px;
     line-height: 1.75;
     margin: 0 0 32px;
@@ -11360,7 +11360,7 @@ div#linkedinPostsBtn {
 
 .page-template-new-service-template-2026 .why-choose__client-number {
     color: #002840;
-    font-family: Figtree;
+    font-family: Figtree, sans-serif;
     font-size: 33.5px;
     font-weight: 700;
     line-height: 1;
@@ -11369,7 +11369,7 @@ div#linkedinPostsBtn {
 
 .page-template-new-service-template-2026 .why-choose__client-label {
     color: #404040;
-    font-family: Figtree;
+    font-family: Figtree, sans-serif;
     font-size: 13px;
     line-height: 1.4
 }
@@ -11510,7 +11510,7 @@ div#linkedinPostsBtn {
     -webkit-text-fill-color: transparent;
     background: linear-gradient(180deg, hsla(0, 0%, 89%, .8), hsla(0, 0%, 89%, 0));
     -webkit-background-clip: text;
-    font-family: Figtree;
+    font-family: Figtree, sans-serif;
     font-size: 95px;
     font-weight: 800;
     line-height: 1;

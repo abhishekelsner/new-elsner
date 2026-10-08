@@ -19,6 +19,7 @@ $template_name = basename($template); ?>
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta http-equiv="X-UA-Compatible" content="IE=edge;chrome=1" />
     <meta content='width=device-width, initial-scale=1, minimum-scale=1' name='viewport' />
+    <title><?php wp_title(''); ?></title>
     <link rel="profile" href="http://gmpg.org/xfn/11">
     
     <?php global $favicon, $logo, $dark_logo, $menu_group, $sticky_logo, $contact_form, $sales_phone_number, $sales_email_address, $skype_id, $partners, $address, $facebook, $instagram, $linekdin, $google, $twitter, $pinterest, $youtube, $github, $header;
@@ -388,7 +389,8 @@ $template_name = basename($template); ?>
                         <div class="collapse navbar-collapse" id="navmenu">
                             <div class="mobile-search-bar-wrapper">
                                     <div class="mega-search-box">
-                                        <input type="text" class="mega-menu-search-input" placeholder="Search">
+                                        <label for="mobile-mega-menu-search-input" class="screen-reader-text" style="display:none;">Search</label>
+                                        <input type="text" id="mobile-mega-menu-search-input" aria-label="Search" class="mega-menu-search-input" placeholder="Search">
                                         <button type="submit" class="mega-search-btn" aria-label="Search">
                                             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <circle cx="11" cy="11" r="7" stroke="#007AC1" stroke-width="2"/>

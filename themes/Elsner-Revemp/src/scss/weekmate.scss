@@ -1063,11 +1063,9 @@ p {
 
 .hrms-category-section .category-tab {
   padding: 10px 15px;
-  border: none;
   cursor: pointer;
   color: #005282;
   border: 1px solid #00528254;
-  border-radius: 10px;
   font-weight: bold;
   transition: box-shadow .3s ease-in-out;
   border-radius: 10px;
@@ -1701,7 +1699,6 @@ p {
 }
 
 .weekmate-single-product-banner-wrapper {
-  height: fit-content;
   background: linear-gradient(180deg, #c1d9f0, #fff);
   padding-block: 130px 0 60px;
   padding-bottom: 0;
@@ -1773,7 +1770,6 @@ p {
   background: rgba(139, 90, 107, 0.9);
   border-radius: 20px;
   cursor: pointer;
-  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
   overflow: hidden;
   min-width: 80px;
@@ -1814,7 +1810,6 @@ p {
 .weekmate-single-product-digital-workplace-section .roate-txt {
   writing-mode: vertical-rl;
   text-orientation: mixed;
-  transform: rotate(180deg);
   position: absolute;
   left: 10px;
   top: 35%;
@@ -2185,14 +2180,10 @@ p {
 		&:after {
 			border-top-left-radius: 160px;
 			border-top-right-radius: 160px;
-			border-top-left-radius: 160px;
-			border-top-right-radius: 160px;
 		}
 		.product-section-wrapper {
 			.section-description {
 				p {
-					font-size: 24px;
-					line-height: normal;
 					font-size: 18px;
 					line-height: normal;
 				}
@@ -2209,8 +2200,6 @@ p {
 			.slider-content {
 				padding: 20px;
 				max-width: 100%;
-				padding: 20px;
-				max-width: 100%;
 			}
 		}
 	}
@@ -2221,15 +2210,12 @@ p {
 		.service-inner {
 			.service-image {
 				padding-bottom: 90.55%;
-				padding-bottom: 90.55%;
 			}
 		}
 	}
 	.why-choose-weekmate-wrapper {
 		.paragraph {
 			p {
-				font-size: 24px;
-				line-height: normal;
 				font-size: 18px;
 				line-height: normal;
 			}
@@ -2237,21 +2223,16 @@ p {
 		.slider-content-wrapper {
 			.slider-content {
 				max-width: 100%;
-				max-width: 100%;
 			}
 		}
 	}
 	.hero-section-paragraph {
 		p {
-			font-size: 24px;
-			line-height: normal;
 			font-size: 18px;
 			line-height: normal;
 		}
 	}
 	p {
-		font-size: 24px;
-		line-height: normal;
 		font-size: 18px;
 		line-height: normal;
 	}
@@ -2262,7 +2243,6 @@ p {
 	}
 	.weekmate-hero-section {
 		.heading {
-			max-width: 530px;
 			max-width: 530px;
 		}
 	}
@@ -2278,7 +2258,6 @@ p {
 	.industries-we-serve {
 		.industries-cards-wrapper {
 			padding: 80px 45px 45px;
-			padding: 80px 45px 45px;
 		}
 	}
 	.weekmate-free-consultation {
@@ -2291,7 +2270,6 @@ p {
 	.weekmate-insights-blocks {
 		.weekmate-insights-wrapper {
 			.slider-content {
-				max-width: 100%;
 				max-width: 100%;
 			}
 		}
@@ -2394,23 +2372,14 @@ p {
 @media screen and (max-width:1024px) {
 	.weekmate-hero-section {
 		padding-top: 120px;
-		padding-top: 120px;
 	}
 	.weekmate-free-consultation {
 		.consultation-wrapper {
 			display: flex;
 			flex-wrap: wrap;
 			flex-direction: column;
-			display: flex;
-			flex-wrap: wrap;
-			flex-direction: column;
 		}
 		.right-side-content-wrapper {
-			max-width: 100%;
-			border-bottom-left-radius: 35px;
-			border-bottom-right-radius: 35px;
-			border-top-left-radius: 0px;
-			border-top-right-radius: 0px;
 			max-width: 100%;
 			border-bottom-left-radius: 35px;
 			border-bottom-right-radius: 35px;
@@ -2422,12 +2391,7 @@ p {
 		}
 		.consultation-image {
 			max-width: 100%;
-			max-width: 100%;
 			img {
-				border-top-left-radius: 35px;
-				border-top-right-radius: 35px;
-				border-bottom-left-radius: 0px;
-				height: 100%;
 				border-top-left-radius: 35px;
 				border-top-right-radius: 35px;
 				border-bottom-left-radius: 0px;
@@ -2439,14 +2403,10 @@ p {
 		&:after {
 			border-top-left-radius: 130px;
 			border-top-right-radius: 130px;
-			border-top-left-radius: 130px;
-			border-top-right-radius: 130px;
 		}
 		.product-section-wrapper {
 			.section-description {
 				p {
-					font-size: 22px;
-					line-height: normal;
 					font-size: 18px;
 					line-height: normal;
 				}
@@ -2461,8 +2421,6 @@ p {
 	.why-choose-weekmate-wrapper {
 		.paragraph {
 			p {
-				font-size: 22px;
-				line-height: normal;
 				font-size: 18px;
 				line-height: normal;
 			}
@@ -2470,23 +2428,17 @@ p {
 	}
 	.hero-section-paragraph {
 		p {
-			font-size: 22px;
-			line-height: normal;
 			font-size: 18px;
 			line-height: normal;
 		}
 	}
 	p {
-		font-size: 22px;
-		line-height: normal;
 		font-size: 18px;
 		line-height: normal;
 	}
 	.industries-we-serve {
 		.industries-cards-wrapper {
 			.industry-card {
-				max-width: calc(33.33% - 20px);
-				margin: 10px;
 				max-width: calc(33.33% - 20px);
 				margin: 10px;
 			}
@@ -2505,7 +2457,6 @@ p {
 		.service-inner {
 			.service-image {
 				padding-bottom: 65.55%;
-				padding-bottom: 65.55%;
 			}
 		}
 	}
@@ -2513,7 +2464,6 @@ p {
 		.weekmate-faq-wrapper {
 			.faq-box {
 				h2 {
-					font-size: 32px;
 					font-size: 32px;
 				}
 			}
@@ -2566,7 +2516,6 @@ p {
 	.faq-section {
 		.weekmate-faq-wrapper {
 			.accordion-header {
-				padding: 15px 8px;
 				font-size: 18px;
 				padding: 15px 8px;
 			}
@@ -2586,7 +2535,6 @@ p {
 			.product-title {
 				h3 {
 					font-size: 24px;
-					font-size: 24px;
 				}
 			}
 			.section-description {
@@ -2599,7 +2547,6 @@ p {
 	}
 	.weekmate-hero-section {
 		.heading {
-			max-width: 470px;
 			max-width: 470px;
 		}
 	}
@@ -2842,7 +2789,6 @@ p {
 			.faq-box {
 				h2 {
 					font-size: 28px;
-					font-size: 28px;
 				}
 				padding: 48px 30px;
 				max-width: 100%;
@@ -2851,21 +2797,16 @@ p {
 	}
 	.weekmate-hero-section {
 		padding-top: 100px;
-		padding-top: 100px;
 	}
 	.industries-we-serve {
 		.industreis-wrapper {
 			.heading {
 				padding: 0 30px;
-				padding: 0 30px;
 			}
 		}
 		.industries-cards-wrapper {
 			padding: 60px 35px 35px;
-			padding: 60px 35px 35px;
 			.industry-card {
-				max-width: calc(50% - 20px);
-				margin: 10px;
 				max-width: calc(50% - 20px);
 				margin: 10px;
 			}
@@ -2875,18 +2816,14 @@ p {
 		.product-section-wrapper {
 			.product-item {
 				padding: 25px;
-				padding: 25px;
 			}
 			.product-title {
 				h3 {
-					font-size: 24px;
 					font-size: 24px;
 				}
 			}
 		}
 		&:after {
-			border-top-left-radius: 90px;
-			border-top-right-radius: 90px;
 			border-top-left-radius: 90px;
 			border-top-right-radius: 90px;
 		}
@@ -2896,10 +2833,7 @@ p {
 			ul {
 				li {
 					padding: 7px 10px;
-					padding: 7px 10px;
 				}
-				overflow: auto;
-				flex-wrap: nowrap;
 				overflow: auto;
 				flex-wrap: nowrap;
 			}
@@ -2907,9 +2841,6 @@ p {
 		.workflow-section {
 			.workflow-content {
 				h3 {
-					font-size: 20px;
-					font-size: 20px;
-					font-size: 20px;
 					font-size: 20px;
 				}
 			}
@@ -2922,9 +2853,6 @@ p {
 		.dedicated-section {
 			.dedicated-title {
 				h3 {
-					font-size: 20px;
-					font-size: 20px;
-					font-size: 20px;
 					font-size: 20px;
 				}
 			}
@@ -2953,9 +2881,6 @@ p {
 		}
 		.get-touch.b2b-get-in-touch {
 			.brew-content {
-				margin: 0 auto;
-				margin: 0 auto;
-				margin: 0 auto;
 				margin: 0 auto;
 				h2 {
 					font-size: 22px;
@@ -3245,7 +3170,6 @@ p {
 	.heading {
 		h2 {
 			font-size: 28px;
-			font-size: 28px;
 		}
 	}
 	h1 {
@@ -3254,7 +3178,6 @@ p {
 	.faq-section {
 		.weekmate-faq-wrapper {
 			.faq-box {
-				font-size: 16px;
 				padding: 48px 30px;
 				font-size: 16px;
 				h2 {
@@ -3264,22 +3187,17 @@ p {
 			}
 			.accordion-header {
 				font-size: 18px;
-				font-size: 18px;
 			}
 			.faq-footer {
 				flex-direction: column;
 				gap: 20px;
-				flex-direction: column;
-				gap: 20px;
 			}
-			height: auto;
 			height: 670px;
 			height: auto;
 		}
 	}
 	.weekmate-free-consultation {
 		.right-side-content-wrapper {
-			padding: 30px;
 			padding: 30px;
 			.consultation-title {
 				font-size: 22px;
@@ -3290,14 +3208,11 @@ p {
 		.sider-content-wrapper {
 			h4 {
 				font-size: 18px;
-				font-size: 18px;
 			}
 			p {
 				font-size: 20px;
-				font-size: 20px;
 			}
 			.designation {
-				font-size: 16px;
 				font-size: 16px;
 			}
 		}
@@ -3306,15 +3221,12 @@ p {
 		.weekmate-insights-wrapper {
 			.slider-content-wrapper {
 				padding: 15px;
-				padding: 15px;
 			}
 			.insights-description {
-				font-size: 16px;
 				font-size: 16px;
 			}
 			.slider-content {
 				.insights-title {
-					font-size: 22px;
 					font-size: 22px;
 				}
 			}
@@ -3325,29 +3237,19 @@ p {
 			border-radius: 30px;
 			margin-top: 20px;
 			border: 2px solid #3C5891;
-			border-radius: 30px;
-			margin-top: 20px;
-			border: 2px solid #3C5891;
 			.heading {
-				padding: 0 10px;
 				padding: 0 10px;
 			}
 		}
 		.industries-cards-wrapper {
 			padding: 30px 30px 30px;
-			padding: 30px 30px 30px;
 			.industry-card {
-				max-width: calc(100% - 20px);
-				margin: 10px;
 				max-width: calc(100% - 20px);
 				margin: 10px;
 				h3 {
 					font-size: 20px;
-					font-size: 20px;
 				}
 				p {
-					font-size: 16px;
-					margin-bottom: 0;
 					font-size: 16px;
 					margin-bottom: 0;
 				}
@@ -3361,15 +3263,9 @@ p {
 				max-width: 80%;
 				margin: 0 auto;
 				text-align: center;
-				border-radius: 20px;
-				max-width: 80%;
-				margin: 0 auto;
-				text-align: center;
 			}
 			.product-title {
 				h3 {
-					margin-bottom: 5px;
-					font-size: 20px;
 					margin-bottom: 5px;
 					font-size: 20px;
 				}
@@ -3377,12 +3273,10 @@ p {
 			.product-thumb {
 				img {
 					width: 90px;
-					width: 90px;
 				}
 			}
 			.section-description {
 				p {
-					font-size: 16px;
 					font-size: 16px;
 				}
 			}
@@ -3392,7 +3286,6 @@ p {
 				.product-content {
 					p {
 						font-size: 14px;
-						font-size: 14px;
 					}
 				}
 			}
@@ -3401,15 +3294,11 @@ p {
 			border-top-left-radius: 60px;
 			border-top-right-radius: 60px;
 			background: linear-gradient(221deg, #005282 0%, rgba(255, 255, 255, 0.5) 88.97%);
-			border-top-left-radius: 60px;
-			border-top-right-radius: 60px;
-			background: linear-gradient(221deg, #005282 0%, rgba(255, 255, 255, 0.5) 88.97%);
 		}
 	}
 	.capability-section-wrapper {
 		.slider-content-wrapper {
 			.service-text {
-				font-size: 18px;
 				font-size: 18px;
 			}
 		}
@@ -3423,7 +3312,6 @@ p {
 	.weekmate-hero-section {
 		.heading {
 			max-width: 340px;
-			max-width: 340px;
 		}
 	}
 	.why-choose-weekmate-wrapper {
@@ -3435,17 +3323,14 @@ p {
 		}
 		.card-image {
 			border-radius: 20px;
-			border-radius: 20px;
 		}
 	}
 	.hero-section-paragraph {
 		p {
 			font-size: 16px;
-			font-size: 16px;
 		}
 	}
 	p {
-		font-size: 16px;
 		font-size: 16px;
 	}
 	.weekmate-button {
@@ -3455,17 +3340,11 @@ p {
 			font-size: 14px;
 		}
 		.secondary.btn {
-			padding: 12px 25px;
-			letter-spacing: 2px;
-			font-size: 14px;
 			padding: 15px 25px;
 			letter-spacing: 2px;
 			font-size: 14px;
 		}
 		.btn {
-			padding: 12px 25px;
-			letter-spacing: 2px;
-			font-size: 14px;
 			padding: 15px 25px;
 			letter-spacing: 2px;
 			font-size: 14px;
@@ -3481,12 +3360,10 @@ p {
 	.weekmate-development-services {
 		.service-image {
 			border-radius: 20px;
-			border-radius: 20px;
 		}
 	}
 	.weekmate-insights-wrapper {
 		.insights-image {
-			border-radius: 20px;
 			border-radius: 20px;
 		}
 	}

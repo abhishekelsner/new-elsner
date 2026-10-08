@@ -142,7 +142,8 @@ function acf_dm_generate_mapping_table( $items_to_map ) {
                         <small>(Slug: <?php echo $source_slug; ?>, Source ID: <?php echo $source_id; ?>)</small>
                     </td>
                     <td>
-                        <select class="acf-dm-action-select">
+                        <label for="acf_dm_action_<?php echo esc_attr( $source_id ); ?>" class="screen-reader-text" style="display:none;"><?php _e( 'Please select action', 'acf-data-manager' ); ?></label>
+                        <select id="acf_dm_action_<?php echo esc_attr( $source_id ); ?>" class="acf-dm-action-select" aria-label="<?php esc_attr_e( 'Please select action', 'acf-data-manager' ); ?>">
                             <option><?php _e( 'Please select', 'acf-data-manager' ); ?></option>
                             <option value="map_existing" <?php selected( $auto_selected_id != 0 ); ?>><?php _e( 'Map to Existing', 'acf-data-manager' ); ?></option>
                             <option value="create_new"><?php _e( 'Create New', 'acf-data-manager' ); ?></option>
@@ -151,7 +152,8 @@ function acf_dm_generate_mapping_table( $items_to_map ) {
                     </td>
                     <td>
                         <div class="acf-dm-target-select-wrapper" style="<?php echo ($auto_selected_id != 0) ? 'display: block;' : 'display: none;'; ?>">
-                            <select class="acf-dm-target-select">
+                            <label for="acf_dm_target_<?php echo esc_attr( $source_id ); ?>" class="screen-reader-text" style="display:none;"><?php _e( 'Select Existing ' . ucfirst( $source_type ), 'acf-data-manager' ); ?></label>
+                            <select id="acf_dm_target_<?php echo esc_attr( $source_id ); ?>" class="acf-dm-target-select" aria-label="<?php echo esc_attr( __( 'Select Existing ' . ucfirst( $source_type ), 'acf-data-manager' ) ); ?>">
                                 <option value=""><?php _e( 'Select Existing ' . ucfirst( $source_type ), 'acf-data-manager' ); ?></option>
                                 <?php foreach ( $current_posts as $p ) : ?>
                                     <option value="<?php echo esc_attr( $p->ID ); ?>" <?php selected( $p->ID, $auto_selected_id ); ?>>
@@ -161,7 +163,8 @@ function acf_dm_generate_mapping_table( $items_to_map ) {
                             </select>
                         </div>
                         <div class="acf-dm-new-title-wrapper" style="display: none;">
-                            <input type="text" class="acf-dm-new-title-input" placeholder="<?php _e( 'Enter New ' . ucfirst( $source_type ) . ' Title', 'acf-data-manager' ); ?>" value="<?php echo $source_title; ?>">
+                            <label for="acf_dm_new_title_<?php echo esc_attr( $source_id ); ?>" class="screen-reader-text" style="display:none;"><?php _e( 'New Title', 'acf-data-manager' ); ?></label>
+                            <input type="text" id="acf_dm_new_title_<?php echo esc_attr( $source_id ); ?>" class="acf-dm-new-title-input" aria-label="<?php esc_attr_e( 'New Title', 'acf-data-manager' ); ?>" placeholder="<?php _e( 'Enter New ' . ucfirst( $source_type ) . ' Title', 'acf-data-manager' ); ?>" value="<?php echo $source_title; ?>">
                         </div>
                     </td>
                 </tr>

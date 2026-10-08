@@ -76,9 +76,11 @@ function portfolios_shortcode($atts)
                             </a>
                         </div>
                         <h6><?php
-                            $terms = get_the_terms($post->ID, array('platform'));
-                            foreach ($terms as $term) {
-                                echo $term->name;
+                            $terms = get_the_terms(get_the_ID(), array('platform'));
+                            if (!empty($terms) && !is_wp_error($terms)) {
+                                foreach ($terms as $term) {
+                                    echo $term->name;
+                                }
                             }
                             ?></h6>
 
@@ -123,9 +125,11 @@ function portfolioslider_shortcode($atts)
             <div class="service_desc">
                 <div class="projects-image-section"><a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a></div>
                 <h6><?php
-                    $terms = get_the_terms($post->ID, array('platform'));
-                    foreach ($terms as $term) {
-                        echo $term->name;
+                    $terms = get_the_terms(get_the_ID(), array('platform'));
+                    if (!empty($terms) && !is_wp_error($terms)) {
+                        foreach ($terms as $term) {
+                            echo $term->name;
+                        }
                     }
                     ?></h6>
                 <a href="<?php the_permalink(); ?>">

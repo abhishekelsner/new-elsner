@@ -31,7 +31,8 @@ $unique_id = 'integrations-' . uniqid();
         <?php if ( ! empty( $technology ) ) : ?>
 
             <div class="integrations__dropdown">
-                <select class="integrations__select">
+                <label for="integrations-select" class="screen-reader-text"><?php esc_html_e( 'Select Integration', 'elsner' ); ?></label>
+                <select id="integrations-select" class="integrations__select">
                     <?php foreach ( $technology as $index => $tab ) :
                         $tab_title = $tab['title'] ?? '';
                         $tab_id    = sanitize_title( $tab_title ) . '-' . $index;

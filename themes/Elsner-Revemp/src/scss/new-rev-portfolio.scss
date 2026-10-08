@@ -4,7 +4,7 @@
 }
 
 body.case-study-template-default.single.single-case-study, h1, h2, h3, h4, h5, h6 {
-    font-family: 'Red Hat Display';
+    font-family: 'Red Hat Display', sans-serif;
 }
 
 .our-portfolio-cta-section .cta-block-wrapper .cta-block-image {
@@ -277,7 +277,7 @@ body.case-study-template-default.single.single-case-study, h1, h2, h3, h4, h5, h
 .our-portfolio-banner-section .stats .stat strong {
     font-size: 24px;
     font-weight: 700;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
 }
 
 .our-portfolio-banner-section .services {
@@ -331,7 +331,7 @@ body.case-study-template-default.single.single-case-study, h1, h2, h3, h4, h5, h
 .our-portfolio-banner-section .banner-icon-grid h3 {
     font-size: 18px;
     margin-bottom: 0;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
 }
 
 .our-portfolio-banner-section .banner-icon-grid .subtitle {
@@ -341,7 +341,7 @@ body.case-study-template-default.single.single-case-study, h1, h2, h3, h4, h5, h
 }
 
 .our-portfolio-banner-section .progress-content strong {
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 20px;
 }
@@ -454,7 +454,6 @@ body.case-study-template-default.single.single-case-study, h1, h2, h3, h4, h5, h
 .banner-button-wrapper .btn.btn-secondary {
     background: #F56F07;
     border-color: #F56F07;
-    padding-inline: 16px;
     display: flex;
     align-items: center;
     gap: 8px;
@@ -597,7 +596,7 @@ body.case-study-template-default.single.single-case-study, h1, h2, h3, h4, h5, h
     gap: 8px;
     line-height: 1.5558;
     z-index: 2;
-    font-family: 'Playfair Display';
+    font-family: 'Playfair Display', serif;
 }
 
 .thumb-bottom-text svg {
@@ -618,7 +617,7 @@ body.case-study-template-default.single.single-case-study, h1, h2, h3, h4, h5, h
 
 .case-study-section:has(.portfolio-filters) .case-study + .section-heading {
     font-size: 19.69px;
-    font-family: 'Playfair Display';
+    font-family: 'Playfair Display', serif;
     max-width: 1196px;
     width: 100%;
     margin-inline: auto;
@@ -661,7 +660,7 @@ body.case-study-template-default.single.single-case-study, h1, h2, h3, h4, h5, h
     color: #03497A;
     line-height: 1.4;
     margin-bottom: 4px;
-    font-family: 'Playfair Display';
+    font-family: 'Playfair Display', serif;
 }
 
 .portfolio-stat-item--2 .portfolio-stat-percent {
@@ -985,7 +984,7 @@ body.case-study-template-default.single.single-case-study, h1, h2, h3, h4, h5, h
 
 .case-study-section .portfolio-card .portfolio-title {
     font-size: 36px;
-    font-family: 'Playfair Display';
+    font-family: 'Playfair Display', serif;
     line-height: 1.1115;
     margin-bottom: 12px;
 }

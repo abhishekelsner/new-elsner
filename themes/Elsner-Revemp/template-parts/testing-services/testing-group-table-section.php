@@ -14,9 +14,9 @@ $heading_group = get_field('heading_group', $post_id);
                 <table class="table">
                     <tbody>
                         <tr>
-                            <td>
+                            <th scope="row">
                                 <h6>Technology Expertise</h6>
-                            </td>
+                            </th>
 
                             <?php
                             if (have_rows('technology_row', $post_id)) :
@@ -30,9 +30,9 @@ $heading_group = get_field('heading_group', $post_id);
 
                         </tr>
                         <tr>
-                            <td>
+                            <th scope="row">
                                 <h6>No. of Year Experience</h6>
-                            </td>
+                            </th>
                             <?php
                             if (have_rows('years_of_experiance_row', $post_id)) :
                                 while (have_rows('years_of_experiance_row', $post_id)) : the_row();
@@ -44,9 +44,9 @@ $heading_group = get_field('heading_group', $post_id);
                             ?>
                         </tr>
                         <tr>
-                            <td>
+                            <th scope="row">
                                 <h6>Total Project Executed</h6>
-                            </td>
+                            </th>
                             <?php
                             if (have_rows('executed_row', $post_id)) :
                                 while (have_rows('executed_row', $post_id)) : the_row();

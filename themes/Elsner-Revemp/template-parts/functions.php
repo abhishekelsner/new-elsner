@@ -350,18 +350,18 @@ function twentyseventeen_unique_id($prefix = '')
 /**
  * Custom template tags for this theme.
  */
-require get_parent_theme_file_path('/inc/template-tags.php');
+require_once get_parent_theme_file_path('/inc/template-tags.php');
 
 /**
  * Additional features to allow styling of the templates.
  */
-require get_parent_theme_file_path('/inc/template-functions.php');
+require_once get_parent_theme_file_path('/inc/template-functions.php');
 
 /**
  * SVG icons functions and filters.
  */
-require get_parent_theme_file_path('/inc/icon-functions.php');
-require get_parent_theme_file_path('/inc/elsner-mega-menu.php');
+require_once get_parent_theme_file_path('/inc/icon-functions.php');
+require_once get_parent_theme_file_path('/inc/elsner-mega-menu.php');
 
 
 
@@ -402,8 +402,7 @@ add_action('wp_head', 'elsner_header_scripts');
 
 function custom_filter_wpcf7_is_tel($result, $tel)
 {
-	$result = preg_match('/^\(?\+?([0-9]{1,2})?\)?[-\. ]?(\d{10})$/', $tel);
-	return $result;
+	return (bool) preg_match('/^\(?\+?([0-9]{1,2})?\)?[-\. ]?(\d{10})$/', $tel);
 }
 
 add_filter('wpcf7_is_tel', 'custom_filter_wpcf7_is_tel', 10, 2);
@@ -472,9 +471,11 @@ function portfolios_shortcode($atts)
 							</a>
 						</div>
 						<h6><?php
-							$terms = get_the_terms($post->ID, array('platform'));
-							foreach ($terms as $term) {
-								echo $term->name;
+							$terms = get_the_terms(get_the_ID(), array('platform'));
+							if (!empty($terms) && !is_wp_error($terms)) {
+								foreach ($terms as $term) {
+									echo $term->name;
+								}
 							}
 							?></h6>
 
@@ -519,9 +520,11 @@ function portfolioslider_shortcode($atts)
 			<div class="service_desc">
 				<div class="projects-image-section"><a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a></div>
 				<h6><?php
-					$terms = get_the_terms($post->ID, array('platform'));
-					foreach ($terms as $term) {
-						echo $term->name;
+					$terms = get_the_terms(get_the_ID(), array('platform'));
+					if (!empty($terms) && !is_wp_error($terms)) {
+						foreach ($terms as $term) {
+							echo $term->name;
+						}
 					}
 					?></h6>
 				<a href="<?php the_permalink(); ?>">

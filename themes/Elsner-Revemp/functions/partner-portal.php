@@ -400,7 +400,7 @@ function account_tab__payout($info)
 
 /* Finally we add some content in the tab */
 //add_filter('um_account_content_hook_payout', 'hook_payout');
-function hook_payout($output)
+function hook_payout($content = '')
 {
 	ob_start();
 	$output = '';
@@ -972,9 +972,7 @@ function payouts_callback_function()
 				</thead>
 				<tbody>';
 		foreach ($yearly_payout as $year => $monthly_detail) {
-			$year = $year;
 			foreach ($monthly_detail as $month => $user_wise_detail) {
-				$month = $month;
 				$month_number = date('m', strtotime($month));
 				foreach ($user_wise_detail as $user => $user_details) {
 					$create_time = (new DateTime)->getTimestamp();

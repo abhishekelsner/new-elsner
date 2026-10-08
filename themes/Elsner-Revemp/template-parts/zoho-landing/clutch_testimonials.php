@@ -1,5 +1,5 @@
 <?php 
-if( 1==1 || isset($_GET['test']) ){ ?>
+if( true || isset($_GET['test']) ){ ?>
     <div class="new-services-clutch-wrapper">
     <h2 class="new-services-clutch-title">What Our Clients Says on Clutch</h1>
         <div class="container">

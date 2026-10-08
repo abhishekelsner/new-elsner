@@ -20,7 +20,6 @@ jQuery(document).ready(function (e) {
     menu: "#menu",
     scrollingSpeed: 1200,
     touchSensitivity: 4,
-    dragAndMove: !0,
     responsiveWidth: 991,
     onLeave: function (n, s, r) {
       if (1 === n.index && "up" === r) {

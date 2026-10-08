@@ -1890,7 +1890,6 @@ section.our-work-banner {
 
 .filter-content {
   padding-top: 3rem;
-  padding-top: 3rem;
 
   .col-md-6 {
     margin-bottom: 4rem;
@@ -3427,7 +3426,6 @@ $color_1: #005282;
     span.wpcf7-spinner {
       position: absolute;
       right: 0;
-      top: 12px;
       //margin: 0;
 
       margin: 0 auto;
@@ -4660,22 +4658,14 @@ ul.check_ul {
     min-width: auto;
     color: $primary-200;
     background: $color-white;
-    padding: 14px 30px;
-    min-width: auto;
-    color: $primary-200;
-    background: $color-white;
     font-weight: bold;
 
     &:hover {
       background-color: $primary-200;
       color: $color-white;
-      background-color: $primary-200;
-      color: $color-white;
     }
 
     &:focus {
-      background-color: $primary-200;
-      color: $color-white;
       background-color: $primary-200;
       color: $color-white;
     }
@@ -5207,7 +5197,6 @@ section.ecomva-banner-section {
           /* filter: grayscale(100%); */
           max-height: 65px;
           max-width: 160px;
-          object-fit: contain;
           align-items: center !important;
           object-fit: contain;
           transition: all 0.4s ease;
@@ -5533,7 +5522,6 @@ div#Clients {
 
     > li {
       flex: 1;
-      text-align: center;
       color: #404040;
       font-size: 32px;
       font-weight: 500;
@@ -6061,7 +6049,6 @@ section.get-touch.emc-get-touch {
 
   .wpcf7-form {
     display: flex;
-    display: flex;
     flex-wrap: wrap;
     margin-top: 60px;
     margin-left: -30px;
@@ -6313,7 +6300,6 @@ section.get-touch.emc-get-touch {
     .form-group {
       label {
         font-weight: 300;
-        letter-spacing: 0;
         text-transform: uppercase;
         font-size: 12px;
         color: #dddddd;
@@ -6472,7 +6458,6 @@ section.get-touch.emc-get-touch {
   > span:not(.text) {
     background: #002840;
     width: 40px;
-    display: block;
     text-align: center;
     color: #fff;
     cursor: pointer;
@@ -6645,7 +6630,7 @@ ul {
   // color: #005282;
   content: "\f058";
   // font-family: Font Awesome\6 Free;
-  font-family: "Font Awesome 6 Free";
+  font-family: "Font Awesome 6 Free", sans-serif;
   color: #f70;
   font-size: 20px;
   font-weight: 600;
@@ -7479,11 +7464,7 @@ span.case-study-read-btn:hover {
   background: url(../images/maintenance/shadow-top.png) no-repeat 50%;
   background-size: contain;
   bottom: 0;
-  content: "";
   right: 0;
-  top: 0;
-  width: 100%;
-  z-index: -1;
   content: "";
   height: 100%;
   position: absolute;
@@ -7581,7 +7562,6 @@ span.case-study-read-btn:hover {
   flex: 0 0 calc(50% - 10px);
   padding: 10px 20px;
   color: #ffffff;
-  border: 1px solid #fff;
   border-radius: 20px;
   margin: 0 5px 10px;
   box-shadow: rgb(99 99 99 / 38%) 0px 2px 8px 0px;
@@ -8846,7 +8826,6 @@ span.case-study-read-btn:hover {
 }
 .new-services-clutch-wrapper .new-services-clutch-review-box p.new-services-review-rating {
   font-size: 18px;
-  margin-bottom: 0;
   text-align: center;
   margin-bottom: 10px;
   color: #ff7700;
@@ -9298,7 +9277,7 @@ section.featured-section.new-services-dev {
 .new-case-study-solution {
   .organizations-section {
     .org-title {
-      font-family: "Red Hat Display" !important;
+      font-family: "Red Hat Display", sans-serif !important;
     }
   }
 }
@@ -10871,7 +10850,7 @@ div#linkedinPostsBtn {
 }
 
 .page-template-new-service-template-2026 .development-services__heading h2 {
-    font-family: Figtree;
+    font-family: Figtree, sans-serif;
     font-weight: 400;
     font-size: 32px;
     line-height: 1.4;
@@ -10931,7 +10910,7 @@ div#linkedinPostsBtn {
 
 /* Title */
 .page-template-new-service-template-2026 .service-card__title {
-    font-family: Manrope;
+    font-family: Manrope, sans-serif;
     font-weight: 800;
     font-size: 20px;
     line-height: 1;
@@ -11009,7 +10988,7 @@ div#linkedinPostsBtn {
 }
 
 .page-template-new-service-template-2026 .cta-banner__title {
-    font-family: Manrope;
+    font-family: Manrope, sans-serif;
     font-weight: 700;
     font-size: 30px;
     line-height: 1.1;
@@ -11135,7 +11114,7 @@ div#linkedinPostsBtn {
 }
 
 .page-template-new-service-template-2026 .why-development__title {
-    font-family: Figtree;
+    font-family: Figtree, sans-serif;
     font-weight: 700;
     font-size: 42px;
     line-height: 1;
@@ -11143,7 +11122,7 @@ div#linkedinPostsBtn {
 }
 
 .page-template-new-service-template-2026 .why-development__description {
-    font-family: Figtree;
+    font-family: Figtree, sans-serif;
     font-weight: 400;
     font-size: 18px;
     line-height: 1.6;
@@ -11171,7 +11150,7 @@ div#linkedinPostsBtn {
 }
 
 .page-template-new-service-template-2026 .why-development__card-title {
-    font-family: Manrope;
+    font-family: Manrope, sans-serif;
     font-weight: 800;
     font-size: 20px;
     line-height: 100%;
@@ -11180,7 +11159,7 @@ div#linkedinPostsBtn {
 }
 
 .page-template-new-service-template-2026 .why-development__card-description {
-    font-family: Manrope;
+    font-family: Manrope, sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.8;
@@ -11236,7 +11215,7 @@ div#linkedinPostsBtn {
 }
 
 .page-template-new-service-template-2026 .integrations__title {
-    font-family: Figtree;
+    font-family: Figtree, sans-serif;
     font-weight: 700;
     font-size: 32px;
     margin-bottom: 40px;
@@ -11262,7 +11241,7 @@ div#linkedinPostsBtn {
 }
 
 .page-template-new-service-template-2026 .integrations__tab {
-    font-family: Manrope;
+    font-family: Manrope, sans-serif;
     flex: 0 0 auto;
     padding: 12px 24px;
     font-size: 16px;
@@ -11410,7 +11389,7 @@ div#linkedinPostsBtn {
 }
 
 .page-template-new-service-template-2026 .why-choose__title {
-    font-family: Figtree;
+    font-family: Figtree, sans-serif;
     font-size: 42px;
     font-weight: 600;
     color: #FF7700;
@@ -11419,7 +11398,7 @@ div#linkedinPostsBtn {
 }
 
 .page-template-new-service-template-2026 .why-choose__description {
-    font-family: Figtree;
+    font-family: Figtree, sans-serif;
     font-size: 19px;
     color: #404040;
     line-height: 1.75;
@@ -11466,7 +11445,7 @@ div#linkedinPostsBtn {
 }
 
 .page-template-new-service-template-2026 .why-choose__client-number {
-    font-family: Figtree;
+    font-family: Figtree, sans-serif;
     font-size: 33.5px;
     font-weight: 700;
     color: #002840;
@@ -11475,7 +11454,7 @@ div#linkedinPostsBtn {
 }
 
 .page-template-new-service-template-2026 .why-choose__client-label {
-    font-family: Figtree;
+    font-family: Figtree, sans-serif;
     font-size: 13px;
     color: #404040;
     line-height: 1.4;
@@ -11626,7 +11605,7 @@ div#linkedinPostsBtn {
     position: absolute;
     font-size: 95px;
     font-weight: 800;
-    font-family: "Figtree";
+    font-family: "Figtree", sans-serif;
     line-height: 1;
     top: 50%;
     right: 83%;

@@ -21,7 +21,7 @@ class acf_field_nav_menu_plugin
 	*  @created: 1/04/13
 	*/
 	
-	function __construct()
+	public function __construct()
 	{
 		// set text domain
 		/*
@@ -45,7 +45,7 @@ class acf_field_nav_menu_plugin
 	*  @created: 1/04/13
 	*/
 	
-	function register_fields()
+	public function register_fields()
 	{
 		include_once('nav-menu-v4.php');
 	}
@@ -58,10 +58,10 @@ class acf_field_nav_menu_plugin
 	*  @created: 8/27/14
 	*/
 	
-	function include_field_types()
+	public function include_field_types()
 	{
 		include_once('nav-menu-v5.php');
 	}
 }
 
-new acf_field_nav_menu_plugin();
+$acf_field_nav_menu_plugin = new acf_field_nav_menu_plugin();

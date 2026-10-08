@@ -56,8 +56,8 @@ function acf_dm_render_admin_page() {
                 <?php wp_nonce_field('acf_dm_export_nonce', 'acf_dm_export_nonce_field'); ?>
 
                 <div class="acf-dm-export-options">
-                    <h4><?php echo esc_html__('Select Post Type:', 'acf-data-manager'); ?></h4>
-                    <select name="acf_dm_export_post_type" id="acf_dm_export_post_type">
+                    <h4><label for="acf_dm_export_post_type"><?php echo esc_html__('Select Post Type:', 'acf-data-manager'); ?></label></h4>
+                    <select name="acf_dm_export_post_type" id="acf_dm_export_post_type" aria-label="<?php echo esc_attr__('Select Post Type', 'acf-data-manager'); ?>">
                         <option value=""><?php echo esc_html__('Select Post Type', 'acf-data-manager'); ?></option>
                         <?php
                         $post_types = get_post_types(array('public' => true), 'objects');
@@ -120,8 +120,8 @@ function acf_dm_render_admin_page() {
                 <input type="hidden" name="action" value="acf_dm_handle_import">
 
                 <div class="acf-dm-import-options">
-                    <h4><?php echo esc_html__('Target Post Type:', 'acf-data-manager'); ?></h4>
-                    <select name="acf_dm_import_post_type" id="acf_dm_import_post_type">
+                    <h4><label for="acf_dm_import_post_type"><?php echo esc_html__('Target Post Type:', 'acf-data-manager'); ?></label></h4>
+                    <select name="acf_dm_import_post_type" id="acf_dm_import_post_type" aria-label="<?php echo esc_attr__('Select Post Type', 'acf-data-manager'); ?>">
                         <option value=""><?php echo esc_html__('Select Post Type', 'acf-data-manager'); ?></option>
                         <?php
                         $post_types = get_post_types(array('public' => true), 'objects');
@@ -135,9 +135,10 @@ function acf_dm_render_admin_page() {
                     </select>
                 </div>
 
-                <h4><?php echo esc_html__('Import File:', 'acf-data-manager'); ?></h4>
+                <h4><label for="acf_dm_import_file"><?php echo esc_html__('Import File:', 'acf-data-manager'); ?></label></h4>
                 <p>
                     <input type="file" name="acf_dm_import_file" id="acf_dm_import_file" 
+                           aria-label="<?php echo esc_attr__('Import File', 'acf-data-manager'); ?>"
                            accept=".json,.xml,application/json,text/xml" required>
                     <small><?php 
                         echo esc_html__('Allowed formats: JSON, XML. Maximum size: ', 'acf-data-manager') . 

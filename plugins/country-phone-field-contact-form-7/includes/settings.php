@@ -367,4 +367,4 @@
 
 }
 
-new NB_CPF_settings;
+$nb_cpf_settings = new NB_CPF_settings;

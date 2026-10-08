@@ -49,8 +49,7 @@ add_action('init', 'register_portfolio_tags_taxonomy');
 
 function custom_filter_wpcf7_is_tel($result, $tel)
 {
-    $result = preg_match('/^\(?\+?([0-9]{1,2})?\)?[-\. ]?(\d{10})$/', $tel);
-    return $result;
+    return (bool) preg_match('/^\(?\+?([0-9]{1,2})?\)?[-\. ]?(\d{10})$/', $tel);
 }
 
 add_filter('wpcf7_is_tel', 'custom_filter_wpcf7_is_tel', 10, 2);
@@ -199,20 +198,21 @@ add_filter('wp_mime_type_icon', function ($icon, $mime, $post_id) {
 }, 10, 3);
 function add_async_forscript($url)
 {
-    if (strpos($url, '#asyncload') === false)
-        return $url;
-    else if (is_admin())
-        return str_replace('#asyncload', '', $url);
-    else
+    if (strpos($url, '#asyncload') !== false) {
+        if (is_admin()) {
+            return str_replace('#asyncload', '', $url);
+        }
         return str_replace('#asyncload', '', $url) . "' async='async";
+    }
 
-
-    if (strpos($url, '#defer') === false)
-        return $url;
-    else if (is_admin())
-        return str_replace('#defer', '', $url);
-    else
+    if (strpos($url, '#defer') !== false) {
+        if (is_admin()) {
+            return str_replace('#defer', '', $url);
+        }
         return str_replace('#defer', '', $url) . "' defer='defer";
+    }
+
+    return $url;
 }
 add_filter('clean_url', 'add_async_forscript', 11, 1);
 

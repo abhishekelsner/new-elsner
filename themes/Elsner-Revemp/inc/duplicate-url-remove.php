@@ -300,7 +300,8 @@ function sdr_settings_page() {
         <h2>🔍 Test a URL</h2>
         <form method="post" style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;">
             <?php wp_nonce_field( 'sdr_test_nonce' ); ?>
-            <input type="url" name="sdr_test_url" style="width:420px;padding:6px 10px;border-radius:4px;border:1px solid #ccc;"
+            <label for="sdr_test_url" class="screen-reader-text" style="display:none;">Test URL</label>
+            <input type="url" id="sdr_test_url" aria-label="Test URL" name="sdr_test_url" style="width:420px;padding:6px 10px;border-radius:4px;border:1px solid #ccc;"
                 placeholder="https://www.elsner.com/hire-ecommerce-developer/" />
             <button type="submit" class="button button-secondary">Test URL</button>
         </form>
@@ -331,6 +332,10 @@ function sdr_settings_page() {
         <hr style="margin:24px 0;">
         <h2>🛠 Debug Info</h2>
         <table class="widefat" style="max-width:500px;">
+            <thead>
+                <tr><th scope="col">Setting</th><th scope="col">Value</th></tr>
+            </thead>
+            <tbody>
             <tr><td><strong>AIOSEO Active</strong></td><td><?php echo $aioseo ? '<span style="color:#00a32a">Yes ✅</span>' : '<span style="color:#cc1818">No</span>'; ?></td></tr>
             <tr><td><strong>AIOSEO Version</strong></td><td><?php echo defined('AIOSEO_VERSION') ? esc_html(AIOSEO_VERSION) : 'N/A'; ?></td></tr>
             <tr><td><strong>PHP Version</strong></td><td><?php echo phpversion(); ?></td></tr>
@@ -340,6 +345,7 @@ function sdr_settings_page() {
                     <?php echo esc_html( home_url('/page-sitemap.xml') ); ?>
                 </a>
             </td></tr>
+            </tbody>
         </table>
     </div>
     <?php

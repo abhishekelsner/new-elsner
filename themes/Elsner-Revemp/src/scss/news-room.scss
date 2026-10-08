@@ -56,12 +56,12 @@
     line-height: 1.2;
     margin-bottom: 14px;
     font-style: Bold;
-    font-family: 'Red Hat Display';
+    font-family: 'Red Hat Display', sans-serif;
 }
 
 /* Text */
 .news-hub-hero__text {
-    font-family: Red Hat Display;
+    font-family: 'Red Hat Display', sans-serif;
     font-weight: 700;
     font-style: Bold;
     font-size: 18px;
@@ -92,7 +92,6 @@
 
 .news-room-contact__wrapper {
     background: linear-gradient(to right, #005282, #0a1628);
-    box-shadow: 0px 30px 30px 10px #3C589129;
     border-radius: 24px;
     padding: 60px 22px 60px 60px;
     display: flex;
@@ -132,7 +131,7 @@
     font-weight: 700;
     line-height: 1.2;
     margin-bottom: 16px;
-    font-family: Red Hat Display;
+    font-family: 'Red Hat Display', sans-serif;
 }
 
 .news-room-contact__text {
@@ -142,7 +141,7 @@
     margin-bottom: 35px;
     max-width: 480px;
     font-weight: 500;
-    font-family: 'Red Hat Display';
+    font-family: 'Red Hat Display', sans-serif;
 }
 
 /* Right Image Area */
@@ -263,7 +262,7 @@
     color: #ffffff;
     font-size: 18px;
     font-weight: 700;
-    font-family: 'Red Hat Display';
+    font-family: 'Red Hat Display', sans-serif;
     margin-bottom: 0;
 }
 
@@ -679,7 +678,7 @@
     transition: color 0.2s ease;
     padding: 0 30px;
     border-right: 1px solid #696868;
-    font-family: 'Red Hat Display';
+    font-family: 'Red Hat Display', sans-serif;
 }
 
 .news-hub-tabs__item:nth-last-child(1) {
@@ -843,7 +842,7 @@
     font-size: 16px;
     font-weight: 600;
     color: #000000;
-    font-family: 'Red Hat Display';
+    font-family: 'Red Hat Display', sans-serif;
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
@@ -858,7 +857,7 @@
 }
 
 .news-card__content-first span {
-    font-family: Red Hat Display;
+    font-family: 'Red Hat Display', sans-serif;
     font-weight: 500;
     font-size: 14px;
     line-height: 100%;
@@ -868,7 +867,7 @@
 }
 
 .news-card__content span {
-    font-family: Red Hat Display;
+    font-family: 'Red Hat Display', sans-serif;
     font-weight: 500;
     font-size: 14px;
     line-height: 100%;
@@ -934,7 +933,7 @@
     font-size: 24px;
     line-height: 100%;
     text-transform: capitalize;
-    font-family: 'Red Hat Display';
+    font-family: 'Red Hat Display', sans-serif;
 }
 
 .btn-view-all {

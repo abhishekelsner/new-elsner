@@ -27,7 +27,7 @@ class acf_field_nav_menu_v5 extends acf_field
 	*  @date	23/01/13
 	*/
 	
-	function __construct()
+	public function __construct()
 	{
 		// vars
 		$this->name = 'nav_menu';
@@ -63,7 +63,7 @@ class acf_field_nav_menu_v5 extends acf_field
 	*  @param	$field	- an array holding all the field's data
 	*/
 	
-	function render_field_settings( $field )  
+	public function render_field_settings( $field )  
 	{ 
 		// Create Field Options HTML
 		acf_render_field_setting( $field, array(
@@ -112,7 +112,7 @@ class acf_field_nav_menu_v5 extends acf_field
 	*  @since	3.6
 	*  @date	23/01/13
 	*/
-	function render_field( $field )
+	public function render_field( $field )
 	{
 		// ob_start();
 		// print_r($field);
@@ -138,7 +138,7 @@ class acf_field_nav_menu_v5 extends acf_field
 		echo '</select>';
 	}
 
-	function get_nav_menus() {
+	public function get_nav_menus() {
 		$navs = get_terms('nav_menu', array( 'hide_empty' => false ) );
 		
 		$nav_menus = array();
@@ -149,7 +149,7 @@ class acf_field_nav_menu_v5 extends acf_field
 		return $nav_menus;
 	}
 
-	function get_allowed_nav_container_tags() {
+	public function get_allowed_nav_container_tags() {
 		$tags = apply_filters( 'wp_nav_menu_container_allowedtags', array( 'div', 'nav' ) );
 		$formatted_tags = array(
 			array( '0' => 'None' )
@@ -160,7 +160,7 @@ class acf_field_nav_menu_v5 extends acf_field
 		return $formatted_tags;
 	}
 	
-	function format_value( $value, $post_id, $field )
+	public function format_value( $value, $post_id, $field )
 	{
 		// defaults
 		$field = array_merge($this->defaults, $field);
@@ -203,4 +203,4 @@ class acf_field_nav_menu_v5 extends acf_field
 }
 
 // create field
-new acf_field_nav_menu_v5();
+$acf_field_nav_menu_v5 = new acf_field_nav_menu_v5();

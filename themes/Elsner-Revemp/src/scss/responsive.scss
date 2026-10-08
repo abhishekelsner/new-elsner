@@ -376,7 +376,6 @@
         img {
           max-height: unset;
           min-height: unset;
-          height: unset;
 
           width: 100%;
           height: 16.1vw;
@@ -419,7 +418,6 @@
     .nav-migrates-wrapper {
       padding-right: 5%;
       // max-width: 766px;
-      padding-right: 5%;
     }
     .dedicated-section {
       .nav-migrate {
@@ -2776,7 +2774,6 @@
     }
 
     .industry-image {
-      position: static;
       max-width: 100%;
       flex: 0 0 100%;
       padding: 0 15px;
@@ -4208,10 +4205,8 @@
     .blog_content_bar {
       h2 {
         font-size: 20px;
-        font-size: 20px;
       }
       h3 {
-        font-size: 18px;
         font-size: 18px;
       }
     }
@@ -5360,7 +5355,6 @@
         max-width: 33.33%;
         width: 100%;
         margin-bottom: 27px;
-        border-right: 1px solid #d1d1d1;
       }
     }
   }

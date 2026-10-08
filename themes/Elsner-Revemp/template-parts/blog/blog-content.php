@@ -28,7 +28,8 @@
                 </ul>
                 <div class="searchbar">
                     <form class="search-form">
-                        <input type="text" name="search" placeholder="Search...">
+                        <label for="blog-search-input" class="screen-reader-text" style="display:none;">Search</label>
+                        <input type="text" id="blog-search-input" name="search" placeholder="Search..." aria-label="Search">
                         <button type="submit"><i class="fas fa-search"></i></button>
                     </form>
                 </div>

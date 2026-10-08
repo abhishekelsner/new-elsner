@@ -331,7 +331,8 @@ function nbcpf_tag_generator_phonetext_old( $contact_form, $args = '' ) {
 </div>
 
 <div class="insert-box">
-	<input type="text" name="<?php echo $type; ?>" class="tag code" readonly="readonly" onfocus="this.select()" />
+	<label for="<?php echo esc_attr( $args['content'] . '-tag' ); ?>" class="screen-reader-text" style="display:none;"><?php echo esc_html( __( 'Form tag', 'nb-cpf' ) ); ?></label>
+	<input type="text" id="<?php echo esc_attr( $args['content'] . '-tag' ); ?>" aria-label="<?php echo esc_attr( __( 'Form tag', 'nb-cpf' ) ); ?>" name="<?php echo $type; ?>" class="tag code" readonly="readonly" onfocus="this.select()" />
 
 	<div class="submitbox">
 	<input type="button" class="button button-primary insert-tag" value="<?php echo esc_attr( __( 'Insert Tag', 'nb-cpf' ) ); ?>" />

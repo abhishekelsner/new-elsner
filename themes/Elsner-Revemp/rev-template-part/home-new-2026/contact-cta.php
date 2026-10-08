@@ -66,17 +66,17 @@ $form_shortcode = get_sub_field( 'form_shortcode' );
 				<?php else : ?>
 					<h3>Send us a message</h3>
 					<div class="frow">
-						<div class="field"><label>First Name *</label><input type="text" placeholder="Your first name"></div>
-						<div class="field"><label>Last Name *</label><input type="text" placeholder="Your last name"></div>
+						<div class="field"><label for="contact-cta-first-name">First Name *</label><input type="text" id="contact-cta-first-name" placeholder="Your first name"></div>
+						<div class="field"><label for="contact-cta-last-name">Last Name *</label><input type="text" id="contact-cta-last-name" placeholder="Your last name"></div>
 					</div>
 					<div class="frow">
-						<div class="field"><label>Email *</label><input type="email" placeholder="your.email@company.com"></div>
-						<div class="field"><label>Phone</label><input type="tel" placeholder="+1 (555) 123-4567"></div>
+						<div class="field"><label for="contact-cta-email">Email *</label><input type="email" id="contact-cta-email" placeholder="your.email@company.com"></div>
+						<div class="field"><label for="contact-cta-phone">Phone</label><input type="tel" id="contact-cta-phone" placeholder="+1 (555) 123-4567"></div>
 					</div>
 					<div class="frow">
-						<div class="field"><label>Company *</label><input type="text" placeholder="Your company name"></div>
-						<div class="field"><label>Country *</label>
-							<select>
+						<div class="field"><label for="contact-cta-company">Company *</label><input type="text" id="contact-cta-company" placeholder="Your company name"></div>
+						<div class="field"><label for="contact-cta-country">Country *</label>
+							<select id="contact-cta-country" aria-label="Country">
 								<option>Select your country</option>
 								<option>United States</option>
 								<option>India</option>
@@ -86,8 +86,8 @@ $form_shortcode = get_sub_field( 'form_shortcode' );
 						</div>
 					</div>
 					<div class="field" style="margin-bottom:16px;">
-						<label>Message *</label>
-						<textarea rows="3" placeholder="Tell us more about your needs and how we can help you…"></textarea>
+						<label for="contact-cta-message">Message *</label>
+						<textarea id="contact-cta-message" rows="3" placeholder="Tell us more about your needs and how we can help you…"></textarea>
 					</div>
 					<div class="consent">
 						<input type="checkbox" id="cx">
