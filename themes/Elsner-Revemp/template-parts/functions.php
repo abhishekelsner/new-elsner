@@ -471,11 +471,10 @@ function portfolios_shortcode($atts)
 							</a>
 						</div>
 						<h6><?php
-							$terms = get_the_terms(get_the_ID(), array('platform'));
-							if (!empty($terms) && !is_wp_error($terms)) {
-								foreach ($terms as $term) {
-									echo $term->name;
-								}
+							$item_platform_terms = get_the_terms(get_the_ID(), 'platform');
+							if (!empty($item_platform_terms) && is_array($item_platform_terms)) {
+								$names_list = wp_list_pluck($item_platform_terms, 'name');
+								echo implode('', $names_list);
 							}
 							?></h6>
 
@@ -520,11 +519,10 @@ function portfolioslider_shortcode($atts)
 			<div class="service_desc">
 				<div class="projects-image-section"><a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a></div>
 				<h6><?php
-					$terms = get_the_terms(get_the_ID(), array('platform'));
-					if (!empty($terms) && !is_wp_error($terms)) {
-						foreach ($terms as $term) {
-							echo $term->name;
-						}
+					$slider_item_terms = get_the_terms(get_the_ID(), 'platform');
+					if (!empty($slider_item_terms) && is_array($slider_item_terms)) {
+						$slider_names_list = wp_list_pluck($slider_item_terms, 'name');
+						echo implode('', $slider_names_list);
 					}
 					?></h6>
 				<a href="<?php the_permalink(); ?>">

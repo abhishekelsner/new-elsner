@@ -1,5 +1,6 @@
 <?php 
-if( true || isset($_GET['test']) ){ ?>
+$enable_zoho_clutch = true;
+if ( $enable_zoho_clutch ) { ?>
     <div class="new-services-clutch-wrapper">
     <h2 class="new-services-clutch-title">What Our Clients Says on Clutch</h1>
         <div class="container">

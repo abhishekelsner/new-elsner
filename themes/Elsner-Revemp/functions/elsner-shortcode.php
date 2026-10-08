@@ -76,10 +76,11 @@ function portfolios_shortcode($atts)
                             </a>
                         </div>
                         <h6><?php
-                            $terms = get_the_terms(get_the_ID(), array('platform'));
-                            if (!empty($terms) && !is_wp_error($terms)) {
-                                foreach ($terms as $term) {
-                                    echo $term->name;
+                            $portfolio_item_id = get_the_ID();
+                            $platform_terms = get_the_terms($portfolio_item_id, 'platform');
+                            if (!empty($platform_terms) && !is_wp_error($platform_terms)) {
+                                foreach ($platform_terms as $platform_term) {
+                                    echo $platform_term->name;
                                 }
                             }
                             ?></h6>
@@ -125,10 +126,11 @@ function portfolioslider_shortcode($atts)
             <div class="service_desc">
                 <div class="projects-image-section"><a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a></div>
                 <h6><?php
-                    $terms = get_the_terms(get_the_ID(), array('platform'));
-                    if (!empty($terms) && !is_wp_error($terms)) {
-                        foreach ($terms as $term) {
-                            echo $term->name;
+                    $slider_post_id = get_the_ID();
+                    $slider_platform_terms = get_the_terms($slider_post_id, 'platform');
+                    if (!empty($slider_platform_terms) && !is_wp_error($slider_platform_terms)) {
+                        foreach ($slider_platform_terms as $slider_single_term) {
+                            echo $slider_single_term->name;
                         }
                     }
                     ?></h6>

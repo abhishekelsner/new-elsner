@@ -1,5 +1,6 @@
 <?php 
-if( true || isset($_GET['test']) ){ ?>
+$show_service_reviews = (bool) !empty($_GET['test']) || true;
+if ( $show_service_reviews ) { ?>
     <div class="new-services-clutch-wrapper">
     <h2 class="new-services-clutch-title">What Our Clients Says on Clutch</h1>
         <div class="container">

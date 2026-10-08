@@ -166,25 +166,27 @@ class acf_field_nav_menu extends acf_field
 	}
 
 	public function get_nav_menus() {
-		$navs = get_terms('nav_menu', array( 'hide_empty' => false ) );
-		
-		$nav_menus = array();
-		foreach( $navs as $nav ) {
-			$nav_menus[ $nav->term_id ] = $nav->name;
+		$terms = get_terms('nav_menu', array('hide_empty' => false));
+		$menu_items = array();
+		if (!empty($terms) && is_array($terms)) {
+			foreach ($terms as $term_object) {
+				$menu_items[$term_object->term_id] = $term_object->name;
+			}
 		}
-
-		return $nav_menus;
+		return $menu_items;
 	}
 
 	public function get_allowed_nav_container_tags() {
-		$tags = apply_filters( 'wp_nav_menu_container_allowedtags', array( 'div', 'nav' ) );
-		$formatted_tags = array(
-			array( '0' => 'None' )
+		$supported_tags = apply_filters('wp_nav_menu_container_allowedtags', array('div', 'nav'));
+		$container_tags_map = array(
+			array('0' => 'None')
 		);
-		foreach( $tags as $tag ) {
-    		$formatted_tags[0][$tag] = ucfirst( $tag );
+		if (is_array($supported_tags)) {
+			foreach ($supported_tags as $valid_tag) {
+				$container_tags_map[0][$valid_tag] = ucfirst($valid_tag);
+			}
 		}
-		return $formatted_tags;
+		return $container_tags_map;
 	}
 	
 	public function format_value_for_api( $value, $post_id, $field )
