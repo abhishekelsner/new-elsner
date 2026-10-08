@@ -1,9 +1,10 @@
 <?php
 $post_id            = $args['post_id'];
 $page_title         = get_field('heading_why_hire', 'option');
-$current_url        = $_SERVER['REQUEST_URI'];
+$current_url        = isset($_SERVER['REQUEST_URI']) ? sanitize_text_field(wp_unslash($_SERVER['REQUEST_URI'])) : '';
 $parts              = explode('-', $current_url);
-$value              = $parts[1];
+$value              = isset($parts[1]) ? preg_replace('/[^a-zA-Z0-9_]/', '', $parts[1]) : '';
+
 if($value == 'mern')
 {
     $page_title = str_replace('%page_title%', strtoupper($value), $page_title);
@@ -22,8 +23,8 @@ $link           = get_field('hire_developer_link', 'option');
             <div class="col-md-4">
                 <div class="why-hire-heading">
                     <div class="heading-wrapper text-left">
-                        <h2 class="Redhat-font"><?php echo $page_title; ?> <br> <span></span></h2>
-                        <h6><?php echo $page_excerpt; ?></h6>
+                        <h2 class="Redhat-font"><?php echo esc_html($page_title); ?> <br> <span></span></h2>
+                        <h6><?php echo esc_html($page_excerpt); ?></h6>
                     </div>
                     <div class="why-hire-gif">
                         <dotlottie-player src="<?php echo $hire_gif; ?>" background="transparent" speed="1" loop
@@ -64,8 +65,7 @@ $link           = get_field('hire_developer_link', 'option');
                         </div>
                         <div class="hire-title">
                             <h4><?php the_sub_field('label'); ?></h4>
-                            <p><?php echo str_replace('%tech_name%', ($value == 'mern' ? strtoupper($value) : ucfirst($value)), get_sub_field('description')); ?>
-                            </p>
+                            <p><?php echo esc_html(str_replace('%tech_name%', ($value == 'mern' ? strtoupper($value) : ucfirst($value)), get_sub_field('description'))); ?>
                         </div>
                     </div>
                     <?php $row_count++; ?>
