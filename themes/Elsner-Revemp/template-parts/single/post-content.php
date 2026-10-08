@@ -74,7 +74,7 @@ global $contact_us_link;
                         <div class="blog-table social-blog">
                             <h4>Share this Blog</h4>
                             <ol>
-                                <li><a href="<?php echo esc_url('http://www.reddit.com/submit?url=' . get_permalink()); ?>"
+                                <li><a href="<?php echo esc_url('https://www.reddit.com/submit?url=' . get_permalink()); ?>"
                                         target="_blank" aria-label="social icon">
                                         <i class="fa-brands fa-reddit"></i></a>
                                 </li>
