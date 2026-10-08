@@ -110,7 +110,7 @@
         <div class="slider-visual aos-item">
             <div class="slider--taxi slider_second">
                 <div class="owl-slider">
-                    <div id="carousel" class="owl-carousel">
+                    <div id="carousel-2" class="owl-carousel">
                         <?php 
                             $rows = get_field('visual_design_slider');
                             if( $rows ) {

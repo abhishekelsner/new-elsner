@@ -63,7 +63,7 @@ function cat_settings_page() {
 			<?php settings_fields( 'cat_group' ); ?>
 			<table class="form-table" role="presentation">
 				<tr>
-					<th scope="row"><label for="cat_api_key">Anthropic API key</label></th>
+					<td style="width: 200px; vertical-align: top; font-weight: 600; padding: 20px 10px 20px 0;"><label for="cat_api_key">Anthropic API key</label></td>
 					<td>
 						<input name="<?php echo esc_attr( CAT_OPTION ); ?>[api_key]" id="cat_api_key" type="password"
 							value="<?php echo esc_attr( cat_get( 'api_key' ) ); ?>" class="regular-text" autocomplete="off" />
@@ -71,7 +71,7 @@ function cat_settings_page() {
 					</td>
 				</tr>
 				<tr>
-					<th scope="row"><label for="cat_model">Model</label></th>
+					<td style="width: 200px; vertical-align: top; font-weight: 600; padding: 20px 10px 20px 0;"><label for="cat_model">Model</label></td>
 					<td>
 						<select name="<?php echo esc_attr( CAT_OPTION ); ?>[model]" id="cat_model">
 							<option value="claude-haiku-4-5-20251001" <?php selected( $model, 'claude-haiku-4-5-20251001' ); ?>>Haiku 4.5 — fast & cheap (recommended)</option>
@@ -82,7 +82,7 @@ function cat_settings_page() {
 					</td>
 				</tr>
 				<tr>
-					<th scope="row"><label for="cat_prompt">Instruction</label></th>
+					<td style="width: 200px; vertical-align: top; font-weight: 600; padding: 20px 10px 20px 0;"><label for="cat_prompt">Instruction</label></td>
 					<td>
 						<textarea name="<?php echo esc_attr( CAT_OPTION ); ?>[prompt]" id="cat_prompt" rows="4" class="large-text"><?php echo esc_textarea( cat_get( 'prompt' ) ); ?></textarea>
 						<p class="description">Tune the tone or length. Keep "return only the alt text" so nothing extra gets saved.</p>
