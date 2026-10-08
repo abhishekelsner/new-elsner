@@ -14,7 +14,7 @@
 $clap_count = get_post_meta(get_the_ID(), 'clap_count', true);
 
 if (!$clap_count) {
-    $clap_count = rand(100, 1000);
+    $clap_count = random_int(100, 1000);
 }
 
 get_header();
