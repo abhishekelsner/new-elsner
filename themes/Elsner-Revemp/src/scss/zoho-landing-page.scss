@@ -348,7 +348,7 @@ html:has(#lp-main) {
     justify-content: center;
     font-size: 14px;
     font-weight: 700;
-    color: #fff;
+    color: #ffffff;
     flex-shrink: 0;
 }
 
@@ -490,7 +490,7 @@ html:has(#lp-main) {
     align-items: center;
     gap: 10px;
     color: rgba(255, 255, 255, 0.88);
-    background: #FFFFFF1;
+    background: #FFFFFF;
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 7px;
     padding: 20px;
@@ -870,7 +870,7 @@ html:has(#lp-main) {
 }
 
 .get-touch.b2b-get-in-touch.lp .lp-hire-cta__heading {
-    font-family: Red Hat Display;
+    font-family: 'Red Hat Display',sans-serif;
     font-weight: 800;
     font-style: ExtraBold;
     font-size: 42px;
@@ -1025,7 +1025,7 @@ html:has(#lp-main) {
 }
 
 .lp-services__heading {
-    font-family: Red Hat Display;
+    font-family: 'Red Hat Display',sans-serif;
     font-weight: 700;
     font-style: Bold;
     font-size: 42px;
@@ -1105,7 +1105,7 @@ html:has(#lp-main) {
 }
 
 .lp-services__card-title {
-    font-family: Manrope;
+    font-family: 'Manrope',sans-serif;
     font-weight: 600;
     font-style: SemiBold;
     font-size: 16px;
