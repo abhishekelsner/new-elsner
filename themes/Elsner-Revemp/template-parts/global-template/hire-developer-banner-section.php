@@ -72,7 +72,7 @@ $value = $parts[1];
                                 <span class="timers"
                                     data-count="<?php the_sub_field('hire_count'); ?>"><?php the_sub_field('hire_count'); ?></span><span>+</span>
                                 <h5>
-                                    <?php echo str_replace('%tech_name%', ($value == 'mern' ? strtoupper($value) : ucfirst($value)), get_sub_field('hire_title')); ?>
+                                    <?php echo esc_html(str_replace('%tech_name%', ($value == 'mern' ? strtoupper($value) : ucfirst($value)), get_sub_field('hire_title'))); ?>
                                 </h5>
                             </div>
                         </div>
