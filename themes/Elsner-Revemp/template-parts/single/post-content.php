@@ -41,11 +41,6 @@ global $contact_us_link;
                             <li>
                                 Author: <a href="<?= $author_url; ?>"><?php echo get_the_author(); ?></a>
                             </li>
-                            <!-- <li>
-                            <i class="fa fa-chart-simple"></i>
-                            <?php //echo do_shortcode('[views id="' . get_the_ID() . '"]'); 
-                            ?>
-                        </li> -->
                         </ul>
                     </div>
                 </div>
@@ -65,25 +60,7 @@ global $contact_us_link;
     <div class="container">
         <div class="blog_content_bar">
             <div class="row">
-                <!-- <div class="col-lg-3 col-md-12">
-                    <div class="sidebar-sticky">
-                        <div class="blog-table">
-                            <h5><?php echo esc_html__('Table of Contents', 'your-theme-textdomain'); ?></h5>
-                            <ul>
-                                <?php
-                                $content = get_the_content();
-                                $modified_content = add_ids_to_headings($content);
-                                $headings = get_headings($modified_content);
-                                foreach ($headings as $heading) {
-                                    echo '<li>';
-                                    echo '<a href="#' . $heading['id'] . '" aria-label="social icon">' . $heading['title'] . '</a>';
-                                    echo '</li>';
-                                }
-                                ?>
-                            </ul>
-                        </div>
-                    </div>
-                </div> -->
+                
                 <div class="col-lg-9 col-md-12">
                     <div class="post-data">
                         <?php echo apply_filters('the_content', $modified_content); ?>
@@ -135,25 +112,6 @@ global $contact_us_link;
                 </div>
             </div>
 
-            <!-- <div class="blog_footer">
-                <div class="author_thumbnail">
-                    <div class="thumb_cover">
-                        <img src="<?php echo site_url() . '/wp-content/uploads/2024/04/Harsh-Bhatt.png'; ?> "
-                            alt="user image" width="160" height="160">
-                    </div>
-                    <div class="author-desc">
-                        <h4>Digital Transformation begins here!</h4>
-                        <p>Let us write your business’s growth story by offering innovative, scalable and result-driven
-                            IT solutions. Do you have an idea that has the potential to bring a change in the world?
-                            Don’t hesitate. Share with our experts and we will help you to achieve it.</p>
-                    </div>
-                    <div class="bookbtn">
-                        <a href="<?php echo $contact_us_link; ?>" class="btn btn-secondary">BOOK A CALL</a>
-                    </div>
-                </div>
-                <?php //$authorDesc = get_the_author_meta('description'); if($authorDesc !='') echo '<div class="author_biography"><p>'.$authorDesc.'</p></div>'; 
-                ?>
-            </div> -->
             <?php
             // Get the author name
             $author_name = get_the_author_meta('display_name');
