@@ -48,15 +48,6 @@ if (!function_exists('twentytwentytwo_styles')) :
         $theme_version = wp_get_theme()->get('Version');
 
         $version_string = is_string($theme_version) ? $theme_version : false;
-        /*wp_register_style(
-			'twentytwentytwo-style',
-			get_template_directory_uri() . '/style.css',
-			array(),
-			$version_string
-		);
-
-		// Enqueue theme stylesheet.
-		wp_enqueue_style('twentytwentytwo-style');*/
     }
 
 endif;
@@ -67,19 +58,19 @@ add_action('wp_enqueue_scripts', 'twentytwentytwo_styles');
 /**
  * Custom template tags for this theme.
  */
-require get_parent_theme_file_path('/inc/template-tags.php');
+require_once get_parent_theme_file_path('/inc/template-tags.php');
 
 /**
  * Additional features to allow styling of the templates.
  */
-require get_parent_theme_file_path('/inc/template-functions.php');
+require_once get_parent_theme_file_path('/inc/template-functions.php');
 
 /**
  * SVG icons functions and filters.
  */
-require get_parent_theme_file_path('/inc/icon-functions.php');
+require_once get_parent_theme_file_path('/inc/icon-functions.php');
 
-require get_parent_theme_file_path('/inc/duplicate-url-remove.php');
+require_once get_parent_theme_file_path('/inc/duplicate-url-remove.php');
 
 
 // //  ====== End Code for Blog Detail Page Table Content  ======= 
