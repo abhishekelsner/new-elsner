@@ -33,7 +33,7 @@ jobs:
 
       # Setup PHP for running tests
       - name: Setup PHP
-        uses: shivammathur/setup-php@v2
+        uses: shivammathur/setup-php@eb7c497e18156a6bbabfef1d3a82760b9eda3962 # v2
         with:
           php-version: "8.2"
           coverage: none
@@ -53,5 +53,7 @@ jobs:
           args: >
             -Dsonar.projectKey=abhishekelsner_new-elsner
             -Dsonar.organization=abhishekelsner
-            -Dsonar.php.coverage.reportPaths=reports/coverage.xml,coverage.xml
+            -Dsonar.exclusions=tests/**,test
             -Dsonar.coverage.exclusions=tests/**
+            -Dsonar.php.coverage.reportPaths=reports/coverage.xml,coverage.xml
+

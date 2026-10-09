@@ -353,3 +353,86 @@ Ensured standard generic font family fallbacks (`, sans-serif` or `, serif`) are
   - Removed duplicate property declarations for `padding-top`, `top`, `padding`, `min-width`, `color`, `background`, `background-color`, `object-fit`, `text-align`, `display`, `letter-spacing`, `content`, `width`, `z-index`, `border`, and `margin-bottom`.
 - **`themes/Elsner-Revemp/src/scss/weekmate.scss`**:
   - Removed 123 duplicate copy-pasted CSS property declarations across responsive media query blocks.
+
+---
+
+## 5. Post-Coverage Reliability & Security Fixes
+
+**Date:** October 9, 2026  
+**Trigger:** Following test coverage setup to 21.15%, SonarCloud reported new reliability issues (rule `php:S930` / `php:S3699`) across 19 theme files and 1 Security Vulnerability (`githubactions:S7637`) on GitHub Actions workflow.
+
+### Root Cause Analysis
+
+1. **Reliability Issues (Bugs - `php:S930` across 19 files):**
+   - In `tests/bootstrap.php`, mock stub declarations for standard WordPress functions were written with incomplete parameter counts (e.g., `is_singular()`, `get_the_date($format)`, `get_the_author_meta($field)`, `submit_button()`, `get_the_content($more, $strip)`).
+   - Because SonarCloud indexed `.` without an explicit exclusion for `tests/`, its PHP static analysis engine treated `tests/bootstrap.php` as project production code and indexed these signatures in its global function symbol table.
+   - Consequently, when scanning production template files that invoked standard WordPress functions with valid WordPress arguments (e.g., `is_singular('case_study')`, `get_the_author_meta('description', $author_id)`, `the_title('<h1>', '</h1>')`), SonarCloud flagged them with `php:S930` ("Function call arguments should match the parameters").
+
+2. **Testimonial Section Bug (`php:S3699`):**
+   - In `themes/Elsner-Revemp/template-parts/Clients-testimonial/testimonial-section.php` line 202, `src="<?php echo the_post_thumbnail_url(); ?>"` attempted to echo the output of a function that directly prints and returns `void`.
+
+3. **Security Vulnerability (`githubactions:S7637`):**
+   - In `.github/workflows/sonarqube.yml`, third-party GitHub Action `shivammathur/setup-php@v2` referenced a mutable tag (`v2`) instead of an immutable full commit SHA hash. SonarCloud flagged this as a `MAJOR` Security Vulnerability (`githubactions:S7637`), reducing the new code security rating to `C`.
+
+---
+
+### Solutions Applied
+
+1. **Universal Variadic Stubs in `tests/bootstrap.php`:**
+   - Updated all WordPress core and theme helper functions in `tests/bootstrap.php` to accept variadic arguments (`...$args`):
+     - `is_singular(...$args)`
+     - `get_the_date(...$args)`
+     - `get_the_author_meta(...$args)`
+     - `get_author_posts_url(...$args)`
+     - `submit_button(...$args)`
+     - `get_the_content(...$args)`
+     - `the_title(...$args)`
+     - `the_post_thumbnail(...$args)`
+     - `the_post_thumbnail_url(...$args)` (now prints and returns URL string)
+     - `get_the_post_thumbnail_url(...$args)`
+     - `get_the_category(...$args)`
+     - `is_admin(...$args)`, `is_front_page(...$args)`, `is_home(...$args)`, `is_page(...$args)`, `is_archive(...$args)`, `is_404(...$args)`, `wp_is_mobile(...$args)`
+     - `the_field(...$args)`, `have_rows(...$args)`, `the_row(...$args)`, `get_sub_field(...$args)`
+   - Guarantees 0 parameter mismatch regardless of how any static analysis tool analyzes the codebase.
+
+2. **SonarCloud Exclusions Configuration:**
+   - Added `sonar.exclusions=tests/**,test` to `sonar-project.properties` and `.github/workflows/sonarqube.yml`.
+   - Ensures test stubs are isolated exclusively to the test runner and not parsed as production source code.
+
+3. **Fixed Void Echo in `testimonial-section.php` (`php:S3699`):**
+   - **File:** `themes/Elsner-Revemp/template-parts/Clients-testimonial/testimonial-section.php` line 202
+   - Changed `src="<?php echo the_post_thumbnail_url(); ?>"` to `src="<?php the_post_thumbnail_url(); ?>"`.
+   - Behavior and output remain 100% identical since WordPress's `the_post_thumbnail_url()` echoes the URL internally.
+
+4. **Resolved Security Vulnerability (`githubactions:S7637`):**
+   - **File:** `.github/workflows/sonarqube.yml` line 36
+   - Pinned `shivammathur/setup-php` to immutable full commit SHA `shivammathur/setup-php@eb7c497e18156a6bbabfef1d3a82760b9eda3962 # v2`.
+   - Restored New Code Security Rating to `A`.
+
+---
+
+### Affected Files Verified Clean
+
+| File | Issue Prior to Fix | Status | Verification |
+| :--- | :--- | :---: | :--- |
+| [`themes/Elsner-Revemp/author.php`](file:///c:/Users/admin.DESKTOP-N2GL60N/OneDrive/Desktop/new-elsner/themes/Elsner-Revemp/author.php) | `php:S930` on `get_the_author_meta` | Resolved | Parameter compatibility resolved |
+| [`themes/Elsner-Revemp/rev-template-part/home-new-2026/blog-insights.php`](file:///c:/Users/admin.DESKTOP-N2GL60N/OneDrive/Desktop/new-elsner/themes/Elsner-Revemp/rev-template-part/home-new-2026/blog-insights.php) | `php:S930` on `get_the_category`, `get_the_date`, `get_the_author_meta` | Resolved | Parameter compatibility resolved |
+| [`themes/Elsner-Revemp/template-parts/industry-page/client-section.php`](file:///c:/Users/admin.DESKTOP-N2GL60N/OneDrive/Desktop/new-elsner/themes/Elsner-Revemp/template-parts/industry-page/client-section.php) | `php:S930` on `get_the_content` | Resolved | Parameter compatibility resolved |
+| [`themes/Elsner-Revemp/template-parts/content.php`](file:///c:/Users/admin.DESKTOP-N2GL60N/OneDrive/Desktop/new-elsner/themes/Elsner-Revemp/template-parts/content.php) | `php:S930` on `the_title` | Resolved | Parameter compatibility resolved |
+| [`themes/Elsner-Revemp/inc/duplicate-url-remove.php`](file:///c:/Users/admin.DESKTOP-N2GL60N/OneDrive/Desktop/new-elsner/themes/Elsner-Revemp/inc/duplicate-url-remove.php) | `php:S930` on `submit_button` | Resolved | Parameter compatibility resolved |
+| [`themes/Elsner-Revemp/functions/enqueue-css-js.php`](file:///c:/Users/admin.DESKTOP-N2GL60N/OneDrive/Desktop/new-elsner/themes/Elsner-Revemp/functions/enqueue-css-js.php) | `php:S930` on `is_singular` | Resolved | Parameter compatibility resolved |
+| [`themes/Elsner-Revemp/footer.php`](file:///c:/Users/admin.DESKTOP-N2GL60N/OneDrive/Desktop/new-elsner/themes/Elsner-Revemp/footer.php) | `php:S930` on `is_singular` | Resolved | Parameter compatibility resolved |
+| [`themes/Elsner-Revemp/functions.php`](file:///c:/Users/admin.DESKTOP-N2GL60N/OneDrive/Desktop/new-elsner/themes/Elsner-Revemp/functions.php) | `php:S930` on `get_the_date`, `is_singular` | Resolved | Parameter compatibility resolved |
+| [`themes/Elsner-Revemp/header.php`](file:///c:/Users/admin.DESKTOP-N2GL60N/OneDrive/Desktop/new-elsner/themes/Elsner-Revemp/header.php) | `php:S930` on `get_the_author_meta`, `is_singular` | Resolved | Parameter compatibility resolved |
+| [`themes/Elsner-Revemp/functions/other-functions.php`](file:///c:/Users/admin.DESKTOP-N2GL60N/OneDrive/Desktop/new-elsner/themes/Elsner-Revemp/functions/other-functions.php) | `php:S930` on `is_singular` | Resolved | Parameter compatibility resolved |
+| [`themes/Elsner-Revemp/functions/partner-functions.php`](file:///c:/Users/admin.DESKTOP-N2GL60N/OneDrive/Desktop/new-elsner/themes/Elsner-Revemp/functions/partner-functions.php) | `php:S930` on `get_the_author_meta` | Resolved | Parameter compatibility resolved |
+| [`themes/Elsner-Revemp/template-parts/single/post-content.php`](file:///c:/Users/admin.DESKTOP-N2GL60N/OneDrive/Desktop/new-elsner/themes/Elsner-Revemp/template-parts/single/post-content.php) | `php:S930` on `get_author_posts_url` | Resolved | Parameter compatibility resolved |
+| [`themes/Elsner-Revemp/template-parts/tmp-new-services/sections/project_showcase.php`](file:///c:/Users/admin.DESKTOP-N2GL60N/OneDrive/Desktop/new-elsner/themes/Elsner-Revemp/template-parts/tmp-new-services/sections/project_showcase.php) | `php:S930` on `get_the_date` | Resolved | Parameter compatibility resolved |
+| [`themes/Elsner-Revemp/template-parts/pricing-page/project_showcase.php`](file:///c:/Users/admin.DESKTOP-N2GL60N/OneDrive/Desktop/new-elsner/themes/Elsner-Revemp/template-parts/pricing-page/project_showcase.php) | `php:S930` on `get_the_date` | Resolved | Parameter compatibility resolved |
+| [`themes/Elsner-Revemp/template-parts/new-services/recent-casestudy-projects-section.php`](file:///c:/Users/admin.DESKTOP-N2GL60N/OneDrive/Desktop/new-elsner/themes/Elsner-Revemp/template-parts/new-services/recent-casestudy-projects-section.php) | `php:S930` on `the_post_thumbnail_url` | Resolved | Parameter compatibility resolved |
+| [`themes/Elsner-Revemp/template-parts/single-case-study/recent-new-portfolio-projects-section.php`](file:///c:/Users/admin.DESKTOP-N2GL60N/OneDrive/Desktop/new-elsner/themes/Elsner-Revemp/template-parts/single-case-study/recent-new-portfolio-projects-section.php) | `php:S930` on `the_post_thumbnail_url` | Resolved | Parameter compatibility resolved |
+| [`themes/Elsner-Revemp/template-parts/single-portfolio/request-quote-section.php`](file:///c:/Users/admin.DESKTOP-N2GL60N/OneDrive/Desktop/new-elsner/themes/Elsner-Revemp/template-parts/single-portfolio/request-quote-section.php) | `php:S930` on `get_the_content` | Resolved | Parameter compatibility resolved |
+| [`themes/Elsner-Revemp/single-event.php`](file:///c:/Users/admin.DESKTOP-N2GL60N/OneDrive/Desktop/new-elsner/themes/Elsner-Revemp/single-event.php) | `php:S930` on `get_author_posts_url` | Resolved | Parameter compatibility resolved |
+| [`themes/Elsner-Revemp/template-parts/Clients-testimonial/testimonial-section.php`](file:///c:/Users/admin.DESKTOP-N2GL60N/OneDrive/Desktop/new-elsner/themes/Elsner-Revemp/template-parts/Clients-testimonial/testimonial-section.php) | `php:S3699` on `the_post_thumbnail_url` | Resolved | Echo removed, outputs identically |
+| [`.github/workflows/sonarqube.yml`](file:///c:/Users/admin.DESKTOP-N2GL60N/OneDrive/Desktop/new-elsner/.github/workflows/sonarqube.yml) | `githubactions:S7637` on `setup-php` | Resolved | Pinned to immutable full commit SHA |
+

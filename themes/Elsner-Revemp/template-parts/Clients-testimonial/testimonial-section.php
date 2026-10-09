@@ -199,7 +199,7 @@ $quote_image_3 = get_field('quote_image_3', $post_id);
 
                             <div class="clutch-user">
                                 <div class="author-data">
-                                    <img alt="tech img" loading="lazy" src="<?php echo the_post_thumbnail_url(); ?> "
+                                    <img alt="tech img" loading="lazy" src="<?php the_post_thumbnail_url(); ?> "
                                         width="70" height="70">
                                     <div class="author-name">
                                         <h6><?php the_title(); ?></h6>

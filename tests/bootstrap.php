@@ -260,39 +260,51 @@ function get_the_ID() {
     return isset($post->ID) ? $post->ID : 101;
 }
 
-function the_permalink() {
+function the_permalink(...$args) {
     echo 'https://example.com/post-permalink/';
 }
 
-function the_title() {
-    echo 'Sample Post Title';
+function the_title(...$args) {
+    $before = isset($args[0]) ? $args[0] : '';
+    $after  = isset($args[1]) ? $args[1] : '';
+    $echo   = isset($args[2]) ? $args[2] : true;
+    $title  = $before . 'Sample Post Title' . $after;
+    if ($echo) {
+        echo $title;
+    }
+    return $title;
 }
 
-function the_post_thumbnail($size = 'post-thumbnail', $attr = '') {
+function the_post_thumbnail(...$args) {
     echo '<img src="https://example.com/thumb.jpg" alt="thumb" />';
 }
 
-function the_post_thumbnail_url() {
+function the_post_thumbnail_url(...$args) {
     echo 'https://example.com/thumb.jpg';
+    return 'https://example.com/thumb.jpg';
 }
 
-function has_post_thumbnail($post_id = null) {
+function get_the_post_thumbnail_url(...$args) {
+    return 'https://example.com/thumb.jpg';
+}
+
+function has_post_thumbnail(...$args) {
     return true;
 }
 
-function wp_reset_postdata() {
+function wp_reset_postdata(...$args) {
     return true;
 }
 
-function get_post_mime_type($id = 0) {
+function get_post_mime_type(...$args) {
     return 'image/jpeg';
 }
 
-function wp_get_attachment_metadata($id) {
+function wp_get_attachment_metadata(...$args) {
     return array('sizes' => array('large' => array('file' => 'large-test.jpg')));
 }
 
-function get_attached_file($id) {
+function get_attached_file(...$args) {
     return sys_get_temp_dir() . '/test-image.jpg';
 }
 
@@ -308,7 +320,7 @@ function wp_list_pluck($list, $field) {
     return $result;
 }
 
-function get_the_terms($post_id, $taxonomy) {
+function get_the_terms(...$args) {
     $t1 = new stdClass();
     $t1->term_id = 1;
     $t1->name = 'WordPress';
@@ -316,7 +328,7 @@ function get_the_terms($post_id, $taxonomy) {
     return array($t1);
 }
 
-function get_the_category() {
+function get_the_category(...$args) {
     $cat = new stdClass();
     $cat->term_id = 5;
     $cat->name = 'Technology';
@@ -324,35 +336,37 @@ function get_the_category() {
     return array($cat);
 }
 
-function get_the_author() {
+function get_the_author(...$args) {
     return 'Admin';
 }
 
-function get_the_author_meta($field = 'ID') {
+function get_the_author_meta(...$args) {
     return 1;
 }
 
-function get_author_posts_url($author_id) {
+function get_author_posts_url(...$args) {
     return 'https://example.com/author/admin/';
 }
 
-function get_the_time($format = 'U') {
+function get_the_time(...$args) {
     return 1728000000;
 }
 
-function get_the_modified_time($format = 'U') {
+function get_the_modified_time(...$args) {
     return 1728000000;
 }
 
-function get_the_modified_date($format = 'Y-m-d') {
+function get_the_modified_date(...$args) {
+    $format = isset($args[0]) ? $args[0] : 'Y-m-d';
     return date($format);
 }
 
-function get_permalink($post_id = 0) {
+function get_permalink(...$args) {
     return 'https://example.com/sample-post/';
 }
 
-function get_the_date($format = 'Y-m-d') {
+function get_the_date(...$args) {
+    $format = !empty($args[0]) ? $args[0] : 'Y-m-d';
     return date($format);
 }
 
@@ -372,19 +386,19 @@ function add_image_size($name, $width = 0, $height = 0, $crop = false) { return 
 function add_editor_style($stylesheet = 'editor-style.css') { return true; }
 
 // Theme Conditionals & Helpers
-function is_admin() { return false; }
-function is_multi_author() { return true; }
-function is_singular() { return false; }
-function is_customize_preview() { return false; }
-function is_front_page() { return true; }
-function is_home() { return false; }
-function is_page($page = '') { return false; }
-function is_archive() { return false; }
-function is_404() { return false; }
-function wp_is_mobile() { return false; }
-function is_user_logged_in() { return true; }
-function has_header_image() { return true; }
-function is_active_sidebar($index) { return true; }
+function is_admin(...$args) { return false; }
+function is_multi_author(...$args) { return true; }
+function is_singular(...$args) { return false; }
+function is_customize_preview(...$args) { return false; }
+function is_front_page(...$args) { return true; }
+function is_home(...$args) { return false; }
+function is_page(...$args) { return false; }
+function is_archive(...$args) { return false; }
+function is_404(...$args) { return false; }
+function wp_is_mobile(...$args) { return false; }
+function is_user_logged_in(...$args) { return true; }
+function has_header_image(...$args) { return true; }
+function is_active_sidebar(...$args) { return true; }
 
 function get_theme_mod($name, $default = false) {
     global $wp_test_theme_mods;
@@ -467,26 +481,26 @@ function selected($selected, $current = true, $echo = true) {
     if ($echo) { echo $res; }
     return $res;
 }
-function submit_button() {}
-function settings_fields($group) {}
-function register_setting($group, $option, $args = array()) {}
-function add_options_page($page_title, $menu_title, $capability, $menu_slug, $callback = '') {}
-function add_media_page($page_title, $menu_title, $capability, $menu_slug, $callback = '') {}
-function admin_url($path = '') { return 'https://example.com/wp-admin/' . ltrim($path, '/'); }
+function submit_button(...$args) { echo '<input type="submit" />'; }
+function settings_fields(...$args) {}
+function register_setting(...$args) {}
+function add_options_page(...$args) {}
+function add_media_page(...$args) {}
+function admin_url(...$args) { return 'https://example.com/wp-admin/' . (isset($args[0]) ? ltrim($args[0], '/') : ''); }
 
-function add_shortcode($tag, $callback) { return true; }
-function register_activation_hook($file, $callback) { return true; }
-function size_format($bytes, $decimals = 0) { return '10 MB'; }
-function get_page_by_path($page_path, $output = 'OBJECT', $post_type = 'page') { return null; }
-function the_field($selector, $post_id = false) { echo 'Sample Field Value'; }
-function get_the_content($more_link_text = null, $strip_teaser = false) { return 'This is sample content for testing shortcodes.'; }
+function add_shortcode(...$args) { return true; }
+function register_activation_hook(...$args) { return true; }
+function size_format(...$args) { return '10 MB'; }
+function get_page_by_path(...$args) { return null; }
+function the_field(...$args) { echo 'Sample Field Value'; }
+function get_the_content(...$args) { return 'This is sample content for testing shortcodes.'; }
 function wp_trim_words($text, $num_words = 55, $more = null) {
     $words = explode(' ', $text);
     return implode(' ', array_slice($words, 0, $num_words)) . ($more ?: '...');
 }
-function have_rows($selector, $post_id = false) { return false; }
-function the_row() { return false; }
-function get_sub_field($selector, $post_id = false) { return ''; }
+function have_rows(...$args) { return false; }
+function the_row(...$args) { return false; }
+function get_sub_field(...$args) { return ''; }
 
 if (!defined('OBJECT')) {
     define('OBJECT', 'OBJECT');

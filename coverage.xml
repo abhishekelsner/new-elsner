@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1791542112">
-  <project timestamp="1791542112">
+<coverage generated="1791544151">
+  <project timestamp="1791544151">
     <file name="plugins/claude-alt-text/claude-alt-text.php">
       <line num="12" type="stmt" count="1"/>
       <line num="13" type="stmt" count="1"/>
