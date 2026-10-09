@@ -13,6 +13,7 @@ themes/Elsner-Revemp/inc/paypal/paypal.class.php
 plugins/contact-form-7-weekmate/contact-form-7-weekmate.php
 themes/Elsner-Revemp/src/scss/===main.scss
 themes/Elsner-Revemp/src/scss/===responsive.scss
+plugins/contact-form-7-lead-info-with-country
 # Environment variables & Secrets
 .env
 .env.*
