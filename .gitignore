@@ -14,6 +14,7 @@ plugins/contact-form-7-weekmate/contact-form-7-weekmate.php
 themes/Elsner-Revemp/src/scss/===main.scss
 themes/Elsner-Revemp/src/scss/===responsive.scss
 plugins/contact-form-7-lead-info-with-country
+plugins/country-phone-field-contact-form-7
 # Environment variables & Secrets
 .env
 .env.*
