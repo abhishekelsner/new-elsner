@@ -23,7 +23,6 @@ $author_image_url = get_field('author_image', 'user_' . $author_id);
             <div class="author-details">
                 <h1><?php echo esc_html($author_meta->display_name); ?></h1>
                 <p class="author-role"><?php the_field('author_position', 'user_' . $author_id); ?></p>
-                <!-- <p class="author-role"><?php // the_field('author_role', 'user_' . $author_id); ?></p> -->
                 <p class="author-exp"><span><svg width="34" height="40" viewBox="0 0 34 40" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
