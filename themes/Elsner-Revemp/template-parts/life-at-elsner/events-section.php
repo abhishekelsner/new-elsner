@@ -1,7 +1,6 @@
 <section class="elsner-life-events">
     <div class="container">
         <div class="filter-list">
-            <!-- <h5 class="Redhat-font white-text">Events Category</h5> -->
             <div class="category-filter white-filter">
                 <?php
                 $selected_years = array();
@@ -33,11 +32,8 @@
                 // Check if "All Events" is selected
                 $all_events_active = empty($selected_years) ? ' active' : '';
 
-                //echo '<button type="button" class="filter-btn' . $all_events_active . '" data-filter=".all" disabled="disabled">All Events</button>';
-
                 foreach ($years as $year) {
                     $active_class = in_array($year, $selected_years) ? ' active' : '';
-                    //  echo '<button type="button" class="filter-btn' . $active_class . '" data-filter=".year_' . $year . '">Year ' . $year . '</button>';
                 }
                 ?>
             </div>
