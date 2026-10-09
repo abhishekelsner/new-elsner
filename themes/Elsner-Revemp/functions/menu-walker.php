@@ -79,7 +79,7 @@ class NewElsnerMenu extends Walker_Nav_Menu {
         foreach ($menu_blocks as $i => $block) {
 
             $left_id = 'left-' . sanitize_title($block['title']);
-            $active  = ($i === 0) ? ' active' : '';
+            $active  = ($i === 0) ? 'active' : '';
 
             // Get the menu link (if exists)
             $menu_link = !empty($block['menu_link']) ? $block['menu_link'] : '#';
@@ -102,7 +102,7 @@ class NewElsnerMenu extends Walker_Nav_Menu {
         foreach ($menu_blocks as $i => $block) {
 
             $left_id = 'left-' . sanitize_title($block['title']);
-            $active  = ($i === 0) ? ' active' : '';
+            $active  = ($i === 0) ? 'active' : '';
 
             $output .= '<div class="mega-center-content' . $active . '" id="' . esc_attr($left_id) . '">';
 
@@ -149,7 +149,7 @@ class NewElsnerMenu extends Walker_Nav_Menu {
         foreach ($menu_blocks as $i => $block) {
 
             $right_id = 'right-' . sanitize_title($block['title']);
-            $active   = ($i === 0) ? ' active' : '';
+            $active   = ($i === 0) ? 'active' : '';
 
             $output .= '<div class="mega-right-content' . $active . '" id="' . esc_attr($right_id) . '">';
 
@@ -222,13 +222,13 @@ class NewElsnerMenu extends Walker_Nav_Menu {
         /* LEFT */
         $output .= '<div class="mega-left">';
         foreach ($industries as $i => $ind) {
-            $active = $i === 0 ? ' active' : '';
-            $link = !empty($ind['industry_link']) 
-                    ? $ind['industry_link'] 
+            $active = $i === 0 ? 'active' : '';
+            $link = !empty($ind['industry_link'])
+                    ? $ind['industry_link']
                     : $ind['url'];
 
-            $output .= '<a href="' . esc_url($link) . '" 
-            class="mega-left-item' . $active . '" 
+            $output .= '<a href="' . esc_url($link) . '"
+            class="mega-left-item' . $active . '"
             data-target="industry-' . $i . '"
             data-has-link="' . (!empty($ind['industry_link']) ? 'true' : 'false') . '">';
             $output .= esc_html($ind['title']);
@@ -256,8 +256,8 @@ class NewElsnerMenu extends Walker_Nav_Menu {
             $output .= '<p>' . esc_html($ind['excerpt']) . '</p>';
             $output .= '<a href="' . esc_url($ind['url']) . '" class="industry-btn">';
             $output .= '<span>View More</span>';
-            $output .= '<svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" 
-                viewBox="0 0 24 24" fill="none" stroke="currentColor" 
+            $output .= '<svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                viewBox="0 0 24 24" fill="none" stroke="currentColor"
                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
                 <polyline points="15 3 21 3 21 9"></polyline>
@@ -276,9 +276,9 @@ class NewElsnerMenu extends Walker_Nav_Menu {
         $output .= '</li>';
     }
 
-    private function render_resource_mega(&$output, $item) {
+    private function render_resource_mega(&$output, $item){
         $resource_data = get_field('menu_resource_item', $item);
-        if (!$resource_data) return;
+        if(!$resource_data) return;
 
         $output .= '<li class="elsner-header-menu menu-item has-mega resource-mega">';
         $output .= '<a href="#">' . esc_html($item->title) . '</a>';
@@ -297,9 +297,9 @@ class NewElsnerMenu extends Walker_Nav_Menu {
                 $menu_link = !empty($link['url']) ? $link['url'] : '#';
                 $has_link  = ($menu_link !== '#' && !empty($menu_link));
 
-                $output .= '<a href="' . esc_url($menu_link) . '" 
-                                class="mega-resource-left-item" 
-                                data-target="' . esc_attr($left_id) . '" 
+                $output .= '<a href="' . esc_url($menu_link) . '"
+                                class="mega-resource-left-item"
+                                data-target="' . esc_attr($left_id) . '"
                                 data-has-link="' . ($has_link ? 'true' : 'false') . '">';
                 
                 $output .= esc_html($link['link_title']);
