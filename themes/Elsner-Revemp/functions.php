@@ -486,7 +486,7 @@ function enqueue_custom_toc_script()
 add_action('wp_enqueue_scripts', 'enqueue_custom_toc_script');
 
 
-require get_parent_theme_file_path('/functions/tracking-info-functions.php');
+require_once get_parent_theme_file_path('/functions/tracking-info-functions.php');
 
 function enforce_trailing_slash()
 {
@@ -548,8 +548,6 @@ function serve_webp_correctly() {
     }
 }
 add_action('template_redirect', 'serve_webp_correctly', 1);
-
-//add_action('transition_post_status', 'send_email_on_first_publish', 10, 3);
 
 function send_email_on_first_publish($new_status, $old_status, $post) {
 
@@ -722,7 +720,9 @@ add_action('personal_options_update', 'elsner_save_revision_setting');
 add_action('edit_user_profile_update', 'elsner_save_revision_setting');
 
 function elsner_save_revision_setting($user_id) {
-    if (!current_user_can('edit_user', $user_id)) return false;
+    if (!current_user_can('edit_user', $user_id)){
+		return false;
+	}
 
     $value = isset($_POST['elsner_enable_revisions']) ? '1' : '0';
     update_user_meta($user_id, 'elsner_enable_revisions', $value);
@@ -870,7 +870,7 @@ function filter_portfolio_case_study_callback() {
                     <!-- Right Side -->
                     <div class="portfolio-content">
                         <h3 class="portfolio-title"><?php the_title(); ?></h3>
-                        <?php 
+                        <?php
                         $listing_details = get_field('listing_page_details', get_the_ID());
                         $client_name     = $listing_details['client_name'] ?? '';
                         ?>
@@ -989,7 +989,7 @@ function filter_news_by_category_callback() {
             'taxonomy' => 'news-updates',
             'field'    => 'slug',
             'terms'    => $category,
-            'include_children' => false,// this hides the childs of all 
+            'include_children' => false,// this hides the childs of all
         ]];
     }
 
@@ -1012,7 +1012,7 @@ function filter_news_by_category_callback() {
                     <h3><?php the_title(); ?></h3>
                     <p class="date"><?php echo get_the_date('F j, Y'); ?></p>
                     <div><?php the_excerpt(); ?></div>
-                    <span href="<?php the_permalink(); ?>">Know More 
+                    <span href="<?php the_permalink(); ?>">Know More
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <line x1="5" y1="12" x2="19" y2="12"/>
                         <polyline points="12 5 19 12 12 19"/>
@@ -1046,43 +1046,6 @@ function filter_news_by_category_callback() {
 
 add_action('wp_ajax_filter_news_by_category', 'filter_news_by_category_callback');
 add_action('wp_ajax_nopriv_filter_news_by_category', 'filter_news_by_category_callback');
-
-// if (!function_exists('custom_add_defer_to_recaptcha')) {
-
-//     function custom_add_defer_to_recaptcha($tag, $handle, $src) {
-
-//         $target_handles = array(
-//             'google-recaptcha',
-//             'recaptcha',
-//             'wpcf7-recaptcha',
-//             'g-recaptcha'
-//         );
-
-//         if (in_array($handle, $target_handles, true)) {
-
-//             // Add async + defer safely
-//             if (strpos($tag, 'async') === false) {
-//                 $tag = str_replace(
-//                     '<script ',
-//                     '<script async ',
-//                     $tag
-//                 );
-//             }
-
-//             if (strpos($tag, 'defer') === false) {
-//                 $tag = str_replace(
-//                     '<script ',
-//                     '<script defer ',
-//                     $tag
-//                 );
-//             }
-//         }
-
-//         return $tag;
-//     }
-
-//     add_filter('script_loader_tag', 'custom_add_defer_to_recaptcha', 10, 3);
-// }
 
 function add_defer_attribute($tag, $handle, $src) {
 
@@ -1145,39 +1108,6 @@ add_action('wp_enqueue_scripts', function () {
     wp_add_inline_script('contact-form-7', $inline_js);
 });
 
-
-
-
-// code Added at 31-=08-2026 
-
-
-// add_filter('wpcf7_mail_components', function ($components, $contact_form, $mail) {
-// 	// Only UpComing Event form — 60646 is the real post ID (not the shortcode hash 628d94e)
-// 	if ($contact_form->id() != 60646) {
-// 		return $components;
-// 	}
-
-// 	if ($mail->name() !== 'mail') {
-// 		return $components;
-// 	}
-
-// 	$submission = WPCF7_Submission::get_instance();
-// 	if (!$submission) {
-// 		return $components;
-// 	}
-
-// 	$data = $submission->get_posted_data();
-// 	$event_name = isset($data['event-name'])
-// 		? trim(sanitize_text_field($data['event-name']))
-// 		: '';
-
-// 	error_log('EVENT NAME = ' . $event_name); // keep temporarily to confirm it fires
-
-// 	if ($event_name === 'Ecommerce Expo London') {
-// 		$components['recipient'] = 'karan@elsner.com, harshal@elsner.in';
-// 	} elseif ($event_name === 'Seamless Middle East') {
-// 		$components['recipient'] = 'nishith@elsner.com, harshal@elsner.in';
-// 	}
 
 // 	return $components;
 // }, 10, 3);
