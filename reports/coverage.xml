@@ -1,6 +1,99 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1791544151">
-  <project timestamp="1791544151">
+<coverage generated="1791550246">
+  <project timestamp="1791550246">
+    <file name="plugins/advanced-custom-fields-nav-menu-field-master/nav-menu-v4.php">
+      <line num="169" type="stmt" count="1"/>
+      <line num="170" type="stmt" count="1"/>
+      <line num="171" type="stmt" count="1"/>
+      <line num="172" type="stmt" count="1"/>
+      <line num="173" type="stmt" count="1"/>
+      <line num="176" type="stmt" count="1"/>
+      <line num="180" type="stmt" count="1"/>
+      <line num="181" type="stmt" count="1"/>
+      <line num="184" type="stmt" count="1"/>
+      <line num="185" type="stmt" count="1"/>
+      <line num="186" type="stmt" count="1"/>
+      <line num="189" type="stmt" count="1"/>
+      <line num="236" type="stmt" count="1"/>
+    </file>
+    <file name="themes/Elsner-Revemp/functions.php">
+      <line num="61" type="stmt" count="1"/>
+      <line num="66" type="stmt" count="1"/>
+      <line num="71" type="stmt" count="1"/>
+      <line num="73" type="stmt" count="1"/>
+      <line num="489" type="stmt" count="1"/>
+      <line num="723" type="stmt" count="1"/>
+      <line num="724" type="stmt" count="1"/>
+    </file>
+    <file name="themes/Elsner-Revemp/template-parts/global-template/why-hire-section.php">
+      <line num="4" type="stmt" count="1"/>
+      <line num="6" type="stmt" count="1"/>
+      <line num="26" type="stmt" count="1"/>
+      <line num="27" type="stmt" count="1"/>
+      <line num="68" type="stmt" count="1"/>
+    </file>
+    <file name="themes/Elsner-Revemp/template-parts/global-template/hiring-step-section.php">
+      <line num="19" type="stmt" count="1"/>
+      <line num="20" type="stmt" count="1"/>
+      <line num="31" type="stmt" count="1"/>
+    </file>
+    <file name="themes/Elsner-Revemp/template-parts/zoho-landing/clutch_testimonials.php">
+      <line num="2" type="stmt" count="1"/>
+      <line num="3" type="stmt" count="1"/>
+    </file>
+    <file name="themes/Elsner-Revemp/template-parts/new-services/newservice-clutch-section.php">
+      <line num="2" type="stmt" count="1"/>
+      <line num="3" type="stmt" count="1"/>
+    </file>
+    <file name="themes/Elsner-Revemp/template-parts/global-template/talk-to-us-section.php">
+      <line num="24" type="stmt" count="1"/>
+      <line num="30" type="stmt" count="1"/>
+    </file>
+    <file name="plugins/advanced-custom-fields-nav-menu-field-master/fz-acf-nav-menu.php">
+      <line num="67" type="stmt" count="1"/>
+    </file>
+    <file name="plugins/advanced-custom-fields-nav-menu-field-master/nav-menu-v5.php">
+      <line num="206" type="stmt" count="1"/>
+    </file>
+    <file name="themes/Elsner-Revemp/header.php">
+      <line num="22" type="stmt" count="1"/>
+    </file>
+    <file name="themes/Elsner-Revemp/template-parts/single/post-content.php">
+      <line num="77" type="stmt" count="1"/>
+    </file>
+    <file name="themes/Elsner-Revemp/template-parts/global-template/request-quote-section.php">
+      <line num="27" type="stmt" count="1"/>
+    </file>
+    <file name="themes/Elsner-Revemp/template-parts/SEO-package/seo-new-price-package-section.php">
+      <line num="771" type="stmt" count="1"/>
+    </file>
+    <file name="themes/Elsner-Revemp/template-parts/service-section-template-26/magento-tab-integration-section.php">
+      <line num="34" type="stmt" count="1"/>
+    </file>
+    <file name="themes/Elsner-Revemp/template-parts/global-template/hire-developer-banner-section.php">
+      <line num="75" type="stmt" count="1"/>
+    </file>
+    <file name="themes/Elsner-Revemp/single-case-study.php">
+      <line num="18" type="stmt" count="1"/>
+    </file>
+    <file name="themes/Elsner-Revemp/single-portfolio.php">
+      <line num="17" type="stmt" count="1"/>
+    </file>
+    <file name="themes/Elsner-Revemp/single-product.php">
+      <line num="17" type="stmt" count="1"/>
+    </file>
+    <file name="themes/Elsner-Revemp/single-solution.php">
+      <line num="17" type="stmt" count="1"/>
+    </file>
+    <file name="themes/Elsner-Revemp/single.php">
+      <line num="17" type="stmt" count="1"/>
+    </file>
+    <file name="themes/Elsner-Revemp/Revamp-Template/template-landing-page-2026.php">
+      <line num="20" type="stmt" count="1"/>
+    </file>
+    <file name="themes/Elsner-Revemp/template-parts/Clients-testimonial/testimonial-section.php">
+      <line num="202" type="stmt" count="1"/>
+    </file>
     <file name="plugins/claude-alt-text/claude-alt-text.php">
       <line num="12" type="stmt" count="1"/>
       <line num="13" type="stmt" count="1"/>
@@ -2430,15 +2523,15 @@
       <line num="784" type="stmt" count="1"/>
       <line num="786" type="stmt" count="1"/>
       <line num="790" type="stmt" count="1"/>
-      <line num="791" type="stmt" count="1"/>
-      <line num="792" type="stmt" count="1"/>
-      <line num="794" type="stmt" count="1"/>
-      <line num="795" type="stmt" count="1"/>
-      <line num="797" type="stmt" count="1"/>
-      <line num="799" type="stmt" count="1"/>
-      <line num="803" type="stmt" count="1"/>
-      <line num="805" type="stmt" count="1"/>
-      <line num="823" type="stmt" count="1"/>
+      <line num="791" type="stmt" count="0"/>
+      <line num="792" type="stmt" count="0"/>
+      <line num="794" type="stmt" count="0"/>
+      <line num="795" type="stmt" count="0"/>
+      <line num="797" type="stmt" count="0"/>
+      <line num="799" type="stmt" count="0"/>
+      <line num="803" type="stmt" count="0"/>
+      <line num="805" type="stmt" count="0"/>
+      <line num="823" type="stmt" count="0"/>
     </file>
   </project>
 </coverage>

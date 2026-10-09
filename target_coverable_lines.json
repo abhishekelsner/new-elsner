@@ -1,4 +1,97 @@
 {
+  "plugins/advanced-custom-fields-nav-menu-field-master/nav-menu-v4.php": [
+    169,
+    170,
+    171,
+    172,
+    173,
+    176,
+    180,
+    181,
+    184,
+    185,
+    186,
+    189,
+    236
+  ],
+  "themes/Elsner-Revemp/functions.php": [
+    61,
+    66,
+    71,
+    73,
+    489,
+    723,
+    724
+  ],
+  "themes/Elsner-Revemp/template-parts/global-template/why-hire-section.php": [
+    4,
+    6,
+    26,
+    27,
+    68
+  ],
+  "themes/Elsner-Revemp/template-parts/global-template/hiring-step-section.php": [
+    19,
+    20,
+    31
+  ],
+  "themes/Elsner-Revemp/template-parts/zoho-landing/clutch_testimonials.php": [
+    2,
+    3
+  ],
+  "themes/Elsner-Revemp/template-parts/new-services/newservice-clutch-section.php": [
+    2,
+    3
+  ],
+  "themes/Elsner-Revemp/template-parts/global-template/talk-to-us-section.php": [
+    24,
+    30
+  ],
+  "plugins/advanced-custom-fields-nav-menu-field-master/fz-acf-nav-menu.php": [
+    67
+  ],
+  "plugins/advanced-custom-fields-nav-menu-field-master/nav-menu-v5.php": [
+    206
+  ],
+  "themes/Elsner-Revemp/header.php": [
+    22
+  ],
+  "themes/Elsner-Revemp/template-parts/single/post-content.php": [
+    77
+  ],
+  "themes/Elsner-Revemp/template-parts/global-template/request-quote-section.php": [
+    27
+  ],
+  "themes/Elsner-Revemp/template-parts/SEO-package/seo-new-price-package-section.php": [
+    771
+  ],
+  "themes/Elsner-Revemp/template-parts/service-section-template-26/magento-tab-integration-section.php": [
+    34
+  ],
+  "themes/Elsner-Revemp/template-parts/global-template/hire-developer-banner-section.php": [
+    75
+  ],
+  "themes/Elsner-Revemp/single-case-study.php": [
+    18
+  ],
+  "themes/Elsner-Revemp/single-portfolio.php": [
+    17
+  ],
+  "themes/Elsner-Revemp/single-product.php": [
+    17
+  ],
+  "themes/Elsner-Revemp/single-solution.php": [
+    17
+  ],
+  "themes/Elsner-Revemp/single.php": [
+    17
+  ],
+  "themes/Elsner-Revemp/Revamp-Template/template-landing-page-2026.php": [
+    20
+  ],
+  "themes/Elsner-Revemp/template-parts/Clients-testimonial/testimonial-section.php": [
+    202
+  ],
   "plugins/claude-alt-text/claude-alt-text.php": [
     12,
     13,

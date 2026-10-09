@@ -125,6 +125,22 @@ function wp_strip_all_tags($string, $remove_breaks = false) {
     return trim($string);
 }
 
+function wp_unslash($value) {
+    return is_string($value) ? stripslashes($value) : $value;
+}
+
+function the_content(...$args) {
+    echo 'Sample Post Content';
+}
+
+function do_shortcode($content, $ignore_html = false) {
+    return is_string($content) ? $content : '';
+}
+
+function custom_breadcrumbs(...$args) {
+    echo '<nav class="breadcrumbs">Breadcrumbs</nav>';
+}
+
 function wp_parse_args($args, $defaults = array()) {
     if (is_object($args)) {
         $r = get_object_vars($args);
@@ -238,6 +254,10 @@ class WP_Query {
         $GLOBALS['post'] = $this->post;
         return $this->post;
     }
+}
+
+function get_post(...$args) {
+    return new WP_Post(array('ID' => 101, 'post_title' => 'Test Post', 'post_name' => 'test-post'));
 }
 
 function get_posts($args = array()) {
