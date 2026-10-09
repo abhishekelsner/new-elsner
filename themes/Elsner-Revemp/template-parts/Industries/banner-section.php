@@ -31,9 +31,9 @@ $testimonial_form = is_page('jewelry-e-commerce-development') || is_page('fashio
                         <h1><?php echo $banner_heading; ?></h1>
                         <p><?php echo the_content(); ?></p>
                         <div class="banner-btn">
-                            <!-- <a href="<?php //echo $testimonial_form; 
+                            <!-- <a href="<?php 
                                             ?>"
-                        class="btn btn-secondary"><?php //echo $banner_button; 
+                        class="btn btn-secondary"><?php
                                                     ?></a> -->
                             <a href="<?php echo $testimonial_form; ?>"
                                 class="btn btn-secondary"><?php echo $banner_button; ?></a>
@@ -122,7 +122,7 @@ $testimonial_form = is_page('jewelry-e-commerce-development') || is_page('fashio
     background: linear-gradient(180deg, rgba(228, 251, 255, 0.2) 0%, rgba(228, 251, 255, 0.5) 50%, rgba(199, 247, 255, 0.8) 100%);
     margin-bottom: 15px;
     padding: 5px;
-}  
+}
 
 .hero-booking-tab span {
     background: linear-gradient(180deg, rgba(228, 251, 255, .2), rgba(228, 251, 255, .5) 50%, rgba(199, 247, 255, .8));
