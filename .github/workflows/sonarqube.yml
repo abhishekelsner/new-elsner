@@ -31,6 +31,17 @@ jobs:
           distribution: temurin
           java-version: "17"
 
+      # Setup PHP for running tests
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: "8.2"
+          coverage: none
+
+      # Run unit tests and generate coverage report
+      - name: Run unit tests and generate coverage report
+        run: php tests/run-tests.php
+
       # SonarQube Cloud analysis
       - name: Analyze with SonarQube
         uses: SonarSource/sonarqube-scan-action@d209202bc7d53ff1cc128f7f907dac145c9d6ae9
@@ -42,3 +53,5 @@ jobs:
           args: >
             -Dsonar.projectKey=abhishekelsner_new-elsner
             -Dsonar.organization=abhishekelsner
+            -Dsonar.php.coverage.reportPaths=reports/coverage.xml,coverage.xml
+            -Dsonar.coverage.exclusions=tests/**

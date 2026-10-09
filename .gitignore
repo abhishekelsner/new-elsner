@@ -31,3 +31,5 @@ sonarqube-summary.json
 sonarqube-report.md
 sonarqube-security-before.md
 sonarqube-security-fixes.md
+/test
+
