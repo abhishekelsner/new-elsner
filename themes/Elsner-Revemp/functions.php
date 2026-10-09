@@ -126,7 +126,7 @@ function add_custom_head_code_script()
             },
             "headline": "' . esc_html($post_title) . '",
             "description": "' . esc_html($post_excerpt) . '",
-            "image": "' . esc_url($post_thumbnail_url) . '", 
+            "image": "' . esc_url($post_thumbnail_url) . '",
             "author": {
               "@type": "Organization",
               "name": "Elsner Technologies",
