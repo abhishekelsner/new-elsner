@@ -278,7 +278,9 @@ class NewElsnerMenu extends Walker_Nav_Menu {
 
     private function render_resource_mega(&$output, $item){
         $resource_data = get_field('menu_resource_item', $item);
-        if(!$resource_data) return;
+        if(!$resource_data){
+            return;
+        }
 
         $output .= '<li class="elsner-header-menu menu-item has-mega resource-mega">';
         $output .= '<a href="#">' . esc_html($item->title) . '</a>';
@@ -355,8 +357,7 @@ class NewElsnerMenu extends Walker_Nav_Menu {
 }
 
 //sidebar menu
-class SidebarMenu extends Walker_Nav_Menu
-{
+class SidebarMenu extends Walker_Nav_Menu{
     var $count = 0;
 
     function start_lvl(&$output, $depth = 0, $args = array())
