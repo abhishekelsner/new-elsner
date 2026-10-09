@@ -27,10 +27,6 @@ while (have_posts()) : the_post();
 		// pree custom code
 		get_template_part('template-parts/single-solution/solution-option', 'section');
 		get_template_part('template-parts/single-solution/featured2', 'section');
-		// pree custom code end 
-	// get_template_part('template-parts/single-solution/solution-provided', 'section');
-	// get_template_part('template-parts/single-solution/project-making', 'section');
-	// get_template_part('template-parts/single-solution/project-team', 'section');
 
 endwhile;
 
