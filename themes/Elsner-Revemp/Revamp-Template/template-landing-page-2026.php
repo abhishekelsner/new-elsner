@@ -17,7 +17,7 @@ get_header();
             $template = get_template_directory() . "/template-parts/zoho-landing/{$layout}.php";
 
             if (file_exists($template)) {
-                include $template;
+                include_once $template;
             } elseif (defined('WP_DEBUG') && WP_DEBUG) {
                 echo "<!-- Missing flexible template: {$layout}.php -->";
             }
