@@ -373,9 +373,9 @@ function custom_cf7_before_send_mail($contact_form)
 }
 // Hook into Contact Form 7's 'before_send_mail' action
 add_action('wpcf7_before_send_mail', 'custom_cf7_before_send_mail');
-//  ====== End Code for Case Study Upload PDF ======= 
+//  ====== End Code for Case Study Upload PDF =======
 
-//  ====== Start Code for Blog Detail Page Table Content  ======= 
+//  ====== Start Code for Blog Detail Page Table Content  =======
 
 function generate_toc($content)
 {
