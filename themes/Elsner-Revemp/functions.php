@@ -72,10 +72,6 @@ require_once get_parent_theme_file_path('/inc/icon-functions.php');
 
 require_once get_parent_theme_file_path('/inc/duplicate-url-remove.php');
 
-
-// //  ====== End Code for Blog Detail Page Table Content  ======= 
-// require get_parent_theme_file_path('/tracking-info-functions.php');
-
 $functions_includes = array(
     '/global-elsner.php',
     '/partner-portal.php',
@@ -130,12 +126,12 @@ function add_custom_head_code_script()
             },
             "headline": "' . esc_html($post_title) . '",
             "description": "' . esc_html($post_excerpt) . '",
-            "image": "' . esc_url($post_thumbnail_url) . '",  
+            "image": "' . esc_url($post_thumbnail_url) . '", 
             "author": {
               "@type": "Organization",
               "name": "Elsner Technologies",
               "url": "https://www.elsner.com/"
-            },  
+            },
             "datePublished": "' . esc_html($post_date) . '"
           }';
         echo '</script>';
@@ -197,16 +193,15 @@ function add_mailchimp_popup(){
                 }
             });
         </script>
-    <?php 
+    <?php
     }
 }
 add_action('wp_footer', 'add_mailchimp_popup');
 
-//  ====== start  breadcrumb code ======= 
+//  ====== start  breadcrumb code =======
 
 function custom_breadcrumbs()
 {
-    // $separator = ' &gt; ';
     $separator = ' / ';
     $home = 'Home';
 
@@ -304,8 +299,8 @@ function custom_breadcrumbs()
         }
     }
 }
-//  ====== End  breadcrumb code ======= 
-//  ====== Start Code for Case Study Upload PDF ======= 
+//  ====== End  breadcrumb code =======
+//  ====== Start Code for Case Study Upload PDF =======
 function custom_cf7_before_send_mail($contact_form)
 {
     // Check if the submitted form matches the specific form ID (39525)
@@ -349,7 +344,7 @@ function custom_cf7_before_send_mail($contact_form)
                         <p>Hi ' . $first_name . ',</p>
                         <p>Are you ready to unlock the secrets of ' . $current_post_name . ' success?</p>
                         <p>We have compiled a comprehensive ' . $current_post_name . ' guide that reveals the strategies and tactics used by top e-commerce businesses to maximize their sales during the busiest shopping season of the year.</p>
-                        <p>' . $download_case_study_content . '</p> 
+                        <p>' . $download_case_study_content . '</p>
                          <p>
                             <a style="display: inline-flex;
                                     align-items: center;
