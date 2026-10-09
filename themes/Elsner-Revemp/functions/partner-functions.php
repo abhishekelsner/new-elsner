@@ -1,8 +1,6 @@
 <?php
 
-//add_action('save_post_leads', 'fun_save_post_leads', 10, 3);   
-function fun_save_post_leads($post_id, $post, $update)
-{
+function fun_save_post_leads($post_id, $post, $update){
 	if ($update) {
 		$new_value = $_REQUEST['acf']['field_644b71edfd2d8'];
 
@@ -53,12 +51,7 @@ function fun_save_post_leads($post_id, $post, $update)
 			$change_flag = 1;
 		}
 
-		/*for ($i=0; $i < count($old_field_vals); $i++) { 
-			if( $old_field_vals[$i] != $new_field_vals[$i] ){
-				$change_flag = 1;
-				break;
-			}
-		}*/
+
 		$post = get_post($post_id);
 		$lead_name = $post->post_title;
 		$author_id = $post->post_author;
